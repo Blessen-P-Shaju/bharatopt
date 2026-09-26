@@ -76,3 +76,6 @@ If the minimum possible activity $\underline{act}_i = \sum_{a_{ij} > 0} a_{ij} l
 ### 4.3 Fixed Variable Substitution
 When $l_j = u_j$, variable $x_j$ is fixed to constant value $v = l_j$. Its column $A_j$ is subtracted from the right-hand side: $b \leftarrow b - v A_j$, and the objective constant shifted: $c_0 \leftarrow c_0 + c_j v$.
 
+### 4.4 Singleton Row Handling
+A row containing a single non-zero entry $a_{ik} x_k = b_i$ directly fixes $x_k = b_i / a_{ik}$. For inequality singleton rows $a_{ik} x_k \le b_i$, a new upper bound $x_k \le b_i / a_{ik}$ (if $a_{ik} > 0$) is propagated.
+
