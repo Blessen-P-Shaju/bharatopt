@@ -85,3 +85,7 @@ A variable $x_j$ appearing in only one constraint $i$ with no cost ($c_j = 0$) c
 ### 4.6 Dual Implied Bounds
 Dual constraints $A^T y + z_l - z_u = c$ are analyzed to bound dual multipliers $y_i$. For variables at their bounds, reduced cost signs establish lower and upper bounds on shadow prices.
 
+### 4.7 Numerical Zero Tolerances
+Matrix entries with absolute value $|a_{ij}| < 10^{-12}$ are purged during presolve to prevent pivot singularity and fill-in.
+Markowitz threshold pivoting ensures that pivot elements satisfy $|a_{kk}| \ge u \max_i |a_{ik}|$ where $u \in [0.01, 0.1]$.
+
