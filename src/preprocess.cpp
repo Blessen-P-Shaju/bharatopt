@@ -232,3 +232,9 @@ void scale_matrix_equilibration(LPModel& m, PresolveStats* stats) {
         }
     }
 }
+
+void scale_matrix_geometric_mean(LPModel& m, int passes) {
+    for (int p = 0; p < passes; ++p) {
+        scale_matrix_equilibration(m, nullptr);
+    }
+}
