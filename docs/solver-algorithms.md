@@ -43,3 +43,10 @@ $$r_i = \frac{1}{\max_{1 \le j \le n} |a_{ij}|}$$
 
 Constraints with $r_i = 0$ (all-zero rows) are flagged as redundant or inconsistent during presolve.
 
+### 3.2 Column Equilibration Scaling
+Let $C = \text{diag}(c_1, c_2, \dots, c_n)$ be a diagonal column scaling matrix. Following row equilibration, each column factor is:
+
+$$c_j = \frac{1}{\max_{1 \le i \le m} |(R A)_{ij}|}$$
+
+The scaled system $\tilde{A} = R A C$ exhibits unit maximum infinity norms along both rows and columns.
+
