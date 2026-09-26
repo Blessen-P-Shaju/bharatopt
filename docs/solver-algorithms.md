@@ -36,3 +36,10 @@ Non-zero lower bounds $l_j > 0$ are shifted to origin: $\hat{x}_j = x_j - l_j \g
 
 Refinery optimization models exhibit severe ill-conditioning due to mixed dimensions: flow rates in thousands of barrels per day (kbpd), sulfur fractions in parts per million (ppm), and economic costs in millions of dollars.
 
+### 3.1 Row Equilibration Scaling
+Let $R = \text{diag}(r_1, r_2, \dots, r_m)$ be a diagonal row scaling matrix. Each factor $r_i$ is computed as:
+
+$$r_i = \frac{1}{\max_{1 \le j \le n} |a_{ij}|}$$
+
+Constraints with $r_i = 0$ (all-zero rows) are flagged as redundant or inconsistent during presolve.
+
