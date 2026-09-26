@@ -158,3 +158,6 @@ Internally, all constraints are converted to SI units or consistent base units:
 - Flow rates: metric tons per hour ($t/h$) or barrels per stream day ($bpsd$)
 - Concentrations: mass fractions ($kg/kg$) or parts per million ($1\text{ ppm} = 10^{-6}$)
 
+### 6.3 Automated Consistency Tests
+Specifications are verified against physical bounds before loading into LP constraint generators to avoid infeasible blend configurations.
+
