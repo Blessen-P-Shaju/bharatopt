@@ -41,5 +41,12 @@
     "sulfur_total_wt_pct_max": 0.3,
     "acidity_total_mg_koh_g_max": 0.015,
     "copper_strip_corrosion_max": "Class 1"
+  },
+  "marine_fuel_imo2020": {
+    "sulfur_wt_pct_max": 0.5,
+    "viscosity_50c_cst_max": 380.0,
+    "density_15c_max_kg_m3": 991.0,
+    "flash_point_c_min": 60.0,
+    "pour_point_c_max": 30.0
   }
 }
