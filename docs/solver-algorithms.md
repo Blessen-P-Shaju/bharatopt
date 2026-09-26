@@ -106,3 +106,6 @@ The CSC format optimizes column-oriented operations such as simplex tableau pric
 ### 5.3 Coordinate (COO) Format
 Triplet array `(row[k], col[k], val[k])` used during dynamic model formulation and flowsheet compilation before sorting into CSC/CSR.
 
+### 5.4 Vector Kernel Optimization
+Sparse vector linear combinations ($y \leftarrow y + \alpha x$) utilize indexed accumulator arrays (`w` and `w_flag`) to achieve $O(nnz)$ time complexity, bypassing dense $O(m)$ scans.
+
