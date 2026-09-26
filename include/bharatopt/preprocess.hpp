@@ -21,3 +21,7 @@ struct PresolveStats {
 };
 void scale_matrix_equilibration(LPModel& model, PresolveStats* stats = nullptr);
 void scale_matrix_geometric_mean(LPModel& model, int passes = 3);
+/**
+ * @brief Tightens variable bounds implied by single-coefficient constraint rows.
+ * @param m LPModel to transform in-place.
+ */
