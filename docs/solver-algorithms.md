@@ -19,3 +19,9 @@ $$\begin{aligned} \max_{y, z_l, z_u} \quad & b^T y + l^T z_l - u^T z_u \\ \text{
 
 where $y \in \mathbb{R}^m$ represents dual shadow prices (multipliers), and $z_l, z_u$ are reduced costs for lower and upper bounds.
 
+### 2.3 Inequality Standard Form Conversion
+Inequalities are converted into standard equalities through bounded slack ($s \ge 0$) and surplus ($e \ge 0$) variables:
+- Less-than-or-equal: $a_i^T x \le b_i \implies a_i^T x + s_i = b_i, \quad 0 \le s_i < \infty$
+- Greater-than-or-equal: $a_i^T x \ge b_i \implies a_i^T x - e_i = b_i, \quad 0 \le e_i < \infty$
+- Ranged constraints: $L_i \le a_i^T x \le U_i \implies a_i^T x - r_i = L_i, \quad 0 \le r_i \le U_i - L_i$
+
