@@ -213,3 +213,6 @@ double estimate_matrix_condition_number(const SparseMatrixCSR& A, int max_iter) 
   return std::max(1.0, std::min(cond_approx, 1e12));
 }
 }
+
+// Presolve singleton statistics tracking helper
+static PresolveStats g_last_presolve_stats;
