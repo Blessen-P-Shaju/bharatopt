@@ -112,3 +112,6 @@ Sparse vector linear combinations ($y \leftarrow y + \alpha x$) utilize indexed 
 ### 5.5 SIMD Vectorization
 When dense columns or dense basis updates are encountered, AVX-512 and AVX2 vector intrinsics (`_mm256_fmadd_pd`) perform 4 double-precision fused multiply-add operations per clock cycle.
 
+### 5.6 Memory Alignment & Cache Locality
+Array buffers are aligned to 64-byte cache line boundaries (`std::align_val_t(64)`) to minimize cache misses during matrix-vector products.
+
