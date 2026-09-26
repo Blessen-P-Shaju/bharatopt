@@ -137,3 +137,10 @@ $$y_i = \frac{c_k - \sum_{r \neq i} a_{rk} y_r}{a_{ik}}$$
 ### 5.10 Condition Number Benchmarks
 Empirical testing demonstrates that row-column scaling reduces the 2-norm condition number $\kappa(A)$ by an average of $10^4$ on refining models with severe unit dimension mismatches.
 
+## 6. Fuel Quality Specifications & Standard Reference
+
+The standard specifications defined in `data/fuel_blending_specs.json` correspond to statutory BS-VI directives in India:
+- **Gasoline (BS-VI)**: Research Octane Number (RON) $\ge 91$, Motor Octane Number (MON) $\ge 81$, Benzene $\le 1.0\text{ vol}\%$, Sulfur $\le 10\text{ ppm}$
+- **Diesel (BS-VI)**: Cetane Number $\ge 51$, Cetane Index $\ge 46$, Density at 15°C: 820-845 kg/m³, Sulfur $\le 10\text{ ppm}$
+- **Jet A-1**: Smoke Point $\ge 25\text{ mm}$, Freeze Point $\le -47^\circ\text{C}$, Flash Point $\ge 38^\circ\text{C}$
+
