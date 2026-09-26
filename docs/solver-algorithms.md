@@ -28,3 +28,7 @@ Inequalities are converted into standard equalities through bounded slack ($s \g
 ### 2.4 Free Variable Handling
 Unbounded variables ($-\infty < x_j < \infty$) can either be replaced by the difference of two non-negative variables ($x_j = x_j^+ - x_j^-$ where $x_j^+, x_j^- \ge 0$), or maintained directly in bounded simplex tableaus to preserve sparsity.
 
+### 2.5 Maximization and Bound Shifts
+Maximization problems are mapped into minimization by negating the objective vector: $\max c^T x \equiv - \min (-c)^T x$.
+Non-zero lower bounds $l_j > 0$ are shifted to origin: $\hat{x}_j = x_j - l_j \ge 0$, updating the right-hand side $b' = b - A l$.
+
