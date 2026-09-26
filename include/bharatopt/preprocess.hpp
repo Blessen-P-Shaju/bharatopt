@@ -12,3 +12,10 @@ PreprocessResult preprocess_lp(const LPModel& input, int scaling_passes = 5);
 void recover_primal(const std::vector<double>& scaled_x, const std::vector<double>& column_scale, std::vector<double>& x);
 double estimate_matrix_condition_number(const SparseMatrixCSR& A, int max_iter = 30);
 }
+struct PresolveStats {
+    int singleton_rows_removed{0};
+    int singleton_cols_removed{0};
+    int implied_bounds_tightened{0};
+    int redundant_rows_eliminated{0};
+    double condition_number_reduction_ratio{1.0};
+};
