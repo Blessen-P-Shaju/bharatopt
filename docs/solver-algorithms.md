@@ -122,3 +122,10 @@ Refinery decision variables are classified into:
 3. *Pooling variables*: Intermediate tank concentrations and blend proportions
 4. *Product variables*: Finished fuel blend components and commercial dispatch volumes
 
+### 5.8 Presolve Pipeline Stages
+1. Duplicate row / column identification
+2. Implied bound propagation (2 iterations)
+3. Singleton processing
+4. Matrix scaling (Equilibration & Geometric Mean)
+5. Sparsity pattern validation
+
