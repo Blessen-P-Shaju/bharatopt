@@ -79,3 +79,6 @@ When $l_j = u_j$, variable $x_j$ is fixed to constant value $v = l_j$. Its colum
 ### 4.4 Singleton Row Handling
 A row containing a single non-zero entry $a_{ik} x_k = b_i$ directly fixes $x_k = b_i / a_{ik}$. For inequality singleton rows $a_{ik} x_k \le b_i$, a new upper bound $x_k \le b_i / a_{ik}$ (if $a_{ik} > 0$) is propagated.
 
+### 4.5 Singleton Column Processing
+A variable $x_j$ appearing in only one constraint $i$ with no cost ($c_j = 0$) can be treated as an implied slack variable, allowing the constraint to be substituted or converted into simple variable bounds on the remaining variables.
+
