@@ -32,3 +32,7 @@ Unbounded variables ($-\infty < x_j < \infty$) can either be replaced by the dif
 Maximization problems are mapped into minimization by negating the objective vector: $\max c^T x \equiv - \min (-c)^T x$.
 Non-zero lower bounds $l_j > 0$ are shifted to origin: $\hat{x}_j = x_j - l_j \ge 0$, updating the right-hand side $b' = b - A l$.
 
+## 3. Numerical Preconditioning & Matrix Scaling
+
+Refinery optimization models exhibit severe ill-conditioning due to mixed dimensions: flow rates in thousands of barrels per day (kbpd), sulfur fractions in parts per million (ppm), and economic costs in millions of dollars.
+
