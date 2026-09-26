@@ -18,5 +18,15 @@
     "density_15c_max_kg_m3": 775.0,
     "oxygen_content_wt_pct_max": 2.7,
     "lead_content_g_l_max": 0.005
+  },
+  "diesel": {
+    "cetane_number_min": 51.0,
+    "cetane_index_min": 46.0,
+    "density_15c_min_kg_m3": 820.0,
+    "density_15c_max_kg_m3": 845.0,
+    "sulfur_ppm_max": 10.0,
+    "pah_wt_pct_max": 8.0,
+    "flash_point_c_min": 35.0,
+    "t95_c_max": 360.0
   }
 }
