@@ -152,3 +152,9 @@ The standard specifications defined in `data/fuel_blending_specs.json` correspon
 - Reid Vapor Pressure (RVP): ASTM D323 / ASTM D5191
 - Flash Point: ASTM D93 (Pensky-Martens closed cup)
 
+### 6.2 Unit Conversion Standard in Solver
+Internally, all constraints are converted to SI units or consistent base units:
+- Pressures: bar gauge ($1\text{ bar} = 100\text{ kPa}$)
+- Flow rates: metric tons per hour ($t/h$) or barrels per stream day ($bpsd$)
+- Concentrations: mass fractions ($kg/kg$) or parts per million ($1\text{ ppm} = 10^{-6}$)
+
