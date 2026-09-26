@@ -89,3 +89,11 @@ Dual constraints $A^T y + z_l - z_u = c$ are analyzed to bound dual multipliers 
 Matrix entries with absolute value $|a_{ij}| < 10^{-12}$ are purged during presolve to prevent pivot singularity and fill-in.
 Markowitz threshold pivoting ensures that pivot elements satisfy $|a_{kk}| \ge u \max_i |a_{ik}|$ where $u \in [0.01, 0.1]$.
 
+## 5. Sparse Matrix Representations
+
+### 5.1 Compressed Sparse Row (CSR)
+The constraint matrix is stored using three 0-indexed arrays:
+- `values`: non-zero coefficients ($nnz$ entries)
+- `col_indices`: column index for each non-zero ($nnz$ entries)
+- `row_ptr`: pointer to the start of each row in `values` ($m + 1$ entries)
+
