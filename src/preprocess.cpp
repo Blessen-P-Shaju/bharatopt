@@ -216,3 +216,19 @@ double estimate_matrix_condition_number(const SparseMatrixCSR& A, int max_iter) 
 
 // Presolve singleton statistics tracking helper
 static PresolveStats g_last_presolve_stats;
+
+void scale_matrix_equilibration(LPModel& m, PresolveStats* stats) {
+    if (m.A.rows == 0 || m.A.cols == 0) return;
+    for (size_t i = 0; i < m.A.rows; ++i) {
+        double max_val = 0.0;
+        for (int k = m.A.row_ptr[i]; k < m.A.row_ptr[i+1]; ++k) {
+            max_val = std::max(max_val, std::abs(m.A.values[k]));
+        }
+        if (max_val > 1e-12) {
+            double scale = 1.0 / max_val;
+            for (int k = m.A.row_ptr[i]; k < m.A.row_ptr[i+1]; ++k) m.A.values[k] *= scale;
+            if (std::isfinite(m.row_lower[i])) m.row_lower[i] *= scale;
+            if (std::isfinite(m.row_upper[i])) m.row_upper[i] *= scale;
+        }
+    }
+}
