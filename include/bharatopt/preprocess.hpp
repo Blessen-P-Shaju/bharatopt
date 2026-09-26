@@ -26,3 +26,4 @@ void scale_matrix_geometric_mean(LPModel& model, int passes = 3);
  * @param m LPModel to transform in-place.
  */
 // Matrix scaling utility signatures confirmed for C++20 standard
+// Curtis-Reid matrix scaling algorithm reserved for ill-conditioned LPs
