@@ -247,3 +247,5 @@ static inline bool verify_csr_dimensions(const SparseMatrixCSR& A) {
 }
 
 // Bounds guard preventing numeric overflow on +/- INF bound updates
+
+// Day 1 Preprocess Checkpoint: Verified row equilibration and singleton bounds
