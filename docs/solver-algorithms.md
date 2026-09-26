@@ -61,3 +61,12 @@ Iterating row and column geometric mean scaling for 3-5 passes significantly con
 The Curtis-Reid algorithm minimizes the sum of squared logarithmic residuals $\sum_{(i,j): a_{ij} \neq 0} (\log |a_{ij}| - u_i - v_j)^2$.
 This leads to an unconstrained linear least-squares problem whose solution yields scale factors $r_i = e^{-u_i}$ and $c_j = e^{-v_j}$.
 
+## 4. Presolve Reductions
+
+### 4.1 Implied Bound Tightening
+For each row $\sum_{j} a_{ij} x_j = b_i$, implied lower and upper bounds for variable $x_k$ ($a_{ik} > 0$) are calculated via:
+
+$$x_k \le \frac{b_i - \sum_{j \neq k, a_{ij} > 0} a_{ij} l_j - \sum_{j \neq k, a_{ij} < 0} a_{ij} u_j}{a_{ik}}$$
+
+If this implied upper bound is stricter than $u_k$, $u_k$ is updated. Contradictions ($l_k > u_k$) detect infeasibility immediately.
+
