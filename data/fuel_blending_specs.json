@@ -30,5 +30,14 @@
     "t95_c_max": 360.0,
     "viscosity_40c_cst_min": 2.0,
     "viscosity_40c_cst_max": 4.5
+  },
+  "jet_a1": {
+    "smoke_point_mm_min": 25.0,
+    "freeze_point_c_max": -47.0,
+    "flash_point_c_min": 38.0,
+    "density_15c_min_kg_m3": 775.0,
+    "density_15c_max_kg_m3": 840.0,
+    "viscosity_minus20c_cst_max": 8.0,
+    "sulfur_total_wt_pct_max": 0.3
   }
 }
