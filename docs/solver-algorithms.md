@@ -97,3 +97,9 @@ The constraint matrix is stored using three 0-indexed arrays:
 - `col_indices`: column index for each non-zero ($nnz$ entries)
 - `row_ptr`: pointer to the start of each row in `values` ($m + 1$ entries)
 
+### 5.2 Compressed Sparse Column (CSC)
+The CSC format optimizes column-oriented operations such as simplex tableau pricing and basis updates:
+- `values`: non-zero coefficients ($nnz$ entries)
+- `row_indices`: row index for each non-zero ($nnz$ entries)
+- `col_ptr`: pointer to the start of each column in `values` ($n + 1$ entries)
+
