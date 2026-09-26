@@ -15,6 +15,8 @@
     "rvp_kpa_max_summer": 60.0,
     "rvp_kpa_max_winter": 67.0,
     "density_15c_min_kg_m3": 720.0,
-    "density_15c_max_kg_m3": 775.0
+    "density_15c_max_kg_m3": 775.0,
+    "oxygen_content_wt_pct_max": 2.7,
+    "lead_content_g_l_max": 0.005
   }
 }
