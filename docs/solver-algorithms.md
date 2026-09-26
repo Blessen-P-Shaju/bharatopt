@@ -129,3 +129,8 @@ Refinery decision variables are classified into:
 4. Matrix scaling (Equilibration & Geometric Mean)
 5. Sparsity pattern validation
 
+### 5.9 Postsolve Solution Recovery
+Presolve maintains an inverse transformation stack. Dual shadow prices and slack variables for eliminated rows are reconstructed using KKT complementarity conditions:
+
+$$y_i = \frac{c_k - \sum_{r \neq i} a_{rk} y_r}{a_{ik}}$$
+
