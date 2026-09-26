@@ -25,3 +25,4 @@ void scale_matrix_geometric_mean(LPModel& model, int passes = 3);
  * @brief Tightens variable bounds implied by single-coefficient constraint rows.
  * @param m LPModel to transform in-place.
  */
+// Matrix scaling utility signatures confirmed for C++20 standard
