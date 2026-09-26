@@ -103,3 +103,6 @@ The CSC format optimizes column-oriented operations such as simplex tableau pric
 - `row_indices`: row index for each non-zero ($nnz$ entries)
 - `col_ptr`: pointer to the start of each column in `values` ($n + 1$ entries)
 
+### 5.3 Coordinate (COO) Format
+Triplet array `(row[k], col[k], val[k])` used during dynamic model formulation and flowsheet compilation before sorting into CSC/CSR.
+
