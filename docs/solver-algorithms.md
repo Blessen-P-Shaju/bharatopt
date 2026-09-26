@@ -144,3 +144,11 @@ The standard specifications defined in `data/fuel_blending_specs.json` correspon
 - **Diesel (BS-VI)**: Cetane Number $\ge 51$, Cetane Index $\ge 46$, Density at 15°C: 820-845 kg/m³, Sulfur $\le 10\text{ ppm}$
 - **Jet A-1**: Smoke Point $\ge 25\text{ mm}$, Freeze Point $\le -47^\circ\text{C}$, Flash Point $\ge 38^\circ\text{C}$
 
+### 6.1 Test Method Standards
+- RON: ASTM D2699 / IS 1448 P:27
+- MON: ASTM D2700 / IS 1448 P:26
+- Sulfur content (X-ray fluorescence): ASTM D2622 / ASTM D5453
+- Density at 15°C: ASTM D1298 / ASTM D4052
+- Reid Vapor Pressure (RVP): ASTM D323 / ASTM D5191
+- Flash Point: ASTM D93 (Pensky-Martens closed cup)
+
