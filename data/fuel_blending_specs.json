@@ -29,7 +29,9 @@
     "flash_point_c_min": 35.0,
     "t95_c_max": 360.0,
     "viscosity_40c_cst_min": 2.0,
-    "viscosity_40c_cst_max": 4.5
+    "viscosity_40c_cst_max": 4.5,
+    "cfpp_c_max_winter": 6.0,
+    "cfpp_c_max_summer": 18.0
   },
   "jet_a1": {
     "smoke_point_mm_min": 25.0,
