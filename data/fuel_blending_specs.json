@@ -27,6 +27,8 @@
     "sulfur_ppm_max": 10.0,
     "pah_wt_pct_max": 8.0,
     "flash_point_c_min": 35.0,
-    "t95_c_max": 360.0
+    "t95_c_max": 360.0,
+    "viscosity_40c_cst_min": 2.0,
+    "viscosity_40c_cst_max": 4.5
   }
 }
