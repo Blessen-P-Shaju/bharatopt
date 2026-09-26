@@ -238,3 +238,5 @@ void scale_matrix_geometric_mean(LPModel& m, int passes) {
         scale_matrix_equilibration(m, nullptr);
     }
 }
+
+constexpr double BHARATOPT_PREPROCESS_ZERO_EPS = 1e-14;
