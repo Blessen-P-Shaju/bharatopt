@@ -50,3 +50,10 @@ $$c_j = \frac{1}{\max_{1 \le i \le m} |(R A)_{ij}|}$$
 
 The scaled system $\tilde{A} = R A C$ exhibits unit maximum infinity norms along both rows and columns.
 
+### 3.3 Geometric Mean Scaling
+Geometric mean scaling computes scale factors based on the geometric mean of non-zero minimum and maximum row elements:
+
+$$r_i = \frac{1}{\sqrt{\max_{j: a_{ij} \neq 0} |a_{ij}| \cdot \min_{j: a_{ij} \neq 0} |a_{ij}|}}$$
+
+Iterating row and column geometric mean scaling for 3-5 passes significantly contracts the spectral spread.
+
