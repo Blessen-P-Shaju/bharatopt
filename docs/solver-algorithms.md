@@ -25,3 +25,6 @@ Inequalities are converted into standard equalities through bounded slack ($s \g
 - Greater-than-or-equal: $a_i^T x \ge b_i \implies a_i^T x - e_i = b_i, \quad 0 \le e_i < \infty$
 - Ranged constraints: $L_i \le a_i^T x \le U_i \implies a_i^T x - r_i = L_i, \quad 0 \le r_i \le U_i - L_i$
 
+### 2.4 Free Variable Handling
+Unbounded variables ($-\infty < x_j < \infty$) can either be replaced by the difference of two non-negative variables ($x_j = x_j^+ - x_j^-$ where $x_j^+, x_j^- \ge 0$), or maintained directly in bounded simplex tableaus to preserve sparsity.
+
