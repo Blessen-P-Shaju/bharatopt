@@ -82,3 +82,6 @@ A row containing a single non-zero entry $a_{ik} x_k = b_i$ directly fixes $x_k 
 ### 4.5 Singleton Column Processing
 A variable $x_j$ appearing in only one constraint $i$ with no cost ($c_j = 0$) can be treated as an implied slack variable, allowing the constraint to be substituted or converted into simple variable bounds on the remaining variables.
 
+### 4.6 Dual Implied Bounds
+Dual constraints $A^T y + z_l - z_u = c$ are analyzed to bound dual multipliers $y_i$. For variables at their bounds, reduced cost signs establish lower and upper bounds on shadow prices.
+
