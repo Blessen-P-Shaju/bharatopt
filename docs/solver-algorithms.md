@@ -73,3 +73,6 @@ If this implied upper bound is stricter than $u_k$, $u_k$ is updated. Contradict
 ### 4.2 Redundant Row Elimination
 If the minimum possible activity $\underline{act}_i = \sum_{a_{ij} > 0} a_{ij} l_j + \sum_{a_{ij} < 0} a_{ij} u_j \ge b_i$ and the constraint is $a_i^T x \ge b_i$, the constraint is unconditionally satisfied and removed from the active model.
 
+### 4.3 Fixed Variable Substitution
+When $l_j = u_j$, variable $x_j$ is fixed to constant value $v = l_j$. Its column $A_j$ is subtracted from the right-hand side: $b \leftarrow b - v A_j$, and the objective constant shifted: $c_0 \leftarrow c_0 + c_j v$.
+
