@@ -19,3 +19,5 @@ struct PresolveStats {
     int redundant_rows_eliminated{0};
     double condition_number_reduction_ratio{1.0};
 };
+void scale_matrix_equilibration(LPModel& model, PresolveStats* stats = nullptr);
+void scale_matrix_geometric_mean(LPModel& model, int passes = 3);
