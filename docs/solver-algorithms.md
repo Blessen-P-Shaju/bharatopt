@@ -161,3 +161,6 @@ Internally, all constraints are converted to SI units or consistent base units:
 ### 6.3 Automated Consistency Tests
 Specifications are verified against physical bounds before loading into LP constraint generators to avoid infeasible blend configurations.
 
+### 6.4 Linkage to Simplex Core
+Scaled matrices and tight variable bounds are passed directly to the revised simplex engine via the `LinearProgram` struct.
+
