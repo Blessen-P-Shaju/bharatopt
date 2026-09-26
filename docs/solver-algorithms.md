@@ -57,3 +57,7 @@ $$r_i = \frac{1}{\sqrt{\max_{j: a_{ij} \neq 0} |a_{ij}| \cdot \min_{j: a_{ij} \n
 
 Iterating row and column geometric mean scaling for 3-5 passes significantly contracts the spectral spread.
 
+### 3.4 Curtis-Reid Scaling
+The Curtis-Reid algorithm minimizes the sum of squared logarithmic residuals $\sum_{(i,j): a_{ij} \neq 0} (\log |a_{ij}| - u_i - v_j)^2$.
+This leads to an unconstrained linear least-squares problem whose solution yields scale factors $r_i = e^{-u_i}$ and $c_j = e^{-v_j}$.
+
