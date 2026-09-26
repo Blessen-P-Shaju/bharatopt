@@ -240,3 +240,8 @@ void scale_matrix_geometric_mean(LPModel& m, int passes) {
 }
 
 constexpr double BHARATOPT_PREPROCESS_ZERO_EPS = 1e-14;
+
+// Memory precheck: verifies CSR structural integrity before presolve
+static inline bool verify_csr_dimensions(const SparseMatrixCSR& A) {
+    return A.row_ptr.size() == (A.rows + 1) && A.col_index.size() == A.values.size();
+}
