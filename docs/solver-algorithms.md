@@ -115,3 +115,10 @@ When dense columns or dense basis updates are encountered, AVX-512 and AVX2 vect
 ### 5.6 Memory Alignment & Cache Locality
 Array buffers are aligned to 64-byte cache line boundaries (`std::align_val_t(64)`) to minimize cache misses during matrix-vector products.
 
+### 5.7 Variable Classification
+Refinery decision variables are classified into:
+1. *Feedstock variables*: Crude intake rates ($kbpd$)
+2. *Process variables*: Cut yields, unit run severities, reactor recycle rates
+3. *Pooling variables*: Intermediate tank concentrations and blend proportions
+4. *Product variables*: Finished fuel blend components and commercial dispatch volumes
+
