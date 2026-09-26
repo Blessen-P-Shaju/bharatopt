@@ -70,3 +70,6 @@ $$x_k \le \frac{b_i - \sum_{j \neq k, a_{ij} > 0} a_{ij} l_j - \sum_{j \neq k, a
 
 If this implied upper bound is stricter than $u_k$, $u_k$ is updated. Contradictions ($l_k > u_k$) detect infeasibility immediately.
 
+### 4.2 Redundant Row Elimination
+If the minimum possible activity $\underline{act}_i = \sum_{a_{ij} > 0} a_{ij} l_j + \sum_{a_{ij} < 0} a_{ij} u_j \ge b_i$ and the constraint is $a_i^T x \ge b_i$, the constraint is unconditionally satisfied and removed from the active model.
+
