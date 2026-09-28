@@ -57,3 +57,6 @@ Standard protocol for testing non-convex pooling instances with varying componen
 ### Haverly 1 Benchmark Instance
 Standard pooling test: 2 crude sources, 1 pool tank, 2 blended products, 1 sulfur component.
 
+### Haverly 2 Benchmark Instance
+Haverly instance with inverted cost structures testing local vs global optima trapping.
+
