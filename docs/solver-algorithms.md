@@ -192,3 +192,8 @@ $$j = \arg\min_{k \in \mathcal{N}} d_k$$
 
 While computationally fast per iteration, it is vulnerable to poor step lengths and stalling on ill-scaled systems.
 
+### 7.4 Pricing Strategy 2: Bland's Minimal Index Rule
+To theoretically guarantee the avoidance of cycling under degeneracy, Bland's rule selects:
+1. *Entering variable*: Smallest index $j$ among all candidates with negative reduced cost ($d_j < 0$).
+2. *Leaving variable*: In case of ties in the minimum ratio test, select basic variable with smallest index $i$.
+
