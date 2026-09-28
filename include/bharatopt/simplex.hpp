@@ -61,3 +61,6 @@ struct SimplexIterationStats {
 };
 int select_entering_bland(const std::vector<double>& reduced_costs);
 int select_entering_steepest_edge(const std::vector<double>& reduced_costs, const std::vector<double>& weights);
+/**
+ * @brief Executes Harris two-pass ratio test for numerically stable pivot row selection.
+ */
