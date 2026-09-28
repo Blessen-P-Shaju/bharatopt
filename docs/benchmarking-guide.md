@@ -18,3 +18,6 @@ Dynamic multi-period production model (57 rows, 97 cols) testing bounded variabl
 ### SC205 Benchmark Profile
 Sparse structural problem (206 rows, 203 cols) benchmarking LU update fill-in rates.
 
+### ISRAEL Benchmark Profile
+Ill-conditioned constraint system (175 rows, 142 cols) testing numerical scaling stability.
+
