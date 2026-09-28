@@ -129,3 +129,6 @@ Any commit increasing solve time by >5% on Netlib suite triggers automated inves
 ### Benchmark Results Archiving
 Storing historical benchmark runs for release comparison.
 
+### Summary & Best Practices
+Best practices for writing realistic refinery LP test cases.
+
