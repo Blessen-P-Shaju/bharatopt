@@ -49,3 +49,14 @@ int select_entering_steepest_edge(const std::vector<double>& d, const std::vecto
 // AVX2 fused multiply-add acceleration hints for dense tableau columns
 
 // Steepest-edge weight recurrence bounding against round-off drift
+
+double estimate_basis_condition_number(const std::vector<double>& diag_u) {
+    if (diag_u.empty()) return 1.0;
+    double min_v = std::abs(diag_u[0]), max_v = min_v;
+    for (double v : diag_u) {
+        double av = std::abs(v);
+        if (av > 0) min_v = std::min(min_v, av);
+        max_v = std::max(max_v, av);
+    }
+    return (min_v > 1e-15) ? (max_v / min_v) : 1e16;
+}
