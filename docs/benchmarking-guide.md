@@ -51,3 +51,6 @@ Deep conversion refinery model featuring INDMAX FCC technology and polypropylene
 ### BPCL Kochi Synthetic Flowsheet
 Clean fuels blending benchmark testing Euro-VI / BS-VI diesel and gasoline compliance bounds.
 
+### Bilinear Pooling Benchmark Protocol
+Standard protocol for testing non-convex pooling instances with varying component numbers.
+
