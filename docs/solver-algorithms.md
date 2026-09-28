@@ -211,3 +211,6 @@ $$\gamma_k^2 \leftarrow \gamma_k^2 - 2 \frac{\alpha_{ik}}{\alpha_{ij}} (B^{-1} A
 
 where $\alpha_{ij}$ is the pivot element and $i$ is the leaving row index.
 
+### 7.7 Devex Pricing Approximation
+Devex approximates steepest-edge weights by resetting weights to 1.0 upon basis refactorization and updating using approximate projection formulas.
+
