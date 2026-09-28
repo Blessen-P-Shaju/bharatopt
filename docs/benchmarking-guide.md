@@ -111,3 +111,6 @@ Verifying column, row, and bound headers in MPS benchmark files.
 ### Sensitivity Analysis Benchmark
 Testing objective range and right-hand side tolerance intervals.
 
+### Parallel Benchmark Execution
+Multi-threaded benchmark runner evaluating thread scaling across batch problem sets.
+
