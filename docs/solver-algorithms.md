@@ -204,3 +204,10 @@ $$j = \arg\min_{k \in \mathcal{N}} \frac{d_k}{\gamma_k}, \quad \gamma_k = \sqrt{
 
 Steepest-edge drastically reduces total simplex iterations (often by 60-80% compared to Dantzig).
 
+### 7.6 Steepest-Edge Weight Recurrence Update
+Rather than computing $\gamma_k$ from scratch each iteration ($O(m^3)$), weights $\gamma_k^2$ are updated in $O(m^2)$ using recurrence:
+
+$$\gamma_k^2 \leftarrow \gamma_k^2 - 2 \frac{\alpha_{ik}}{\alpha_{ij}} (B^{-1} A_k)^T (B^{-1} A_j) + \left(\frac{\alpha_{ik}}{\alpha_{ij}}\right)^2 \gamma_j^2$$
+
+where $\alpha_{ij}$ is the pivot element and $i$ is the leaving row index.
+
