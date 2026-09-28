@@ -69,3 +69,6 @@ Three-pool, four-component blending network benchmarking Successive Linear Progr
 ### Benchmark Metrics: Iteration Count
 Recording total simplex iterations, Phase I iterations, and Phase II iterations.
 
+### Benchmark Metrics: Wall-Clock Solve Time
+High-resolution microsecond timing using `std::chrono::steady_clock`.
+
