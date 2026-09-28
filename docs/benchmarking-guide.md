@@ -93,3 +93,6 @@ Comparing solve speed and iteration counts against HiGHS v1.7.0 C++ API.
 ### Reference Solver Comparison: GLPK
 Comparing basis stability against GNU Linear Programming Kit simplex engine.
 
+### Reference Solver Comparison: Clp (Coin-OR)
+Benchmarking against Coin-OR Linear Programming simplex solver.
+
