@@ -66,3 +66,6 @@ Extended Haverly instance with product demand upper bounds testing economic shad
 ### Standat Pooling Instance
 Three-pool, four-component blending network benchmarking Successive Linear Programming (SLP).
 
+### Benchmark Metrics: Iteration Count
+Recording total simplex iterations, Phase I iterations, and Phase II iterations.
+
