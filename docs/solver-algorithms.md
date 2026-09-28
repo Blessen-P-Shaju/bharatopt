@@ -231,3 +231,9 @@ Bartels-Golub updates apply stabilized row permutations to maintain numerical st
 ### 7.12 Product Form of the Inverse (Eta Matrices)
 Between full factorizations, basis inverse operations $B_k^{-1} = E_k E_{k-1} \dots E_1 B_0^{-1}$ are maintained as a sequence of sparse eta vectors.
 
+### 7.13 Periodic Refactorization
+A full LU refactorization is triggered when:
+1. Number of update eta vectors exceeds 100
+2. Relative residual $\|B x_B - b\| / \|b\| > 10^{-8}$
+3. Numerical instability is detected in pivot element
+
