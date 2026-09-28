@@ -197,3 +197,10 @@ To theoretically guarantee the avoidance of cycling under degeneracy, Bland's ru
 1. *Entering variable*: Smallest index $j$ among all candidates with negative reduced cost ($d_j < 0$).
 2. *Leaving variable*: In case of ties in the minimum ratio test, select basic variable with smallest index $i$.
 
+### 7.5 Pricing Strategy 3: Steepest-Edge Pricing
+Steepest-edge pricing selects the entering variable that maximizes the rate of objective improvement per unit step length in $\mathbb{R}^n$:
+
+$$j = \arg\min_{k \in \mathcal{N}} \frac{d_k}{\gamma_k}, \quad \gamma_k = \sqrt{1 + \|B^{-1} A_k\|_2^2}$$
+
+Steepest-edge drastically reduces total simplex iterations (often by 60-80% compared to Dantzig).
+
