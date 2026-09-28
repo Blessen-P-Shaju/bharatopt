@@ -117,3 +117,6 @@ Multi-threaded benchmark runner evaluating thread scaling across batch problem s
 ### Cross-Platform Reproducibility
 Verifying identical iteration counts across Linux x86_64 and Windows MSVC/Clang targets.
 
+### Reproducibility Checksum Protocol
+SHA-256 hash verification for input MPS files to ensure benchmark integrity.
+
