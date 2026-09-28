@@ -250,3 +250,6 @@ Bounds are perturbed by small random offsets $\epsilon_j \sim \mathcal{U}(10^{-1
 ### 7.17 Phase I Feasibility Search
 When starting without a feasible basis, Phase I minimizes the sum of artificial variable violations $\sum v_i$.
 
+### 7.18 Crash Basis Initialization
+Triangular crash algorithms inspect column sparsity to construct an initial triangular basis, reducing Phase I iterations by up to 70%.
+
