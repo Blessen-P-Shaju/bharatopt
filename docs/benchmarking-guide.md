@@ -123,3 +123,6 @@ SHA-256 hash verification for input MPS files to ensure benchmark integrity.
 ### Benchmark Reporting Format
 JSON and Markdown table generation for continuous performance tracking.
 
+### Performance Regression Thresholds
+Any commit increasing solve time by >5% on Netlib suite triggers automated investigation.
+
