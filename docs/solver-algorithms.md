@@ -225,3 +225,6 @@ The basis matrix $B$ is factored into unit lower triangular matrix $L$ and upper
 ### 7.10 Forrest-Tomlin LU Basis Update
 Replacing column $p$ in $B$ produces an upper Hessenberg matrix $\tilde{U}$. The Forrest-Tomlin update performs row cyclic permutations and row eliminations to restore upper triangular form with minimal fill-in.
 
+### 7.11 Bartels-Golub LU Update
+Bartels-Golub updates apply stabilized row permutations to maintain numerical stability during long sequences of simplex pivots.
+
