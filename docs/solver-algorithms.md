@@ -214,3 +214,8 @@ where $\alpha_{ij}$ is the pivot element and $i$ is the leaving row index.
 ### 7.7 Devex Pricing Approximation
 Devex approximates steepest-edge weights by resetting weights to 1.0 upon basis refactorization and updating using approximate projection formulas.
 
+### 7.8 Harris Two-Pass Ratio Test
+Degeneracy and round-off errors can cause false infeasibilities. Harris' two-pass ratio test expands feasibility bounds by tolerance $\delta = 10^{-7}$:
+- *Pass 1*: Compute maximum step length $\theta_{max}$ allowing basic variables to violate bounds by up to $\delta$.
+- *Pass 2*: Select entering pivot with largest absolute pivot coefficient $|\alpha_{ij}|$ among candidate rows with $\theta_i \le \theta_{max}$.
+
