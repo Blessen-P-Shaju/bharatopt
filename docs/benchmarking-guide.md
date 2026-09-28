@@ -114,3 +114,6 @@ Testing objective range and right-hand side tolerance intervals.
 ### Parallel Benchmark Execution
 Multi-threaded benchmark runner evaluating thread scaling across batch problem sets.
 
+### Cross-Platform Reproducibility
+Verifying identical iteration counts across Linux x86_64 and Windows MSVC/Clang targets.
+
