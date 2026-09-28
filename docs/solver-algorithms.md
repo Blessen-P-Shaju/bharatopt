@@ -185,3 +185,10 @@ The reduced cost vector $d_N$ for non-basic variables is defined as:
 
 $$d_N = c_N - N^T y = c_N - N^T B^{-T} c_B$$
 
+### 7.3 Pricing Strategy 1: Dantzig's Rule
+Dantzig's original pivot rule selects the entering non-basic variable $j$ with the most negative reduced cost (for minimization):
+
+$$j = \arg\min_{k \in \mathcal{N}} d_k$$
+
+While computationally fast per iteration, it is vulnerable to poor step lengths and stalling on ill-scaled systems.
+
