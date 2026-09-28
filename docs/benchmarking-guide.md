@@ -63,3 +63,6 @@ Haverly instance with inverted cost structures testing local vs global optima tr
 ### Haverly 3 Benchmark Instance
 Extended Haverly instance with product demand upper bounds testing economic shadow prices.
 
+### Standat Pooling Instance
+Three-pool, four-component blending network benchmarking Successive Linear Programming (SLP).
+
