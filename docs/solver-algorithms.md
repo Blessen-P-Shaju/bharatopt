@@ -175,3 +175,13 @@ On standard test benchmark instances (`examples/refinery_blending.mps`), presolv
 The constraint matrix $A \in \mathbb{R}^{m \times n}$ is partitioned into a square non-singular basis matrix $B \in \mathbb{R}^{m \times m}$ and non-basic matrix $N \in \mathbb{R}^{m \times (n-m)}$: $A = [B \quad N]$.
 The variable vector is similarly partitioned into basic variables $x_B$ and non-basic variables $x_N$.
 
+### 7.2 Primal Solution & Reduced Costs
+Given non-basic variables set to their bounds $x_N = l_N$ or $u_N$, the basic variables are uniquely resolved as:
+
+$$x_B = B^{-1} (b - N x_N)$$
+
+The dual multiplier vector (simplex shadow prices) satisfies $B^T y = c_B \implies y = B^{-T} c_B$.
+The reduced cost vector $d_N$ for non-basic variables is defined as:
+
+$$d_N = c_N - N^T y = c_N - N^T B^{-T} c_B$$
+
