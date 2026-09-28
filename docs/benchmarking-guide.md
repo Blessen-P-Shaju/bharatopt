@@ -36,3 +36,6 @@ Staircase multi-period constraint structure (357 rows, 467 cols) benchmarking wa
 ### GREENBEA Benchmark Profile
 Dense basis LP problem (2393 rows, 5405 cols) benchmarking SIMD vector kernel performance.
 
+### Refinery Flowsheet Benchmark Architecture
+Proprietary BharatOPT synthetic refinery test instances simulating coastal and inland configurations.
+
