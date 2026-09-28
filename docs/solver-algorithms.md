@@ -168,3 +168,10 @@ Scaled matrices and tight variable bounds are passed directly to the revised sim
 On standard test benchmark instances (`examples/refinery_blending.mps`), presolve reduces total non-zero entries by 34.2% and eliminates 28.5% of redundant blending constraints prior to simplex factorization.
 
 <!-- Day 1 Checkpoint Completed: 44 commits on 2026-09-26 -->
+
+## 7. Revised Simplex Algorithm Engine
+
+### 7.1 Basis Partitioning & Fundamental Subspaces
+The constraint matrix $A \in \mathbb{R}^{m \times n}$ is partitioned into a square non-singular basis matrix $B \in \mathbb{R}^{m \times m}$ and non-basic matrix $N \in \mathbb{R}^{m \times (n-m)}$: $A = [B \quad N]$.
+The variable vector is similarly partitioned into basic variables $x_B$ and non-basic variables $x_N$.
+
