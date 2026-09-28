@@ -45,3 +45,5 @@ int select_entering_steepest_edge(const std::vector<double>& d, const std::vecto
 }
 
 // Instrumenting simplex execution timers
+
+// AVX2 fused multiply-add acceleration hints for dense tableau columns
