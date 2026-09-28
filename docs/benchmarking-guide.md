@@ -15,3 +15,6 @@ Refinery-adjacent LP problem (97 rows, 79 cols) testing sparse pivot selection s
 ### ADLITTLE Benchmark Profile
 Dynamic multi-period production model (57 rows, 97 cols) testing bounded variable simplex.
 
+### SC205 Benchmark Profile
+Sparse structural problem (206 rows, 203 cols) benchmarking LU update fill-in rates.
+
