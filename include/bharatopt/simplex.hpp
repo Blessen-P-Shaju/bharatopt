@@ -66,3 +66,4 @@ int select_entering_steepest_edge(const std::vector<double>& reduced_costs, cons
  */
 
 // Extension: support for Forrest-Tomlin basis factorization updates
+double estimate_basis_condition_number(const std::vector<double>& diag_u);
