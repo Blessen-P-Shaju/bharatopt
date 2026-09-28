@@ -27,3 +27,6 @@ Deep degeneracy problem (224 rows, 282 cols) testing anti-cycling Bland and stee
 ### SCTAP1 Benchmark Profile
 Dynamic traffic and routing model (301 rows, 480 cols) benchmarking sparse matrix multiply kernels.
 
+### PILOT Benchmark Profile
+Large macroeconomic input-output model (1442 rows, 3652 cols) stress testing basis refactorization.
+
