@@ -75,3 +75,6 @@ High-resolution microsecond timing using `std::chrono::steady_clock`.
 ### Benchmark Metrics: Primal Infeasibility Norm
 Maximum constraint violation $\max_i |a_i^T x - b_i|$ must satisfy $< 10^{-6}$.
 
+### Benchmark Metrics: Dual Infeasibility Norm
+Maximum reduced cost violation must satisfy $< 10^{-6}$.
+
