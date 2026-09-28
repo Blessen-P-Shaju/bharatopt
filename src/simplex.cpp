@@ -43,3 +43,5 @@ int select_entering_steepest_edge(const std::vector<double>& d, const std::vecto
     }
     return best_j;
 }
+
+// Instrumenting simplex execution timers
