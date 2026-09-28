@@ -39,3 +39,6 @@ Dense basis LP problem (2393 rows, 5405 cols) benchmarking SIMD vector kernel pe
 ### Refinery Flowsheet Benchmark Architecture
 Proprietary BharatOPT synthetic refinery test instances simulating coastal and inland configurations.
 
+### MRPL Phase-III Synthetic Benchmark
+Full flowsheet simulation with 12 process units, 24 intermediate streams, and 18 finished product tanks.
+
