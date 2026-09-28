@@ -24,3 +24,6 @@ Ill-conditioned constraint system (175 rows, 142 cols) testing numerical scaling
 ### E226 Benchmark Profile
 Deep degeneracy problem (224 rows, 282 cols) testing anti-cycling Bland and steepest-edge rules.
 
+### SCTAP1 Benchmark Profile
+Dynamic traffic and routing model (301 rows, 480 cols) benchmarking sparse matrix multiply kernels.
+
