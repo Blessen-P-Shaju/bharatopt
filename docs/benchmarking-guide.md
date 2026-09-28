@@ -120,3 +120,6 @@ Verifying identical iteration counts across Linux x86_64 and Windows MSVC/Clang 
 ### Reproducibility Checksum Protocol
 SHA-256 hash verification for input MPS files to ensure benchmark integrity.
 
+### Benchmark Reporting Format
+JSON and Markdown table generation for continuous performance tracking.
+
