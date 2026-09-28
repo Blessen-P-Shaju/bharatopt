@@ -30,3 +30,6 @@ Dynamic traffic and routing model (301 rows, 480 cols) benchmarking sparse matri
 ### PILOT Benchmark Profile
 Large macroeconomic input-output model (1442 rows, 3652 cols) stress testing basis refactorization.
 
+### STAIR Benchmark Profile
+Staircase multi-period constraint structure (357 rows, 467 cols) benchmarking warm-start capability.
+
