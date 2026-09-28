@@ -237,3 +237,6 @@ A full LU refactorization is triggered when:
 2. Relative residual $\|B x_B - b\| / \|b\| > 10^{-8}$
 3. Numerical instability is detected in pivot element
 
+### 7.14 Dual Simplex Algorithm
+Dual simplex maintains dual feasibility ($d_N \ge 0$) while driving primal infeasibilities to zero. It is exceptionally efficient for re-optimizing after adding cuts or modifying capacity bounds.
+
