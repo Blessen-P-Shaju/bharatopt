@@ -244,3 +244,6 @@ Dual simplex maintains dual feasibility ($d_N \ge 0$) while driving primal infea
 1. *Leaving variable*: Variable $x_{B_i}$ violating primal bound by the largest amount.
 2. *Entering variable*: $j = \arg\min_{k: \alpha_{ik} < 0} |d_k / \alpha_{ik}|$.
 
+### 7.16 Bound Perturbation Heuristic
+Bounds are perturbed by small random offsets $\epsilon_j \sim \mathcal{U}(10^{-11}, 10^{-9})$ to break polyhedral degeneracy, then removed during post-solve cleanup.
+
