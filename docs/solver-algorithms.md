@@ -228,3 +228,6 @@ Replacing column $p$ in $B$ produces an upper Hessenberg matrix $\tilde{U}$. The
 ### 7.11 Bartels-Golub LU Update
 Bartels-Golub updates apply stabilized row permutations to maintain numerical stability during long sequences of simplex pivots.
 
+### 7.12 Product Form of the Inverse (Eta Matrices)
+Between full factorizations, basis inverse operations $B_k^{-1} = E_k E_{k-1} \dots E_1 B_0^{-1}$ are maintained as a sequence of sparse eta vectors.
+
