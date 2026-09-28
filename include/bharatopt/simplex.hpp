@@ -59,3 +59,5 @@ struct SimplexIterationStats {
     double pivot_selection_time_ms{0.0};
     double basis_update_time_ms{0.0};
 };
+int select_entering_bland(const std::vector<double>& reduced_costs);
+int select_entering_steepest_edge(const std::vector<double>& reduced_costs, const std::vector<double>& weights);
