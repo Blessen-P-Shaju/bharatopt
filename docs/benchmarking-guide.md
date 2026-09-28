@@ -33,3 +33,6 @@ Large macroeconomic input-output model (1442 rows, 3652 cols) stress testing bas
 ### STAIR Benchmark Profile
 Staircase multi-period constraint structure (357 rows, 467 cols) benchmarking warm-start capability.
 
+### GREENBEA Benchmark Profile
+Dense basis LP problem (2393 rows, 5405 cols) benchmarking SIMD vector kernel performance.
+
