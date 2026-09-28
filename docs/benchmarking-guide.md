@@ -105,3 +105,6 @@ Tolerances for primal feasibility ($10^{-7}$), dual feasibility ($10^{-7}$), and
 ### Benchmarking Execution Script
 Documentation for `scripts/run_benchmarks.py` parameters and summary report output.
 
+### MPS Format Validation Protocol
+Verifying column, row, and bound headers in MPS benchmark files.
+
