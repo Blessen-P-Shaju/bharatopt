@@ -42,3 +42,6 @@ Proprietary BharatOPT synthetic refinery test instances simulating coastal and i
 ### MRPL Phase-III Synthetic Benchmark
 Full flowsheet simulation with 12 process units, 24 intermediate streams, and 18 finished product tanks.
 
+### CPCL Manali Synthetic Benchmark
+Heavy crude processing configuration testing vacuum distillation and delayed coking constraints.
+
