@@ -81,3 +81,6 @@ Maximum reduced cost violation must satisfy $< 10^{-6}$.
 ### Benchmark Metrics: Objective Value Gap
 Relative gap $|z_{calc} - z_{ref}| / (1 + |z_{ref}|) < 10^{-7}$ against HiGHS reference.
 
+### Benchmark Metrics: Memory High-Water Mark
+Peak RSS resident memory usage during basis refactorization and matrix allocation.
+
