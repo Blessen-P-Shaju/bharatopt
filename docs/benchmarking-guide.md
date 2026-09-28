@@ -48,3 +48,6 @@ Heavy crude processing configuration testing vacuum distillation and delayed cok
 ### IOCL Paradip Benchmark Instance
 Deep conversion refinery model featuring INDMAX FCC technology and polypropylene yield balance.
 
+### BPCL Kochi Synthetic Flowsheet
+Clean fuels blending benchmark testing Euro-VI / BS-VI diesel and gasoline compliance bounds.
+
