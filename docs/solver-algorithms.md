@@ -240,3 +240,7 @@ A full LU refactorization is triggered when:
 ### 7.14 Dual Simplex Algorithm
 Dual simplex maintains dual feasibility ($d_N \ge 0$) while driving primal infeasibilities to zero. It is exceptionally efficient for re-optimizing after adding cuts or modifying capacity bounds.
 
+### 7.15 Dual Ratio Test
+1. *Leaving variable*: Variable $x_{B_i}$ violating primal bound by the largest amount.
+2. *Entering variable*: $j = \arg\min_{k: \alpha_{ik} < 0} |d_k / \alpha_{ik}|$.
+
