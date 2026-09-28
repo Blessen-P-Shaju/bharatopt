@@ -64,3 +64,5 @@ int select_entering_steepest_edge(const std::vector<double>& reduced_costs, cons
 /**
  * @brief Executes Harris two-pass ratio test for numerically stable pivot row selection.
  */
+
+// Extension: support for Forrest-Tomlin basis factorization updates
