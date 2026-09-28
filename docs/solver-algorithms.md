@@ -219,3 +219,6 @@ Degeneracy and round-off errors can cause false infeasibilities. Harris' two-pas
 - *Pass 1*: Compute maximum step length $\theta_{max}$ allowing basic variables to violate bounds by up to $\delta$.
 - *Pass 2*: Select entering pivot with largest absolute pivot coefficient $|\alpha_{ij}|$ among candidate rows with $\theta_i \le \theta_{max}$.
 
+### 7.9 LU Basis Factorization ($B = L U$)
+The basis matrix $B$ is factored into unit lower triangular matrix $L$ and upper triangular matrix $U$ using Markowitz threshold pivoting.
+
