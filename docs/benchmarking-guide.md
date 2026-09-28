@@ -72,3 +72,6 @@ Recording total simplex iterations, Phase I iterations, and Phase II iterations.
 ### Benchmark Metrics: Wall-Clock Solve Time
 High-resolution microsecond timing using `std::chrono::steady_clock`.
 
+### Benchmark Metrics: Primal Infeasibility Norm
+Maximum constraint violation $\max_i |a_i^T x - b_i|$ must satisfy $< 10^{-6}$.
+
