@@ -27,3 +27,19 @@ int select_entering_bland(const std::vector<double>& reduced_costs) {
     }
     return -1;
 }
+
+int select_entering_steepest_edge(const std::vector<double>& d, const std::vector<double>& gamma) {
+    int best_j = -1;
+    double best_ratio = 0.0;
+    for (size_t j = 0; j < d.size(); ++j) {
+        if (d[j] < -1e-8) {
+            double w = (j < gamma.size() && gamma[j] > 1e-12) ? gamma[j] : 1.0;
+            double ratio = (d[j] * d[j]) / w;
+            if (ratio > best_ratio) {
+                best_ratio = ratio;
+                best_j = static_cast<int>(j);
+            }
+        }
+    }
+    return best_j;
+}
