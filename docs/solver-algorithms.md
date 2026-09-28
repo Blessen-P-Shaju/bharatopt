@@ -222,3 +222,6 @@ Degeneracy and round-off errors can cause false infeasibilities. Harris' two-pas
 ### 7.9 LU Basis Factorization ($B = L U$)
 The basis matrix $B$ is factored into unit lower triangular matrix $L$ and upper triangular matrix $U$ using Markowitz threshold pivoting.
 
+### 7.10 Forrest-Tomlin LU Basis Update
+Replacing column $p$ in $B$ produces an upper Hessenberg matrix $\tilde{U}$. The Forrest-Tomlin update performs row cyclic permutations and row eliminations to restore upper triangular form with minimal fill-in.
+
