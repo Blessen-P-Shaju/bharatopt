@@ -84,3 +84,6 @@ Relative gap $|z_{calc} - z_{ref}| / (1 + |z_{ref}|) < 10^{-7}$ against HiGHS re
 ### Benchmark Metrics: Memory High-Water Mark
 Peak RSS resident memory usage during basis refactorization and matrix allocation.
 
+### Benchmark Metrics: Cache Miss Rates
+L1/L3 cache misses measured via hardware performance counters during sparse pricing.
+
