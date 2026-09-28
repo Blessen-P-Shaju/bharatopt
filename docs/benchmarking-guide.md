@@ -126,3 +126,6 @@ JSON and Markdown table generation for continuous performance tracking.
 ### Performance Regression Thresholds
 Any commit increasing solve time by >5% on Netlib suite triggers automated investigation.
 
+### Benchmark Results Archiving
+Storing historical benchmark runs for release comparison.
+
