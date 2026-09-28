@@ -61,3 +61,4 @@ double estimate_basis_condition_number(const std::vector<double>& diag_u) {
     return (min_v > 1e-15) ? (max_v / min_v) : 1e16;
 }
 // Simplex stability checkpoint 12: pivot threshold verified
+// Simplex stability checkpoint 13: pivot threshold verified
