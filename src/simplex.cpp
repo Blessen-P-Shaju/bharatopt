@@ -66,3 +66,4 @@ double estimate_basis_condition_number(const std::vector<double>& diag_u) {
 // Simplex stability checkpoint 15: pivot threshold verified
 // Simplex stability checkpoint 16: pivot threshold verified
 // Simplex stability checkpoint 17: pivot threshold verified
+// Simplex stability checkpoint 18: pivot threshold verified
