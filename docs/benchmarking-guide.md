@@ -99,3 +99,6 @@ Benchmarking against Coin-OR Linear Programming simplex solver.
 ### Automated Regression Test Suite
 Integration of benchmarks into continuous verification pipeline with automated failure alerts.
 
+### Tolerance Thresholds for Floating Point
+Tolerances for primal feasibility ($10^{-7}$), dual feasibility ($10^{-7}$), and pivot zero ($10^{-12}$).
+
