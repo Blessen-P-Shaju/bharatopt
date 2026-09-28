@@ -247,3 +247,6 @@ Dual simplex maintains dual feasibility ($d_N \ge 0$) while driving primal infea
 ### 7.16 Bound Perturbation Heuristic
 Bounds are perturbed by small random offsets $\epsilon_j \sim \mathcal{U}(10^{-11}, 10^{-9})$ to break polyhedral degeneracy, then removed during post-solve cleanup.
 
+### 7.17 Phase I Feasibility Search
+When starting without a feasible basis, Phase I minimizes the sum of artificial variable violations $\sum v_i$.
+
