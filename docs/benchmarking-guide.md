@@ -90,3 +90,6 @@ L1/L3 cache misses measured via hardware performance counters during sparse pric
 ### Reference Solver Comparison: HiGHS
 Comparing solve speed and iteration counts against HiGHS v1.7.0 C++ API.
 
+### Reference Solver Comparison: GLPK
+Comparing basis stability against GNU Linear Programming Kit simplex engine.
+
