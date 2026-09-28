@@ -78,3 +78,6 @@ Maximum constraint violation $\max_i |a_i^T x - b_i|$ must satisfy $< 10^{-6}$.
 ### Benchmark Metrics: Dual Infeasibility Norm
 Maximum reduced cost violation must satisfy $< 10^{-6}$.
 
+### Benchmark Metrics: Objective Value Gap
+Relative gap $|z_{calc} - z_{ref}| / (1 + |z_{ref}|) < 10^{-7}$ against HiGHS reference.
+
