@@ -21,3 +21,6 @@ Sparse structural problem (206 rows, 203 cols) benchmarking LU update fill-in ra
 ### ISRAEL Benchmark Profile
 Ill-conditioned constraint system (175 rows, 142 cols) testing numerical scaling stability.
 
+### E226 Benchmark Profile
+Deep degeneracy problem (224 rows, 282 cols) testing anti-cycling Bland and steepest-edge rules.
+
