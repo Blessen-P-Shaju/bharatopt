@@ -54,3 +54,6 @@ Clean fuels blending benchmark testing Euro-VI / BS-VI diesel and gasoline compl
 ### Bilinear Pooling Benchmark Protocol
 Standard protocol for testing non-convex pooling instances with varying component numbers.
 
+### Haverly 1 Benchmark Instance
+Standard pooling test: 2 crude sources, 1 pool tank, 2 blended products, 1 sulfur component.
+
