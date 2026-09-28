@@ -108,3 +108,6 @@ Documentation for `scripts/run_benchmarks.py` parameters and summary report outp
 ### MPS Format Validation Protocol
 Verifying column, row, and bound headers in MPS benchmark files.
 
+### Sensitivity Analysis Benchmark
+Testing objective range and right-hand side tolerance intervals.
+
