@@ -48,3 +48,14 @@ private:
 SolverResult solve_simplex(const LPModel& model, const SolverOptions& options);
 
 } // namespace bharatopt
+
+struct SimplexIterationStats {
+    int iteration_count{0};
+    int phase1_iterations{0};
+    int phase2_iterations{0};
+    int refactorization_count{0};
+    double final_primal_infeasibility{0.0};
+    double final_dual_infeasibility{0.0};
+    double pivot_selection_time_ms{0.0};
+    double basis_update_time_ms{0.0};
+};
