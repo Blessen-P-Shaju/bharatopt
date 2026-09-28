@@ -20,3 +20,10 @@ SolverResult solve_simplex(const LPModel& model, const SolverOptions& options) {
 }
 
 } // namespace bharatopt
+
+int select_entering_bland(const std::vector<double>& reduced_costs) {
+    for (size_t j = 0; j < reduced_costs.size(); ++j) {
+        if (reduced_costs[j] < -1e-8) return static_cast<int>(j);
+    }
+    return -1;
+}
