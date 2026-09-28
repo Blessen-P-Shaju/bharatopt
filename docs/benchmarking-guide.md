@@ -45,3 +45,6 @@ Full flowsheet simulation with 12 process units, 24 intermediate streams, and 18
 ### CPCL Manali Synthetic Benchmark
 Heavy crude processing configuration testing vacuum distillation and delayed coking constraints.
 
+### IOCL Paradip Benchmark Instance
+Deep conversion refinery model featuring INDMAX FCC technology and polypropylene yield balance.
+
