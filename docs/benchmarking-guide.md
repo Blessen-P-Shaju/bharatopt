@@ -102,3 +102,6 @@ Integration of benchmarks into continuous verification pipeline with automated f
 ### Tolerance Thresholds for Floating Point
 Tolerances for primal feasibility ($10^{-7}$), dual feasibility ($10^{-7}$), and pivot zero ($10^{-12}$).
 
+### Benchmarking Execution Script
+Documentation for `scripts/run_benchmarks.py` parameters and summary report output.
+
