@@ -69,3 +69,6 @@ Quadratic hydraulic resistance across high-pressure hydrotreater piping loops.
 ### Tank Farm Working Ullage Safety Buffers
 Quadratic penalty on tank levels approaching minimum heel or overflow limits.
 
+### Multi-Period Demurrage Soft Constraint Penalties
+Quadratic penalty on vessel waiting times beyond contracted laytime.
+
