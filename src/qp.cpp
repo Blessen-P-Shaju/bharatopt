@@ -38,3 +38,14 @@ SolverResult BharatOptSolverCore::solve_qp(const QPModel&m,const SolverOptions&o
  r.objective=objective(m,r.x);r.best_bound=r.objective;r.mip_gap=0;r.solve_time_sec=std::chrono::duration<double>(std::chrono::steady_clock::now()-t0).count();r.status=r.converged?"QP_OPTIMALITY_TOL_REACHED":"QP_ITERATION_LIMIT";return r;
 }
 }
+bool verify_hessian_psd(const SparseMatrixCSR& Q, double tol) {
+    for (size_t i = 0; i < Q.rows; ++i) {
+        double diag = 0.0, off_diag = 0.0;
+        for (int k = Q.row_ptr[i]; k < Q.row_ptr[i+1]; ++k) {
+            if (static_cast<size_t>(Q.col_index[k]) == i) diag = Q.values[k];
+            else off_diag += std::abs(Q.values[k]);
+        }
+        if (diag < off_diag - tol) return false;
+    }
+    return true;
+}
