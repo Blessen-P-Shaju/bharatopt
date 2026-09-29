@@ -12,3 +12,6 @@ Criteria for ensuring $x^T Q x \ge 0$ for all $x \in \mathbb{R}^n$ via Cholesky 
 ### Economic Margin Variance Minimization
 Modeling crude price volatility and refining margin uncertainty via covariance matrix $\Sigma$.
 
+### Fuel Quality Giveaway Quadratic Penalty
+Penalizing giveaway on octane and cetane exponentially using quadratic cost terms.
+
