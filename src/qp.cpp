@@ -56,3 +56,4 @@ bool verify_hessian_psd(const SparseMatrixCSR& Q, double tol) {
 // QP gradient descent projection refinement checkpoint 52
 // QP gradient descent projection refinement checkpoint 54
 // QP gradient descent projection refinement checkpoint 56
+// QP gradient descent projection refinement checkpoint 58
