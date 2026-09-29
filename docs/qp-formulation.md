@@ -96,3 +96,6 @@ Quadratic fan power curves vs coke combustion kinetics in regenerator.
 ### Alkylation Acid Consumption Minimization
 Balancing acid makeup rate against alkylate octane rating.
 
+### Delayed Coker Cycle Time Optimization
+Scheduling drum decoking cycles to maximize liquid yield vs coke formation.
+
