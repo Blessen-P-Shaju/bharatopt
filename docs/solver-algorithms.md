@@ -362,3 +362,12 @@ Introduces non-negative elastic variables $e_i^+, e_i^-$ with high penalty weigh
 ### 9.6 Refinery Diagnostic Mapping
 IIS results are translated into actionable refinery alerts (e.g., 'Sulfur ceiling of 10 ppm conflicts with HCU minimum feed sulfur 250 ppm').
 
+### 9.7 Interior Point vs Simplex Comparison
+| Metric | Revised Simplex | Primal-Dual Interior Point |
+|---|---|---|
+| Iteration Count | $O(m)$ to $O(m \ln n)$ | $O(\sqrt{n} \ln(1/\epsilon))$ (typically 20-40) |
+| Cost per Iteration | Low ($O(m^2)$ update) | High ($O(m^3)$ Cholesky) |
+| Solution Type | Exact vertex (basic) | Analytic center of optimal face |
+| Warm-Starting | Excellent (Dual Simplex) | Challenging (needs crossover) |
+| Large Dense Models | Slower | Superior scaling |
+
