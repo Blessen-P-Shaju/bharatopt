@@ -343,3 +343,10 @@ When Cholesky factor $L$ exhibits excessive fill-in, preconditioned conjugate gr
 ### 9.1 Mathematical Definition of IIS
 An Irreducible Infeasible Subsystem (IIS) is an infeasible sub-model that becomes feasible upon the deletion of any single constraint.
 
+### 9.2 Farkas' Lemma Certificate
+A system $A x = b, x \ge 0$ is infeasible if and only if there exists ray $y$ such that:
+
+$$A^T y \ge 0 \quad \text{and} \quad b^T y < 0$$
+
+The ray $y$ serves as a mathematical proof of infeasibility and identifies contributing constraints.
+
