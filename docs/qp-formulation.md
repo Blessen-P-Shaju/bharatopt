@@ -90,3 +90,6 @@ Quadratic penalty on peak electrical megawatt consumption from external grid.
 ### Desalter Salt Removal Efficiency Optimization
 Optimizing wash water injection rate against downstream corrosion costs.
 
+### FCCU Catalyst Regeneration Air Blower Limits
+Quadratic fan power curves vs coke combustion kinetics in regenerator.
+
