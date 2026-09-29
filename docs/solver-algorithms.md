@@ -332,3 +332,6 @@ Dual variables and slack variables are partitioned to establish exact complement
 ### 8.16 Ill-Conditioning in Final Iterations
 As $\mu \to 0$, some $\Theta_j \to \infty$ while others $\to 0$. Regularization $(A \Theta A^T + \delta I)$ maintains numerical stability.
 
+### 8.17 Diagonal Levenberg-Marquardt Regularization
+When rank deficiency is detected in $A \Theta A^T$, diagonal perturbation $\delta_i = 10^{-9} \max_k M_{kk}$ is injected.
+
