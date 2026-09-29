@@ -11,3 +11,4 @@ struct QPDiagnostics {
     bool is_strictly_convex{true};
 };
 bool verify_hessian_psd(const SparseMatrixCSR& Q, double tol = 1e-9);
+// QP gradient descent projection refinement checkpoint 43
