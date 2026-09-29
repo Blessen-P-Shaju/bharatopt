@@ -383,3 +383,6 @@ Centering previous solution points to prevent initial iterates from starting too
 ### 9.11 Triangular Solve Stability
 Forward substitution $L z = r$ and back substitution $L^T \Delta y = z$ with iterative refinement.
 
+### 9.12 Symbolic Elimination Tree Caching
+Reusing the non-zero pattern of $L$ across iterations when matrix sparsity structure remains invariant.
+
