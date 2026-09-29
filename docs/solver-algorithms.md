@@ -284,3 +284,6 @@ where $\Theta = X S^{-1} = \text{diag}(x_1/s_1, x_2/s_2, \dots, x_n/s_n)$.
 ### 8.5 Cholesky Factorization ($L L^T = A \Theta A^T$)
 The matrix $M = A \Theta A^T$ is factored into lower triangular factor $L$. Sparsity is preserved via reordering.
 
+### 8.6 Symbolic Fill-In Reduction (AMD Ordering)
+Approximate Minimum Degree (AMD) pre-ordering computes permutation $P$ such that $P (A A^T) P^T$ minimizes Cholesky fill-in.
+
