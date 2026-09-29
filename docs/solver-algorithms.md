@@ -320,3 +320,6 @@ Convergence is declared when all three residuals fall below tolerance $\epsilon 
 - Relative dual infeasibility: $\|A^T y + s - c\| / (1 + \|c\|) < 10^{-8}$
 - Relative duality gap: $|c^T x - b^T y| / (1 + |c^T x|) < 10^{-8}$
 
+### 8.13 Crossover to Basic Feasible Solution
+For sensitivity analysis and warm-starting, interior-point solutions are converted to an exact basic feasible vertex using primal and dual crossover.
+
