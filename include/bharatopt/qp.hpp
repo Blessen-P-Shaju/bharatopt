@@ -10,3 +10,4 @@ struct QPDiagnostics {
     double constraint_violation{0.0};
     bool is_strictly_convex{true};
 };
+bool verify_hessian_psd(const SparseMatrixCSR& Q, double tol = 1e-9);
