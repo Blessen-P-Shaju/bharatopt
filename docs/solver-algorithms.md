@@ -274,3 +274,10 @@ $$\begin{bmatrix} A & 0 & 0 \\ 0 & A^T & I \\ S & 0 & X \end{bmatrix} \begin{bma
 
 where $r_p = b - A x$ (primal residual), $r_d = c - A^T y - s$ (dual residual), and $r_{xs} = \mu e - X S e$.
 
+### 8.4 Normal Equations Reduction
+Eliminating $\Delta s = X^{-1}(r_{xs} - S \Delta x)$ and $\Delta x$ yields the symmetric positive-definite normal equations:
+
+$$(A \Theta A^T) \Delta y = r_p + A \Theta (r_d - X^{-1} r_{xs})$$
+
+where $\Theta = X S^{-1} = \text{diag}(x_1/s_1, x_2/s_2, \dots, x_n/s_n)$.
+
