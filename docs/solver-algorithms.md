@@ -398,3 +398,5 @@ Storage requirements for $A, \Theta, L$, and working vectors during peak executi
 ### 9.16 Free Variable Splitting in Interior Point
 Decomposing free variables or projecting onto null space of free column equations.
 
+<!-- Day 3 Interior Point Section Completed: 35 commits -->
+
