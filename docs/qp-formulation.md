@@ -105,3 +105,6 @@ Automated validation of Hessian matrix symmetry and strict convexity.
 ### Comparison: QP vs Linear Programming Performance
 Trade-offs in solve time and model fidelity between LP and QP formulations.
 
+### Summary & Future Direction for Non-Convex MINLP
+Extending QP solvers towards Mixed-Integer Nonlinear Programming (MINLP).
+
