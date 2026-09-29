@@ -84,3 +84,6 @@ Environmental limits on heat discharge to coastal water bodies.
 ### Flare Gas Minimization Quadratic Model
 Penalizing flaring events during unit upsets and mode transitions.
 
+### Power Grid Demand Charge Peak Shaving
+Quadratic penalty on peak electrical megawatt consumption from external grid.
+
