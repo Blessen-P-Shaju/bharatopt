@@ -338,3 +338,8 @@ When rank deficiency is detected in $A \Theta A^T$, diagonal perturbation $\delt
 ### 8.18 Conjugate Gradient Preconditioned Iterative Solver
 When Cholesky factor $L$ exhibits excessive fill-in, preconditioned conjugate gradient (PCG) with incomplete Cholesky provides scalable fallback.
 
+## 9. Infeasibility Analysis & IIS Extraction
+
+### 9.1 Mathematical Definition of IIS
+An Irreducible Infeasible Subsystem (IIS) is an infeasible sub-model that becomes feasible upon the deletion of any single constraint.
+
