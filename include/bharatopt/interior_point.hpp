@@ -19,3 +19,4 @@ struct InteriorPointDiagnostics {
 };
 SolverResult solve_interior_point_verbose(const LPModel& model, const SolverOptions& options, InteriorPointDiagnostics* diag);
 // Interior-Point Mehrotra predictor-corrector optimization step 5
+// Interior-Point Mehrotra predictor-corrector optimization step 7
