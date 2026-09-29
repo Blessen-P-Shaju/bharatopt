@@ -57,3 +57,6 @@ Refining Refutas viscosity index blending using local quadratic approximations.
 ### Emissions Abatement Cost Curve Modeling
 Quadratic marginal abatement cost curves for refinery carbon capture investments.
 
+### Thermal Efficiency & Furnace Heat Loss QP
+Modeling non-linear radiative heat losses in atmospheric distillation furnaces.
+
