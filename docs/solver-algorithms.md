@@ -297,3 +297,8 @@ The maximum allowable step lengths maintaining $x + \alpha_p \Delta x \ge 0$ and
 
 $$\alpha_p^{aff} = \min_{j: \Delta x_j < 0} \left(-\frac{x_j}{\Delta x_j}\right), \quad \alpha_d^{aff} = \min_{j: \Delta s_j < 0} \left(-\frac{s_j}{\Delta s_j}\right)$$
 
+### 8.9 Adaptive Centering Parameter $\sigma$
+The centering parameter $\sigma$ is calculated dynamically from the affine duality gap reduction:
+
+$$\sigma = \left(\frac{\mu_{aff}}{\mu}\right)^3 = \left(\frac{(x + \alpha_p^{aff} \Delta x_{aff})^T (s + \alpha_d^{aff} \Delta s_{aff}) / n}{x^T s / n}\right)^3$$
+
