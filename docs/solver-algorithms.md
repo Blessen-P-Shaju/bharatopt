@@ -395,3 +395,6 @@ Parallelizing independent branches of the elimination tree across CPU cores.
 ### 9.15 Memory Architecture
 Storage requirements for $A, \Theta, L$, and working vectors during peak execution.
 
+### 9.16 Free Variable Splitting in Interior Point
+Decomposing free variables or projecting onto null space of free column equations.
+
