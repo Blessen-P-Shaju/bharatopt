@@ -326,3 +326,6 @@ For sensitivity analysis and warm-starting, interior-point solutions are convert
 ### 8.14 Primal Push Crossover
 Variables near their bounds are fixed to non-basic status. The remaining variables form a basis that is driven to feasibility.
 
+### 8.15 Dual Push Crossover
+Dual variables and slack variables are partitioned to establish exact complementary slackness and an optimal basic tableau.
+
