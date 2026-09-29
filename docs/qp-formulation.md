@@ -24,3 +24,6 @@ Iterative active set strategy treating active constraints as equalities and upda
 ### KKT Conditions for Quadratic Programs
 First-order necessary and sufficient optimality conditions for convex QP.
 
+### Null-Space Method for Equality-Constrained QP
+Projecting the Hessian $Q$ onto the null space of constraint matrix $A$.
+
