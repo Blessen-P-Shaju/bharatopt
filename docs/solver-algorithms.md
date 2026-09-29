@@ -380,3 +380,6 @@ Preventing underflow when dual slack variables approach machine precision near o
 ### 9.10 Interior Point Warm-Starting Heuristics
 Centering previous solution points to prevent initial iterates from starting too close to the boundary.
 
+### 9.11 Triangular Solve Stability
+Forward substitution $L z = r$ and back substitution $L^T \Delta y = z$ with iterative refinement.
+
