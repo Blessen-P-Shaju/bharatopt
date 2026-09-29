@@ -3,3 +3,6 @@
 ## 1. Overview
 Quadratic programming models arise in refinery optimization when objective functions or constraints involve risk minimization, quality variance penalization, or market price elasticity.
 
+### Convex QP Standard Mathematical Representation
+Minimizing $f(x) = \frac{1}{2} x^T Q x + c^T x$ subject to linear constraints $A x = b, l \le x \le u$.
+
