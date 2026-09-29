@@ -371,3 +371,6 @@ IIS results are translated into actionable refinery alerts (e.g., 'Sulfur ceilin
 | Warm-Starting | Excellent (Dual Simplex) | Challenging (needs crossover) |
 | Large Dense Models | Slower | Superior scaling |
 
+### 9.8 Barrier Parameter Decay Strategies
+Comparison of Fiacco-McCormick fixed geometric decay vs Mehrotra adaptive cubic reduction.
+
