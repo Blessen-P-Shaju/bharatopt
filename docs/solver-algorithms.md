@@ -292,3 +292,8 @@ Mehrotra's algorithm computes two directions per iteration:
 1. *Affine scaling predictor*: $\mu = 0$, finding pure progress towards boundary.
 2. *Centering and cross-term corrector*: adjusts for nonlinear curvature $\Delta x_{aff} \Delta s_{aff}$.
 
+### 8.8 Affine Step & Boundary Distance
+The maximum allowable step lengths maintaining $x + \alpha_p \Delta x \ge 0$ and $s + \alpha_d \Delta s \ge 0$ are:
+
+$$\alpha_p^{aff} = \min_{j: \Delta x_j < 0} \left(-\frac{x_j}{\Delta x_j}\right), \quad \alpha_d^{aff} = \min_{j: \Delta s_j < 0} \left(-\frac{s_j}{\Delta s_j}\right)$$
+
