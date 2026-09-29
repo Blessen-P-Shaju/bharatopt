@@ -253,3 +253,10 @@ When starting without a feasible basis, Phase I minimizes the sum of artificial 
 ### 7.18 Crash Basis Initialization
 Triangular crash algorithms inspect column sparsity to construct an initial triangular basis, reducing Phase I iterations by up to 70%.
 
+## 8. Primal-Dual Interior-Point Algorithms
+
+### 8.1 Logarithmic Barrier Formulation
+The inequality constraints $x \ge 0$ are replaced by a logarithmic barrier penalty with barrier parameter $\mu > 0$:
+
+$$\min c^T x - \mu \sum_{j=1}^n \ln(x_j) \quad \text{s.t.} \quad A x = b$$
+
