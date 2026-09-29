@@ -184,3 +184,4 @@ static double calculate_mehrotra_sigma(double mu_affine, double mu_current) {
 // Interior-Point Mehrotra predictor-corrector optimization step 14
 // Interior-Point Mehrotra predictor-corrector optimization step 16
 // Interior-Point Mehrotra predictor-corrector optimization step 18
+// Interior-Point Mehrotra predictor-corrector optimization step 20
