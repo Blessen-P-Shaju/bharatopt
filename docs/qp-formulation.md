@@ -54,3 +54,6 @@ Balancing octane give-away penalty against component cost trade-offs.
 ### Nonlinear Viscosity Blending via QP Approximation
 Refining Refutas viscosity index blending using local quadratic approximations.
 
+### Emissions Abatement Cost Curve Modeling
+Quadratic marginal abatement cost curves for refinery carbon capture investments.
+
