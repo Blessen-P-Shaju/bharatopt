@@ -356,3 +356,6 @@ Iterates through constraints $i = 1, \dots, m$. Constraint $i$ is temporarily re
 ### 9.4 Additive Bounding Heuristic
 Builds an infeasible set starting from an empty system by adding violated constraints from Phase I until infeasibility is established.
 
+### 9.5 Elastic Filter Method
+Introduces non-negative elastic variables $e_i^+, e_i^-$ with high penalty weights to identify the minimal set of conflicting operational rules.
+
