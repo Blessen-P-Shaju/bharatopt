@@ -18,3 +18,6 @@ Penalizing giveaway on octane and cetane exponentially using quadratic cost term
 ### Minimum Kinetic Energy Pipeline Scheduling
 Minimizing pump power losses proportional to squared flow rate: $P \propto Q^2$.
 
+### Active Set Algorithm for Quadratic Programming
+Iterative active set strategy treating active constraints as equalities and updating basis.
+
