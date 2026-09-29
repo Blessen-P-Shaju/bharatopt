@@ -39,3 +39,6 @@ Solving strictly convex quadratic programs starting from unconstrained minimum.
 ### Interior-Point Method for Convex QP
 Extending primal-dual Mehrotra predictor-corrector to quadratic objective terms.
 
+### Linearized Complementarity System for QP
+Incorporating Hessian $Q \Delta x$ directly into the Newton normal equations.
+
