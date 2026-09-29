@@ -314,3 +314,9 @@ To strictly prevent iterates from hitting the non-negative orthant boundary, dam
 
 $$\alpha_p = \min(1.0, \tau \alpha_p^{max}), \quad \alpha_d = \min(1.0, \tau \alpha_d^{max})$$
 
+### 8.12 Termination Criteria
+Convergence is declared when all three residuals fall below tolerance $\epsilon = 10^{-8}$:
+- Relative primal infeasibility: $\|A x - b\| / (1 + \|b\|) < 10^{-8}$
+- Relative dual infeasibility: $\|A^T y + s - c\| / (1 + \|c\|) < 10^{-8}$
+- Relative duality gap: $|c^T x - b^T y| / (1 + |c^T x|) < 10^{-8}$
+
