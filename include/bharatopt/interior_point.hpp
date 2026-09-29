@@ -17,3 +17,4 @@ struct InteriorPointDiagnostics {
     double barrier_parameter_mu{0.0};
     double cholesky_factorization_time_ms{0.0};
 };
+SolverResult solve_interior_point_verbose(const LPModel& model, const SolverOptions& options, InteriorPointDiagnostics* diag);
