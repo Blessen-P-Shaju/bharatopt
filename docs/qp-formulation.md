@@ -45,3 +45,6 @@ Incorporating Hessian $Q \Delta x$ directly into the Newton normal equations.
 ### Augmented System Formulation for QP
 Solving the symmetric indefinite saddle-point system $\begin{bmatrix} Q + \Theta^{-1} & A^T \\ A & 0 \end{bmatrix}$.
 
+### LDL^T Factorization of Indefinite Saddle System
+Using Bunch-Parlett or symmetric indefinite pivoting for saddle-point stability.
+
