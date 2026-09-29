@@ -63,3 +63,6 @@ Modeling non-linear radiative heat losses in atmospheric distillation furnaces.
 ### Crude Distillation Yield Deviation Penalties
 Penalizing deviation from nominal cut temperatures in CDU and VDU operations.
 
+### Hydrogen Network Pressure Drop QP
+Quadratic hydraulic resistance across high-pressure hydrotreater piping loops.
+
