@@ -302,3 +302,10 @@ The centering parameter $\sigma$ is calculated dynamically from the affine duali
 
 $$\sigma = \left(\frac{\mu_{aff}}{\mu}\right)^3 = \left(\frac{(x + \alpha_p^{aff} \Delta x_{aff})^T (s + \alpha_d^{aff} \Delta s_{aff}) / n}{x^T s / n}\right)^3$$
 
+### 8.10 Combined Corrector Step
+The right-hand side for the combined step is updated to:
+
+$$r_{xs} = \sigma \mu e - X S e - \Delta X_{aff} \Delta S_{aff} e$$
+
+Solving the normal equations with this RHS produces the final predictor-corrector search direction.
+
