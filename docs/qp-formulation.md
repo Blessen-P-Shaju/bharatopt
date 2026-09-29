@@ -66,3 +66,6 @@ Penalizing deviation from nominal cut temperatures in CDU and VDU operations.
 ### Hydrogen Network Pressure Drop QP
 Quadratic hydraulic resistance across high-pressure hydrotreater piping loops.
 
+### Tank Farm Working Ullage Safety Buffers
+Quadratic penalty on tank levels approaching minimum heel or overflow limits.
+
