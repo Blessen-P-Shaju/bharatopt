@@ -9,3 +9,6 @@ Minimizing $f(x) = \frac{1}{2} x^T Q x + c^T x$ subject to linear constraints $A
 ### Positive Semi-Definite Hessian Verification
 Criteria for ensuring $x^T Q x \ge 0$ for all $x \in \mathbb{R}^n$ via Cholesky decomposition or Gershgorin circle theorem.
 
+### Economic Margin Variance Minimization
+Modeling crude price volatility and refining margin uncertainty via covariance matrix $\Sigma$.
+
