@@ -48,3 +48,6 @@ Solving the symmetric indefinite saddle-point system $\begin{bmatrix} Q + \Theta
 ### LDL^T Factorization of Indefinite Saddle System
 Using Bunch-Parlett or symmetric indefinite pivoting for saddle-point stability.
 
+### Refinery Blend Optimization QP Model
+Balancing octane give-away penalty against component cost trade-offs.
+
