@@ -329,3 +329,6 @@ Variables near their bounds are fixed to non-basic status. The remaining variabl
 ### 8.15 Dual Push Crossover
 Dual variables and slack variables are partitioned to establish exact complementary slackness and an optimal basic tableau.
 
+### 8.16 Ill-Conditioning in Final Iterations
+As $\mu \to 0$, some $\Theta_j \to \infty$ while others $\to 0$. Regularization $(A \Theta A^T + \delta I)$ maintains numerical stability.
+
