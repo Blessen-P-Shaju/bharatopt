@@ -78,3 +78,6 @@ Optimizing reformer severity to minimize exponential catalyst coking rates.
 ### Steam Header Venting & Letdown Penalties
 Quadratic penalization of high-pressure to low-pressure steam letdown throttling.
 
+### Cooling Water Temperature Rise Constraints
+Environmental limits on heat discharge to coastal water bodies.
+
