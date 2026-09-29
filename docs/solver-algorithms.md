@@ -392,3 +392,6 @@ Grouping adjacent columns with identical sparsity patterns into dense matrix sup
 ### 9.14 OpenMP Multi-Threaded Factorization
 Parallelizing independent branches of the elimination tree across CPU cores.
 
+### 9.15 Memory Architecture
+Storage requirements for $A, \Theta, L$, and working vectors during peak execution.
+
