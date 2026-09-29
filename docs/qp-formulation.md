@@ -30,3 +30,6 @@ Projecting the Hessian $Q$ onto the null space of constraint matrix $A$.
 ### Range-Space Method for Equality-Constrained QP
 Dual approach solving for Lagrange multipliers via Schur complement.
 
+### Dual Quadratic Programming Formulation
+Formulating the Wolfe dual problem for efficient solution when $n \gg m$.
+
