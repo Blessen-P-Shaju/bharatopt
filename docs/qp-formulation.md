@@ -75,3 +75,6 @@ Quadratic penalty on vessel waiting times beyond contracted laytime.
 ### Catalyst Deactivation Rate Minimization
 Optimizing reformer severity to minimize exponential catalyst coking rates.
 
+### Steam Header Venting & Letdown Penalties
+Quadratic penalization of high-pressure to low-pressure steam letdown throttling.
+
