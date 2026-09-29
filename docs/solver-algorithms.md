@@ -309,3 +309,8 @@ $$r_{xs} = \sigma \mu e - X S e - \Delta X_{aff} \Delta S_{aff} e$$
 
 Solving the normal equations with this RHS produces the final predictor-corrector search direction.
 
+### 8.11 Fraction-to-the-Boundary Step Damping
+To strictly prevent iterates from hitting the non-negative orthant boundary, damping factor $\tau = 0.9995$ is applied:
+
+$$\alpha_p = \min(1.0, \tau \alpha_p^{max}), \quad \alpha_d = \min(1.0, \tau \alpha_d^{max})$$
+
