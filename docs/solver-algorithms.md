@@ -281,3 +281,6 @@ $$(A \Theta A^T) \Delta y = r_p + A \Theta (r_d - X^{-1} r_{xs})$$
 
 where $\Theta = X S^{-1} = \text{diag}(x_1/s_1, x_2/s_2, \dots, x_n/s_n)$.
 
+### 8.5 Cholesky Factorization ($L L^T = A \Theta A^T$)
+The matrix $M = A \Theta A^T$ is factored into lower triangular factor $L$. Sparsity is preserved via reordering.
+
