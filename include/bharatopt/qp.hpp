@@ -13,3 +13,4 @@ struct QPDiagnostics {
 bool verify_hessian_psd(const SparseMatrixCSR& Q, double tol = 1e-9);
 // QP gradient descent projection refinement checkpoint 43
 // QP gradient descent projection refinement checkpoint 45
+// QP gradient descent projection refinement checkpoint 47
