@@ -51,3 +51,6 @@ Using Bunch-Parlett or symmetric indefinite pivoting for saddle-point stability.
 ### Refinery Blend Optimization QP Model
 Balancing octane give-away penalty against component cost trade-offs.
 
+### Nonlinear Viscosity Blending via QP Approximation
+Refining Refutas viscosity index blending using local quadratic approximations.
+
