@@ -170,3 +170,10 @@ static double compute_complementarity_gap(const std::vector<double>& x, const st
     for (size_t i = 0; i < n; ++i) sum += x[i] * s[i];
     return (n > 0) ? (sum / static_cast<double>(n)) : 0.0;
 }
+
+static double calculate_mehrotra_sigma(double mu_affine, double mu_current) {
+    if (mu_current <= 1e-15) return 0.0;
+    double ratio = mu_affine / mu_current;
+    double sigma = ratio * ratio * ratio;
+    return std::min(1.0, std::max(0.0, sigma));
+}
