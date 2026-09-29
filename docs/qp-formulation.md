@@ -93,3 +93,6 @@ Optimizing wash water injection rate against downstream corrosion costs.
 ### FCCU Catalyst Regeneration Air Blower Limits
 Quadratic fan power curves vs coke combustion kinetics in regenerator.
 
+### Alkylation Acid Consumption Minimization
+Balancing acid makeup rate against alkylate octane rating.
+
