@@ -389,3 +389,6 @@ Reusing the non-zero pattern of $L$ across iterations when matrix sparsity struc
 ### 9.13 Supernodal Factorization
 Grouping adjacent columns with identical sparsity patterns into dense matrix supernodes to leverage BLAS-3 GEMM.
 
+### 9.14 OpenMP Multi-Threaded Factorization
+Parallelizing independent branches of the elimination tree across CPU cores.
+
