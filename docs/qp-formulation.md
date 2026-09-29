@@ -42,3 +42,6 @@ Extending primal-dual Mehrotra predictor-corrector to quadratic objective terms.
 ### Linearized Complementarity System for QP
 Incorporating Hessian $Q \Delta x$ directly into the Newton normal equations.
 
+### Augmented System Formulation for QP
+Solving the symmetric indefinite saddle-point system $\begin{bmatrix} Q + \Theta^{-1} & A^T \\ A & 0 \end{bmatrix}$.
+
