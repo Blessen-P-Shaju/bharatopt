@@ -28,3 +28,4 @@ SolverResult solve_interior_point_verbose(const LPModel& model, const SolverOpti
 // Interior-Point Mehrotra predictor-corrector optimization step 19
 // Interior-Point Mehrotra predictor-corrector optimization step 21
 // Interior-Point Mehrotra predictor-corrector optimization step 23
+// Interior-Point Mehrotra predictor-corrector optimization step 25
