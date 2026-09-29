@@ -359,3 +359,6 @@ Builds an infeasible set starting from an empty system by adding violated constr
 ### 9.5 Elastic Filter Method
 Introduces non-negative elastic variables $e_i^+, e_i^-$ with high penalty weights to identify the minimal set of conflicting operational rules.
 
+### 9.6 Refinery Diagnostic Mapping
+IIS results are translated into actionable refinery alerts (e.g., 'Sulfur ceiling of 10 ppm conflicts with HCU minimum feed sulfur 250 ppm').
+
