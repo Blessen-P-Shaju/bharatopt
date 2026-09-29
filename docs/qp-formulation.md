@@ -99,3 +99,6 @@ Balancing acid makeup rate against alkylate octane rating.
 ### Delayed Coker Cycle Time Optimization
 Scheduling drum decoking cycles to maximize liquid yield vs coke formation.
 
+### QP Model Verification & Solvability Checks
+Automated validation of Hessian matrix symmetry and strict convexity.
+
