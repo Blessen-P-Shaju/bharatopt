@@ -287,3 +287,8 @@ The matrix $M = A \Theta A^T$ is factored into lower triangular factor $L$. Spar
 ### 8.6 Symbolic Fill-In Reduction (AMD Ordering)
 Approximate Minimum Degree (AMD) pre-ordering computes permutation $P$ such that $P (A A^T) P^T$ minimizes Cholesky fill-in.
 
+### 8.7 Mehrotra Predictor-Corrector Architecture
+Mehrotra's algorithm computes two directions per iteration:
+1. *Affine scaling predictor*: $\mu = 0$, finding pure progress towards boundary.
+2. *Centering and cross-term corrector*: adjusts for nonlinear curvature $\Delta x_{aff} \Delta s_{aff}$.
+
