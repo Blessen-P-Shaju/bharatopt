@@ -21,3 +21,6 @@ Minimizing pump power losses proportional to squared flow rate: $P \propto Q^2$.
 ### Active Set Algorithm for Quadratic Programming
 Iterative active set strategy treating active constraints as equalities and updating basis.
 
+### KKT Conditions for Quadratic Programs
+First-order necessary and sufficient optimality conditions for convex QP.
+
