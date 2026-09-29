@@ -374,3 +374,6 @@ IIS results are translated into actionable refinery alerts (e.g., 'Sulfur ceilin
 ### 9.8 Barrier Parameter Decay Strategies
 Comparison of Fiacco-McCormick fixed geometric decay vs Mehrotra adaptive cubic reduction.
 
+### 9.9 Slack Scaling Nuances
+Preventing underflow when dual slack variables approach machine precision near optimality.
+
