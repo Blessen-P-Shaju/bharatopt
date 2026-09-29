@@ -33,3 +33,6 @@ Dual approach solving for Lagrange multipliers via Schur complement.
 ### Dual Quadratic Programming Formulation
 Formulating the Wolfe dual problem for efficient solution when $n \gg m$.
 
+### Goldfarb-Idnani Dual Active-Set Algorithm
+Solving strictly convex quadratic programs starting from unconstrained minimum.
+
