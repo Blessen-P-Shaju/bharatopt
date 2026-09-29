@@ -267,3 +267,10 @@ $$\begin{aligned} A x &= b, \quad x > 0 \\ A^T y + s &= c, \quad s > 0 \\ X S e 
 
 where $X = \text{diag}(x_1, \dots, x_n)$, $S = \text{diag}(s_1, \dots, s_n)$, and $e = (1, 1, \dots, 1)^T$.
 
+### 8.3 Newton Direction Derivation
+Applying Newton's method to the nonlinear complementarity equation yields the linear system:
+
+$$\begin{bmatrix} A & 0 & 0 \\ 0 & A^T & I \\ S & 0 & X \end{bmatrix} \begin{bmatrix} \Delta x \\ \Delta y \\ \Delta s \end{bmatrix} = \begin{bmatrix} r_p \\ r_d \\ r_{xs} \end{bmatrix}$$
+
+where $r_p = b - A x$ (primal residual), $r_d = c - A^T y - s$ (dual residual), and $r_{xs} = \mu e - X S e$.
+
