@@ -9,3 +9,11 @@ struct InteriorPointOptions {
 };
 SolverResult solve_interior_point(const LPModel& model, const InteriorPointOptions& options = {});
 }
+struct InteriorPointDiagnostics {
+    int iterations{0};
+    double duality_gap{0.0};
+    double primal_residual_norm{0.0};
+    double dual_residual_norm{0.0};
+    double barrier_parameter_mu{0.0};
+    double cholesky_factorization_time_ms{0.0};
+};
