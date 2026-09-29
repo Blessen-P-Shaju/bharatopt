@@ -163,3 +163,10 @@ SolverResult solve_interior_point(const LPModel&m,const InteriorPointOptions&opt
   return r;
 }
 }
+
+static double compute_complementarity_gap(const std::vector<double>& x, const std::vector<double>& s) {
+    double sum = 0.0;
+    size_t n = std::min(x.size(), s.size());
+    for (size_t i = 0; i < n; ++i) sum += x[i] * s[i];
+    return (n > 0) ? (sum / static_cast<double>(n)) : 0.0;
+}
