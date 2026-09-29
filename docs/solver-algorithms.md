@@ -260,3 +260,10 @@ The inequality constraints $x \ge 0$ are replaced by a logarithmic barrier penal
 
 $$\min c^T x - \mu \sum_{j=1}^n \ln(x_j) \quad \text{s.t.} \quad A x = b$$
 
+### 8.2 Central Path KKT Conditions
+The perturbed Karush-Kuhn-Tucker (KKT) conditions define the central path parameterized by $\mu$:
+
+$$\begin{aligned} A x &= b, \quad x > 0 \\ A^T y + s &= c, \quad s > 0 \\ X S e &= \mu e \end{aligned}$$
+
+where $X = \text{diag}(x_1, \dots, x_n)$, $S = \text{diag}(s_1, \dots, s_n)$, and $e = (1, 1, \dots, 1)^T$.
+
