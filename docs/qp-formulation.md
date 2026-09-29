@@ -60,3 +60,6 @@ Quadratic marginal abatement cost curves for refinery carbon capture investments
 ### Thermal Efficiency & Furnace Heat Loss QP
 Modeling non-linear radiative heat losses in atmospheric distillation furnaces.
 
+### Crude Distillation Yield Deviation Penalties
+Penalizing deviation from nominal cut temperatures in CDU and VDU operations.
+
