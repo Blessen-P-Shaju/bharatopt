@@ -27,3 +27,6 @@ First-order necessary and sufficient optimality conditions for convex QP.
 ### Null-Space Method for Equality-Constrained QP
 Projecting the Hessian $Q$ onto the null space of constraint matrix $A$.
 
+### Range-Space Method for Equality-Constrained QP
+Dual approach solving for Lagrange multipliers via Schur complement.
+
