@@ -18,3 +18,4 @@ struct InteriorPointDiagnostics {
     double cholesky_factorization_time_ms{0.0};
 };
 SolverResult solve_interior_point_verbose(const LPModel& model, const SolverOptions& options, InteriorPointDiagnostics* diag);
+// Interior-Point Mehrotra predictor-corrector optimization step 5
