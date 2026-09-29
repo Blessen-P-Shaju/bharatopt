@@ -323,3 +323,6 @@ Convergence is declared when all three residuals fall below tolerance $\epsilon 
 ### 8.13 Crossover to Basic Feasible Solution
 For sensitivity analysis and warm-starting, interior-point solutions are converted to an exact basic feasible vertex using primal and dual crossover.
 
+### 8.14 Primal Push Crossover
+Variables near their bounds are fixed to non-basic status. The remaining variables form a basis that is driven to feasibility.
+
