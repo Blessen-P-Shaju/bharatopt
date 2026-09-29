@@ -177,3 +177,4 @@ static double calculate_mehrotra_sigma(double mu_affine, double mu_current) {
     double sigma = ratio * ratio * ratio;
     return std::min(1.0, std::max(0.0, sigma));
 }
+// Interior-Point Mehrotra predictor-corrector optimization step 6
