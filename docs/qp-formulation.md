@@ -102,3 +102,6 @@ Scheduling drum decoking cycles to maximize liquid yield vs coke formation.
 ### QP Model Verification & Solvability Checks
 Automated validation of Hessian matrix symmetry and strict convexity.
 
+### Comparison: QP vs Linear Programming Performance
+Trade-offs in solve time and model fidelity between LP and QP formulations.
+
