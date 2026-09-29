@@ -386,3 +386,6 @@ Forward substitution $L z = r$ and back substitution $L^T \Delta y = z$ with ite
 ### 9.12 Symbolic Elimination Tree Caching
 Reusing the non-zero pattern of $L$ across iterations when matrix sparsity structure remains invariant.
 
+### 9.13 Supernodal Factorization
+Grouping adjacent columns with identical sparsity patterns into dense matrix supernodes to leverage BLAS-3 GEMM.
+
