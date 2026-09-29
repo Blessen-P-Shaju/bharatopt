@@ -87,3 +87,6 @@ Penalizing flaring events during unit upsets and mode transitions.
 ### Power Grid Demand Charge Peak Shaving
 Quadratic penalty on peak electrical megawatt consumption from external grid.
 
+### Desalter Salt Removal Efficiency Optimization
+Optimizing wash water injection rate against downstream corrosion costs.
+
