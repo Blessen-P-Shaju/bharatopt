@@ -15,3 +15,6 @@ Modeling crude price volatility and refining margin uncertainty via covariance m
 ### Fuel Quality Giveaway Quadratic Penalty
 Penalizing giveaway on octane and cetane exponentially using quadratic cost terms.
 
+### Minimum Kinetic Energy Pipeline Scheduling
+Minimizing pump power losses proportional to squared flow rate: $P \propto Q^2$.
+
