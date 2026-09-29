@@ -350,3 +350,6 @@ $$A^T y \ge 0 \quad \text{and} \quad b^T y < 0$$
 
 The ray $y$ serves as a mathematical proof of infeasibility and identifies contributing constraints.
 
+### 9.3 Deletion Filter Algorithm
+Iterates through constraints $i = 1, \dots, m$. Constraint $i$ is temporarily removed. If the remaining system remains infeasible, constraint $i$ is permanently discarded; otherwise, it is essential to the IIS.
+
