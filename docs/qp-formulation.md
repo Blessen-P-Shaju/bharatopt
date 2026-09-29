@@ -81,3 +81,6 @@ Quadratic penalization of high-pressure to low-pressure steam letdown throttling
 ### Cooling Water Temperature Rise Constraints
 Environmental limits on heat discharge to coastal water bodies.
 
+### Flare Gas Minimization Quadratic Model
+Penalizing flaring events during unit upsets and mode transitions.
+
