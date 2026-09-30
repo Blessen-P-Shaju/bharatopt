@@ -27,3 +27,6 @@ High-TAN and high-metals crude requiring specialized metallurgy.
 ### WTI Midland Operational Characteristics
 Ultra-low sulfur light crude producing premium reformate blendstocks.
 
+### Mumbai High Sweet Paraffinic Characteristics
+Indian offshore crude with high pour point requiring heated storage.
+
