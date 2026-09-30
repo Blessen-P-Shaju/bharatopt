@@ -39,3 +39,6 @@ Premium Indian sweet crude ideal for direct kerosene and ATF production.
 ### Murban UAE Extra-Light Characteristics
 High-API crude with high yields of light naphtha and aviation kerosene.
 
+### Dubai Fateh Middle East Benchmark Characteristics
+Medium sour crude used as standard reference for Middle East pricing.
+
