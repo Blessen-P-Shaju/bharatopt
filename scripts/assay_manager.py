@@ -22,3 +22,10 @@ def get_cuts(crude_id):
         return None
     return assays[crude_id]['yield_cuts_pct']
 
+def blend_api_gravity(crudes_fractions):
+    assays = load_assays()
+    tot_vol = sum(crudes_fractions.values())
+    tot_sg = sum((141.5 / (assays[k]['api_gravity'] + 131.5)) * frac for k, frac in crudes_fractions.items())
+    avg_sg = tot_sg / tot_vol
+    return (141.5 / avg_sg) - 131.5
+
