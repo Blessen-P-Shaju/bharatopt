@@ -71,5 +71,22 @@
       "vgo": 23.0,
       "residue": 11.0
     }
+  },
+  "maya": {
+    "name": "Maya",
+    "origin": "Mexico",
+    "api_gravity": 21.8,
+    "sulfur_wt_pct": 3.45,
+    "tan_mg_koh_g": 0.35,
+    "pour_point_c": -15.0,
+    "yield_cuts_pct": {
+      "lpg": 1.1,
+      "light_naphtha": 3.5,
+      "heavy_naphtha": 8.2,
+      "kerosene": 6.9,
+      "diesel": 15.6,
+      "vgo": 26.2,
+      "residue": 38.5
+    }
   }
 }
