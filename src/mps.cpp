@@ -134,3 +134,4 @@ MPSStats inspect_mps_stream(const std::string& path) {
 }
 // MPS robust token parsing parser checkpoint 4
 // MPS robust token parsing parser checkpoint 6
+// MPS robust token parsing parser checkpoint 8
