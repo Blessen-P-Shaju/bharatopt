@@ -54,5 +54,22 @@
       "vgo": 24.1,
       "residue": 11.8
     }
+  },
+  "forties": {
+    "name": "Forties",
+    "origin": "United Kingdom",
+    "api_gravity": 40.3,
+    "sulfur_wt_pct": 0.65,
+    "tan_mg_koh_g": 0.1,
+    "pour_point_c": -6.0,
+    "yield_cuts_pct": {
+      "lpg": 3.4,
+      "light_naphtha": 9.5,
+      "heavy_naphtha": 17.1,
+      "kerosene": 13.2,
+      "diesel": 22.8,
+      "vgo": 23.0,
+      "residue": 11.0
+    }
   }
 }
