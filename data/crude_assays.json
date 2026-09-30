@@ -224,5 +224,22 @@
       "vgo": 24.5,
       "residue": 10.3
     }
+  },
+  "urals": {
+    "name": "Urals",
+    "origin": "Russia",
+    "api_gravity": 31.3,
+    "sulfur_wt_pct": 1.48,
+    "tan_mg_koh_g": 0.18,
+    "pour_point_c": -12.0,
+    "yield_cuts_pct": {
+      "lpg": 1.9,
+      "light_naphtha": 6.2,
+      "heavy_naphtha": 12.8,
+      "kerosene": 10.1,
+      "diesel": 20.4,
+      "vgo": 27.6,
+      "residue": 21.0
+    }
   }
 }
