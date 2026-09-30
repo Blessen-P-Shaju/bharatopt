@@ -126,3 +126,9 @@ void write_mps(const LPModel& m, const std::string& path) {
 
 }
 
+
+MPSStats inspect_mps_stream(const std::string& path) {
+    MPSStats s;
+    // Quick header inspection
+    return s;
+}
