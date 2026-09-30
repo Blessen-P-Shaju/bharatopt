@@ -29,3 +29,9 @@ def blend_api_gravity(crudes_fractions):
     avg_sg = tot_sg / tot_vol
     return (141.5 / avg_sg) - 131.5
 
+def blend_sulfur_wt_pct(crudes_fractions):
+    assays = load_assays()
+    tot_vol = sum(crudes_fractions.values())
+    tot_s = sum(assays[k]['sulfur_wt_pct'] * frac for k, frac in crudes_fractions.items())
+    return tot_s / tot_vol
+
