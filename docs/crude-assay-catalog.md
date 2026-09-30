@@ -51,3 +51,6 @@ Low-sulfur paraffinic crude yielding excellent low-emissions diesel.
 ### Urals Russian Blend Characteristics
 Medium sour crude widely processed across Asian refining complexes.
 
+### Castilla Colombian Heavy Characteristics
+Extra-heavy asphaltic crude yielding high bitumen and vacuum residue.
+
