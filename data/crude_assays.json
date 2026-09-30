@@ -105,5 +105,22 @@
       "vgo": 21.5,
       "residue": 7.8
     }
+  },
+  "mumbai_high": {
+    "name": "Mumbai High",
+    "origin": "India",
+    "api_gravity": 39.2,
+    "sulfur_wt_pct": 0.14,
+    "tan_mg_koh_g": 0.03,
+    "pour_point_c": 30.0,
+    "yield_cuts_pct": {
+      "lpg": 2.8,
+      "light_naphtha": 9.2,
+      "heavy_naphtha": 17.5,
+      "kerosene": 14.1,
+      "diesel": 25.2,
+      "vgo": 22.4,
+      "residue": 8.8
+    }
   }
 }
