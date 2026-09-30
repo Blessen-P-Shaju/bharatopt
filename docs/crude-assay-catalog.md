@@ -21,3 +21,6 @@ Light sweet North Sea benchmark with low sulfur and high gas oil.
 ### Forties Operational Characteristics
 Light crude with excellent reforming naphtha qualities.
 
+### Maya Heavy Sour Operational Characteristics
+High-TAN and high-metals crude requiring specialized metallurgy.
+
