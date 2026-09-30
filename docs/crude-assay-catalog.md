@@ -42,3 +42,6 @@ High-API crude with high yields of light naphtha and aviation kerosene.
 ### Dubai Fateh Middle East Benchmark Characteristics
 Medium sour crude used as standard reference for Middle East pricing.
 
+### Basrah Medium Iraqi Crude Characteristics
+Medium sour crude with high middle distillate recovery.
+
