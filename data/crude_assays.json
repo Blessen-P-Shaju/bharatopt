@@ -275,5 +275,22 @@
       "vgo": 14.8,
       "residue": 5.0
     }
+  },
+  "minas": {
+    "name": "Minas",
+    "origin": "Indonesia",
+    "api_gravity": 35.0,
+    "sulfur_wt_pct": 0.09,
+    "tan_mg_koh_g": 0.03,
+    "pour_point_c": 36.0,
+    "yield_cuts_pct": {
+      "lpg": 1.2,
+      "light_naphtha": 4.5,
+      "heavy_naphtha": 11.2,
+      "kerosene": 10.5,
+      "diesel": 24.5,
+      "vgo": 32.1,
+      "residue": 16.0
+    }
   }
 }
