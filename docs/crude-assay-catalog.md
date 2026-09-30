@@ -24,3 +24,6 @@ Light crude with excellent reforming naphtha qualities.
 ### Maya Heavy Sour Operational Characteristics
 High-TAN and high-metals crude requiring specialized metallurgy.
 
+### WTI Midland Operational Characteristics
+Ultra-low sulfur light crude producing premium reformate blendstocks.
+
