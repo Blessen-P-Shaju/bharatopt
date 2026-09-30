@@ -45,3 +45,6 @@ Medium sour crude used as standard reference for Middle East pricing.
 ### Basrah Medium Iraqi Crude Characteristics
 Medium sour crude with high middle distillate recovery.
 
+### Bonny Light Nigerian Crude Characteristics
+Low-sulfur paraffinic crude yielding excellent low-emissions diesel.
+
