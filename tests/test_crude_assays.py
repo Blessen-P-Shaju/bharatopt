@@ -18,3 +18,8 @@ class TestCrudeAssays(unittest.TestCase):
             if k == 'metadata': continue
             self.assertTrue(10.0 <= v['api_gravity'] <= 55.0, f'{k} API out of range')
 
+    def test_sulfur_content_positive(self):
+        for k, v in self.assays.items():
+            if k == 'metadata': continue
+            self.assertTrue(0.0 <= v['sulfur_wt_pct'] <= 6.0, f'{k} sulfur out of range')
+
