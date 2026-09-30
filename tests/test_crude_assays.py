@@ -33,3 +33,5 @@ class TestCrudeAssays(unittest.TestCase):
             if k == 'metadata': continue
             self.assertTrue(-40.0 <= v['pour_point_c'] <= 50.0, f'{k} pour point invalid')
 
+if __name__ == '__main__':
+    unittest.main()
