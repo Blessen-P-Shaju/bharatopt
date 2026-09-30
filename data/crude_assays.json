@@ -139,5 +139,22 @@
       "vgo": 34.6,
       "residue": 24.2
     }
+  },
+  "ravva": {
+    "name": "Ravva",
+    "origin": "India (KG Basin)",
+    "api_gravity": 36.5,
+    "sulfur_wt_pct": 0.08,
+    "tan_mg_koh_g": 0.02,
+    "pour_point_c": 12.0,
+    "yield_cuts_pct": {
+      "lpg": 2.5,
+      "light_naphtha": 8.4,
+      "heavy_naphtha": 15.9,
+      "kerosene": 13.5,
+      "diesel": 24.8,
+      "vgo": 24.2,
+      "residue": 10.7
+    }
   }
 }
