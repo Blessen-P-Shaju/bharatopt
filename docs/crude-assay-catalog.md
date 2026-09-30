@@ -12,3 +12,6 @@ ASTM D2892 15-theoretical-plate batch distillation curves.
 ### Arab Light Operational Characteristics
 Benchmark Saudi crude yielding balanced middle distillates.
 
+### Arab Heavy Operational Characteristics
+High-yield residue crude requiring delayed coking and RFCC.
+
