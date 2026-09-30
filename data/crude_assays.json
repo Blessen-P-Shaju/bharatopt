@@ -309,5 +309,22 @@
       "vgo": 30.5,
       "residue": 15.6
     }
+  },
+  "qatar_marine": {
+    "name": "Qatar Marine",
+    "origin": "Qatar",
+    "api_gravity": 35.8,
+    "sulfur_wt_pct": 1.55,
+    "tan_mg_koh_g": 0.05,
+    "pour_point_c": -24.0,
+    "yield_cuts_pct": {
+      "lpg": 2.6,
+      "light_naphtha": 7.8,
+      "heavy_naphtha": 15.1,
+      "kerosene": 12.0,
+      "diesel": 22.5,
+      "vgo": 26.2,
+      "residue": 13.8
+    }
   }
 }
