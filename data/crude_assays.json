@@ -207,5 +207,22 @@
       "vgo": 27.8,
       "residue": 26.7
     }
+  },
+  "bonny_light": {
+    "name": "Bonny Light",
+    "origin": "Nigeria",
+    "api_gravity": 35.3,
+    "sulfur_wt_pct": 0.15,
+    "tan_mg_koh_g": 0.06,
+    "pour_point_c": -6.0,
+    "yield_cuts_pct": {
+      "lpg": 2.9,
+      "light_naphtha": 8.7,
+      "heavy_naphtha": 16.5,
+      "kerosene": 13.1,
+      "diesel": 24.0,
+      "vgo": 24.5,
+      "residue": 10.3
+    }
   }
 }
