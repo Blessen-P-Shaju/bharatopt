@@ -292,5 +292,22 @@
       "vgo": 32.1,
       "residue": 16.0
     }
+  },
+  "cinta": {
+    "name": "Cinta",
+    "origin": "Indonesia",
+    "api_gravity": 31.1,
+    "sulfur_wt_pct": 0.09,
+    "tan_mg_koh_g": 0.02,
+    "pour_point_c": 32.0,
+    "yield_cuts_pct": {
+      "lpg": 1.5,
+      "light_naphtha": 5.2,
+      "heavy_naphtha": 12.4,
+      "kerosene": 11.0,
+      "diesel": 23.8,
+      "vgo": 30.5,
+      "residue": 15.6
+    }
   }
 }
