@@ -12,3 +12,10 @@ struct MPSReadOptions {
     bool strict_fixed_format{false};
     double zero_coefficient_tolerance{1e-12};
 };
+struct MPSStats {
+    int rows{0};
+    int cols{0};
+    int non_zeros{0};
+    double density_pct{0.0};
+};
+MPSStats inspect_mps_stream(const std::string& path);
