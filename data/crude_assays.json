@@ -37,5 +37,22 @@
       "vgo": 27.5,
       "residue": 29.0
     }
+  },
+  "brent_blend": {
+    "name": "Brent Blend",
+    "origin": "United Kingdom",
+    "api_gravity": 38.3,
+    "sulfur_wt_pct": 0.37,
+    "tan_mg_koh_g": 0.08,
+    "pour_point_c": -3.0,
+    "yield_cuts_pct": {
+      "lpg": 3.1,
+      "light_naphtha": 8.9,
+      "heavy_naphtha": 16.2,
+      "kerosene": 12.5,
+      "diesel": 23.4,
+      "vgo": 24.1,
+      "residue": 11.8
+    }
   }
 }
