@@ -35,3 +35,8 @@ def blend_sulfur_wt_pct(crudes_fractions):
     tot_s = sum(assays[k]['sulfur_wt_pct'] * frac for k, frac in crudes_fractions.items())
     return tot_s / tot_vol
 
+if __name__ == '__main__':
+    if len(sys.argv) > 1 and sys.argv[1] == 'list':
+        list_crudes()
+    else:
+        print('Usage: python assay_manager.py [list]')
