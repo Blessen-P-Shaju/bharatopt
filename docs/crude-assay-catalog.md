@@ -9,3 +9,6 @@ Classifying crudes by API gravity and Sulfur content.
 ### True Boiling Point (TBP) Distillation Definition
 ASTM D2892 15-theoretical-plate batch distillation curves.
 
+### Arab Light Operational Characteristics
+Benchmark Saudi crude yielding balanced middle distillates.
+
