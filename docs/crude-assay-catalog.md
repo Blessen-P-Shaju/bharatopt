@@ -18,3 +18,6 @@ High-yield residue crude requiring delayed coking and RFCC.
 ### Brent Blend Operational Characteristics
 Light sweet North Sea benchmark with low sulfur and high gas oil.
 
+### Forties Operational Characteristics
+Light crude with excellent reforming naphtha qualities.
+
