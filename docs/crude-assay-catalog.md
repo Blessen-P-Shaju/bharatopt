@@ -6,3 +6,6 @@ Accurate crude oil assay characterization is fundamental to refinery linear prog
 ### Crude Classification Framework
 Classifying crudes by API gravity and Sulfur content.
 
+### True Boiling Point (TBP) Distillation Definition
+ASTM D2892 15-theoretical-plate batch distillation curves.
+
