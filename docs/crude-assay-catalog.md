@@ -15,3 +15,6 @@ Benchmark Saudi crude yielding balanced middle distillates.
 ### Arab Heavy Operational Characteristics
 High-yield residue crude requiring delayed coking and RFCC.
 
+### Brent Blend Operational Characteristics
+Light sweet North Sea benchmark with low sulfur and high gas oil.
+
