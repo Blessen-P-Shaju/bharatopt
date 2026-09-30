@@ -258,5 +258,22 @@
       "vgo": 28.1,
       "residue": 43.8
     }
+  },
+  "tapis": {
+    "name": "Tapis",
+    "origin": "Malaysia",
+    "api_gravity": 45.2,
+    "sulfur_wt_pct": 0.04,
+    "tan_mg_koh_g": 0.01,
+    "pour_point_c": 15.0,
+    "yield_cuts_pct": {
+      "lpg": 4.1,
+      "light_naphtha": 12.5,
+      "heavy_naphtha": 22.0,
+      "kerosene": 15.2,
+      "diesel": 26.4,
+      "vgo": 14.8,
+      "residue": 5.0
+    }
   }
 }
