@@ -33,3 +33,6 @@ Indian offshore crude with high pour point requiring heated storage.
 ### Mangala High-Wax Rajasthan Characteristics
 Waxy inland Indian crude with exceptionally high vacuum gasoil yields.
 
+### Ravva KG Basin Crude Characteristics
+Premium Indian sweet crude ideal for direct kerosene and ATF production.
+
