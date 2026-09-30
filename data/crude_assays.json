@@ -122,5 +122,22 @@
       "vgo": 22.4,
       "residue": 8.8
     }
+  },
+  "mangala": {
+    "name": "Mangala",
+    "origin": "India (Rajasthan)",
+    "api_gravity": 28.5,
+    "sulfur_wt_pct": 0.18,
+    "tan_mg_koh_g": 0.05,
+    "pour_point_c": 42.0,
+    "yield_cuts_pct": {
+      "lpg": 0.8,
+      "light_naphtha": 2.9,
+      "heavy_naphtha": 7.8,
+      "kerosene": 8.5,
+      "diesel": 21.2,
+      "vgo": 34.6,
+      "residue": 24.2
+    }
   }
 }
