@@ -40,3 +40,4 @@ if __name__ == '__main__':
         list_crudes()
     else:
         print('Usage: python assay_manager.py [list]')
+# Validated for Python 3.10+ with UTF-8 encoding support
