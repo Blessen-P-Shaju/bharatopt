@@ -13,3 +13,8 @@ class TestCrudeAssays(unittest.TestCase):
             total_cuts = sum(v['yield_cuts_pct'].values())
             self.assertAlmostEqual(total_cuts, 100.0, delta=0.5, msg=f'{k} cut sum != 100%')
 
+    def test_api_gravity_bounds(self):
+        for k, v in self.assays.items():
+            if k == 'metadata': continue
+            self.assertTrue(10.0 <= v['api_gravity'] <= 55.0, f'{k} API out of range')
+
