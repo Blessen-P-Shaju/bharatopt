@@ -28,3 +28,8 @@ class TestCrudeAssays(unittest.TestCase):
             if k == 'metadata': continue
             self.assertTrue(0.0 <= v['tan_mg_koh_g'] <= 3.0, f'{k} TAN out of range')
 
+    def test_pour_point_bounds(self):
+        for k, v in self.assays.items():
+            if k == 'metadata': continue
+            self.assertTrue(-40.0 <= v['pour_point_c'] <= 50.0, f'{k} pour point invalid')
+
