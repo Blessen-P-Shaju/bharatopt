@@ -15,3 +15,10 @@ def list_crudes():
         if k == 'metadata': continue
         print(f"{k:15} | {v['name']:20} | API: {v['api_gravity']:4.1f} | S: {v['sulfur_wt_pct']:4.2f}%")
 
+def get_cuts(crude_id):
+    assays = load_assays()
+    if crude_id not in assays:
+        print(f"Unknown crude: {crude_id}")
+        return None
+    return assays[crude_id]['yield_cuts_pct']
+
