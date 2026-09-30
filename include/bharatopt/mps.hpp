@@ -19,3 +19,4 @@ struct MPSStats {
     double density_pct{0.0};
 };
 MPSStats inspect_mps_stream(const std::string& path);
+// MPS robust token parsing parser checkpoint 5
