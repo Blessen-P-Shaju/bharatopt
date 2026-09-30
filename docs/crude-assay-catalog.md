@@ -36,3 +36,6 @@ Waxy inland Indian crude with exceptionally high vacuum gasoil yields.
 ### Ravva KG Basin Crude Characteristics
 Premium Indian sweet crude ideal for direct kerosene and ATF production.
 
+### Murban UAE Extra-Light Characteristics
+High-API crude with high yields of light naphtha and aviation kerosene.
+
