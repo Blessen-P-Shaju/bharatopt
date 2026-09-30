@@ -20,5 +20,22 @@
       "vgo": 28.5,
       "residue": 17.8
     }
+  },
+  "arab_heavy": {
+    "name": "Arab Heavy",
+    "origin": "Saudi Arabia",
+    "api_gravity": 27.9,
+    "sulfur_wt_pct": 2.85,
+    "tan_mg_koh_g": 0.12,
+    "pour_point_c": -20.0,
+    "yield_cuts_pct": {
+      "lpg": 1.5,
+      "light_naphtha": 4.8,
+      "heavy_naphtha": 10.2,
+      "kerosene": 8.6,
+      "diesel": 18.4,
+      "vgo": 27.5,
+      "residue": 29.0
+    }
   }
 }
