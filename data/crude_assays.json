@@ -88,5 +88,22 @@
       "vgo": 26.2,
       "residue": 38.5
     }
+  },
+  "wti_midland": {
+    "name": "WTI Midland",
+    "origin": "USA",
+    "api_gravity": 40.8,
+    "sulfur_wt_pct": 0.2,
+    "tan_mg_koh_g": 0.04,
+    "pour_point_c": -12.0,
+    "yield_cuts_pct": {
+      "lpg": 3.8,
+      "light_naphtha": 10.2,
+      "heavy_naphtha": 18.4,
+      "kerosene": 13.8,
+      "diesel": 24.5,
+      "vgo": 21.5,
+      "residue": 7.8
+    }
   }
 }
