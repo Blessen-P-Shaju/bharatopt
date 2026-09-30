@@ -30,3 +30,6 @@ Ultra-low sulfur light crude producing premium reformate blendstocks.
 ### Mumbai High Sweet Paraffinic Characteristics
 Indian offshore crude with high pour point requiring heated storage.
 
+### Mangala High-Wax Rajasthan Characteristics
+Waxy inland Indian crude with exceptionally high vacuum gasoil yields.
+
