@@ -72,5 +72,10 @@
     "name": "Sulfur Recovery Unit (Claus)",
     "capacity_tpd": 450.0,
     "recovery_efficiency_pct": 99.9
+  },
+  "hydrogen_smr": {
+    "name": "Steam Methane Reformer",
+    "capacity_knm3_h": 120.0,
+    "h2_purity_pct": 99.9
   }
 }
