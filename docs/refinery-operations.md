@@ -45,3 +45,6 @@ Mixing off-gas, LPG vapor, and natural gas.
 ### Steam & Power Cogeneration System
 HP, MP, and LP header balancing.
 
+### Cooling Tower & Closed Loop Water Systems
+Cycles of concentration and biological fouling control.
+
