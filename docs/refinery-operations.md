@@ -21,3 +21,6 @@ Dehydrogenation of naphthenes and chlorination.
 ### Delayed Coker (DCU) Thermal Cracking Chemistry
 Free-radical thermal decomposition of vacuum residue.
 
+### C5/C6 Isomerization Thermodynamic Equilibrium
+Low-temperature chlorided alumina catalyst performance.
+
