@@ -57,3 +57,6 @@ Flare gas recovery compressors and acoustic leak detection.
 ### Refinery Energy Index & Benchmarking
 Solomon Energy Intensity Index calculation.
 
+### Unit Turnaround & Catalyst Life Management
+Decoking schedules and multi-year coordination.
+
