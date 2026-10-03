@@ -8,5 +8,11 @@
     "capacity_kbpd": 300.0,
     "min_turndown_pct": 60.0,
     "fuel_gas_duty_mmbtu_bbl": 0.12
+  },
+  "vdu": {
+    "name": "Vacuum Distillation Unit",
+    "capacity_kbpd": 140.0,
+    "min_turndown_pct": 55.0,
+    "steam_duty_kg_bbl": 8.5
   }
 }
