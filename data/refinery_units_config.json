@@ -14,5 +14,14 @@
     "capacity_kbpd": 140.0,
     "min_turndown_pct": 55.0,
     "steam_duty_kg_bbl": 8.5
+  },
+  "fccu": {
+    "name": "Fluid Catalytic Cracking Unit",
+    "capacity_kbpd": 80.0,
+    "catalyst_type": "USY Zeolite",
+    "lpg_yield_pct": 22.5,
+    "gasoline_yield_pct": 51.2,
+    "lco_yield_pct": 18.3,
+    "coke_yield_pct": 5.5
   }
 }
