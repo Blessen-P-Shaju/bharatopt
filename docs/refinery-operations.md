@@ -3,3 +3,6 @@
 ## 1. Overview
 Comprehensive technical guide to major unit operations, process flow integration, and kinetic conversion models.
 
+### Atmospheric Distillation Unit (CDU) Hydraulics
+Flash zone temperature control and pumparounds.
+
