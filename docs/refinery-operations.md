@@ -27,3 +27,6 @@ Low-temperature chlorided alumina catalyst performance.
 ### Sulfuric Acid Alkylation Kinetics
 Isobutane-to-olefin ratio optimization and emulsion stability.
 
+### Diesel Hydrodesulfurization (DHDS/DHDT) Kinetics
+Deep desulfurization for 10 ppm BS-VI diesel.
+
