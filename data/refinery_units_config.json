@@ -62,5 +62,10 @@
     "capacity_kbpd": 90.0,
     "sulfur_removal_efficiency_pct": 99.8,
     "h2_consumption_nm3_m3": 75.0
+  },
+  "vgo_hdt": {
+    "name": "VGO Hydrotreater Unit",
+    "capacity_kbpd": 75.0,
+    "sulfur_removal_pct": 95.0
   }
 }
