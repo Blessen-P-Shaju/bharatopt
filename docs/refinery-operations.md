@@ -15,3 +15,6 @@ Riser reaction kinetics and catalyst-to-oil ratio.
 ### Hydrocracker (HCU) Multi-Bed Temperature Quench
 Hydrogen quench injection and partial pressure.
 
+### Continuous Catalytic Reformer (CCR) Reaction Pathways
+Dehydrogenation of naphthenes and chlorination.
+
