@@ -67,5 +67,10 @@
     "name": "VGO Hydrotreater Unit",
     "capacity_kbpd": 75.0,
     "sulfur_removal_pct": 95.0
+  },
+  "sru": {
+    "name": "Sulfur Recovery Unit (Claus)",
+    "capacity_tpd": 450.0,
+    "recovery_efficiency_pct": 99.9
   }
 }
