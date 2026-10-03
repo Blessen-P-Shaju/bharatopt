@@ -63,3 +63,6 @@ Decoking schedules and multi-year coordination.
 ### Process Safety & Operational Envelopes
 Integrity operating windows and interlocks.
 
+### Summary of Unit Integration Models in BharatOPT
+Mathematical coupling of linear unit transfer functions.
+
