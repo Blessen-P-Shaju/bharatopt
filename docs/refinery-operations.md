@@ -39,3 +39,6 @@ Claus reaction kinetics and 99.9% recovery.
 ### Amine Gas Treating Unit (AGTU)
 MDEA absorption equilibrium for H2S and CO2 removal.
 
+### Fuel Gas Blending & Wobbe Index Control
+Mixing off-gas, LPG vapor, and natural gas.
+
