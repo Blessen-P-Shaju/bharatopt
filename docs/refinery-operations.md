@@ -54,3 +54,6 @@ Dissolved air flotation and zero liquid discharge.
 ### Flare Minimization & Relief Systems
 Flare gas recovery compressors and acoustic leak detection.
 
+### Refinery Energy Index & Benchmarking
+Solomon Energy Intensity Index calculation.
+
