@@ -30,3 +30,6 @@ Isobutane-to-olefin ratio optimization and emulsion stability.
 ### Diesel Hydrodesulfurization (DHDS/DHDT) Kinetics
 Deep desulfurization for 10 ppm BS-VI diesel.
 
+### Hydrogen Network Integration & Pinch Analysis
+Balancing hydrogen producers and consumers.
+
