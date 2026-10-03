@@ -39,5 +39,11 @@
       102.0
     ],
     "h2_byproduct_wt_pct": 3.8
+  },
+  "dcu": {
+    "name": "Delayed Coker Unit",
+    "capacity_kbpd": 50.0,
+    "coke_yield_wt_pct": 28.0,
+    "coker_gasoil_pct": 48.0
   }
 }
