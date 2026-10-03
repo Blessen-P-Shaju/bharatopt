@@ -11,3 +11,5 @@ CudaPdhgSolver::~CudaPdhgSolver(){ delete impl_; }
 bool CudaPdhgSolver::solve(const LPModel&, const SolverOptions&, SolverResult&){ return false; }
 
 }
+// Suppress compiler unused parameter diagnostic warnings in CPU stub
+#pragma GCC diagnostic ignored "-Wunused-parameter"
