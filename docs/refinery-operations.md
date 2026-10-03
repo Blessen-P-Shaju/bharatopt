@@ -24,3 +24,6 @@ Free-radical thermal decomposition of vacuum residue.
 ### C5/C6 Isomerization Thermodynamic Equilibrium
 Low-temperature chlorided alumina catalyst performance.
 
+### Sulfuric Acid Alkylation Kinetics
+Isobutane-to-olefin ratio optimization and emulsion stability.
+
