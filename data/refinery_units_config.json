@@ -2,5 +2,11 @@
   "metadata": {
     "config_version": "1.0",
     "description": "Refinery unit operating limits and yields"
+  },
+  "cdu": {
+    "name": "Atmospheric Distillation Unit",
+    "capacity_kbpd": 300.0,
+    "min_turndown_pct": 60.0,
+    "fuel_gas_duty_mmbtu_bbl": 0.12
   }
 }
