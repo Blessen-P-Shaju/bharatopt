@@ -42,3 +42,6 @@ MDEA absorption equilibrium for H2S and CO2 removal.
 ### Fuel Gas Blending & Wobbe Index Control
 Mixing off-gas, LPG vapor, and natural gas.
 
+### Steam & Power Cogeneration System
+HP, MP, and LP header balancing.
+
