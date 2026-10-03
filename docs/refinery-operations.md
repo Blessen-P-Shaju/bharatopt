@@ -18,3 +18,6 @@ Hydrogen quench injection and partial pressure.
 ### Continuous Catalytic Reformer (CCR) Reaction Pathways
 Dehydrogenation of naphthenes and chlorination.
 
+### Delayed Coker (DCU) Thermal Cracking Chemistry
+Free-radical thermal decomposition of vacuum residue.
+
