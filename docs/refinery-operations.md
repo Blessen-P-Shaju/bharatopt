@@ -60,3 +60,6 @@ Solomon Energy Intensity Index calculation.
 ### Unit Turnaround & Catalyst Life Management
 Decoking schedules and multi-year coordination.
 
+### Process Safety & Operational Envelopes
+Integrity operating windows and interlocks.
+
