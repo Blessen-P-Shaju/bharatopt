@@ -77,5 +77,10 @@
     "name": "Steam Methane Reformer",
     "capacity_knm3_h": 120.0,
     "h2_purity_pct": 99.9
+  },
+  "etp": {
+    "name": "Effluent Treatment Plant",
+    "capacity_m3_h": 1200.0,
+    "treatment_type": "MBBR+RO+ZLD"
   }
 }
