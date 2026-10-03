@@ -36,3 +36,6 @@ Balancing hydrogen producers and consumers.
 ### Sour Water Stripping (SWS) & Sulfur Recovery (SRU)
 Claus reaction kinetics and 99.9% recovery.
 
+### Amine Gas Treating Unit (AGTU)
+MDEA absorption equilibrium for H2S and CO2 removal.
+
