@@ -82,5 +82,10 @@
     "name": "Effluent Treatment Plant",
     "capacity_m3_h": 1200.0,
     "treatment_type": "MBBR+RO+ZLD"
+  },
+  "cpp": {
+    "name": "Captive Power Plant (Cogeneration)",
+    "power_mw": 180.0,
+    "steam_generation_tph": 750.0
   }
 }
