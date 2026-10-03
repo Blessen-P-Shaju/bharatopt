@@ -30,5 +30,14 @@
     "h2_consumption_nm3_m3": 210.0,
     "kerosene_yield_pct": 28.0,
     "diesel_yield_pct": 55.0
+  },
+  "ccr": {
+    "name": "Continuous Catalytic Reformer",
+    "capacity_kbpd": 45.0,
+    "ron_operating_range": [
+      95.0,
+      102.0
+    ],
+    "h2_byproduct_wt_pct": 3.8
   }
 }
