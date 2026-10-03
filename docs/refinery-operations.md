@@ -9,3 +9,6 @@ Flash zone temperature control and pumparounds.
 ### Vacuum Distillation Unit (VDU) Deep-Cut Mechanics
 Vacuum ejector systems and packings vs trays.
 
+### Fluid Catalytic Cracking (FCCU) Catalyst Circulation
+Riser reaction kinetics and catalyst-to-oil ratio.
+
