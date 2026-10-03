@@ -45,5 +45,10 @@
     "capacity_kbpd": 50.0,
     "coke_yield_wt_pct": 28.0,
     "coker_gasoil_pct": 48.0
+  },
+  "isomerization": {
+    "name": "C5/C6 Isomerization Unit",
+    "capacity_kbpd": 20.0,
+    "isomerate_ron": 87.5
   }
 }
