@@ -50,5 +50,11 @@
     "name": "C5/C6 Isomerization Unit",
     "capacity_kbpd": 20.0,
     "isomerate_ron": 87.5
+  },
+  "alkylation": {
+    "name": "Sulfuric Acid Alkylation Unit",
+    "capacity_kbpd": 15.0,
+    "alkylate_ron": 96.0,
+    "acid_consumption_kg_bbl": 4.2
   }
 }
