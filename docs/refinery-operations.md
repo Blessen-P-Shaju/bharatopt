@@ -48,3 +48,6 @@ HP, MP, and LP header balancing.
 ### Cooling Tower & Closed Loop Water Systems
 Cycles of concentration and biological fouling control.
 
+### Effluent Treatment Plant (ETP) Standards
+Dissolved air flotation and zero liquid discharge.
+
