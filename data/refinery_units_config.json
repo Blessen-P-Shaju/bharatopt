@@ -23,5 +23,12 @@
     "gasoline_yield_pct": 51.2,
     "lco_yield_pct": 18.3,
     "coke_yield_pct": 5.5
+  },
+  "hcu": {
+    "name": "Hydrocracker Unit",
+    "capacity_kbpd": 65.0,
+    "h2_consumption_nm3_m3": 210.0,
+    "kerosene_yield_pct": 28.0,
+    "diesel_yield_pct": 55.0
   }
 }
