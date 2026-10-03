@@ -56,5 +56,11 @@
     "capacity_kbpd": 15.0,
     "alkylate_ron": 96.0,
     "acid_consumption_kg_bbl": 4.2
+  },
+  "dhdt": {
+    "name": "Diesel Hydrotreater Unit",
+    "capacity_kbpd": 90.0,
+    "sulfur_removal_efficiency_pct": 99.8,
+    "h2_consumption_nm3_m3": 75.0
   }
 }
