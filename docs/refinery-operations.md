@@ -12,3 +12,6 @@ Vacuum ejector systems and packings vs trays.
 ### Fluid Catalytic Cracking (FCCU) Catalyst Circulation
 Riser reaction kinetics and catalyst-to-oil ratio.
 
+### Hydrocracker (HCU) Multi-Bed Temperature Quench
+Hydrogen quench injection and partial pressure.
+
