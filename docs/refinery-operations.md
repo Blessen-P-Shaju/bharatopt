@@ -33,3 +33,6 @@ Deep desulfurization for 10 ppm BS-VI diesel.
 ### Hydrogen Network Integration & Pinch Analysis
 Balancing hydrogen producers and consumers.
 
+### Sour Water Stripping (SWS) & Sulfur Recovery (SRU)
+Claus reaction kinetics and 99.9% recovery.
+
