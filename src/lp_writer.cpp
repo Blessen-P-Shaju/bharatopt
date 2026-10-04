@@ -90,3 +90,4 @@ void write_lp_formatted(const LPModel& model, const std::string& filepath, const
 }
 // LP Writer formatting rule checkpoint 4
 // LP Writer formatting rule checkpoint 6
+// LP Writer formatting rule checkpoint 8
