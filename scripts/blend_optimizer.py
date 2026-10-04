@@ -20,3 +20,15 @@ SAMPLE_COMPONENTS = [
     BlendComponent('Light_Naphtha', 72.0, 68.0, 90.0, 8.0, 5000.0)
 ]
 
+def solve_blend(components, target_volume, min_ron=91.0, max_rvp=60.0, max_sulfur=10.0):
+    print(f'Optimizing blend for {target_volume} bbl target...')
+    sorted_comp = sorted(components, key=lambda c: c.cost)
+    allocated = {}
+    rem = target_volume
+    for c in sorted_comp:
+        take = min(rem, c.max_bbl)
+        allocated[c.name] = take
+        rem -= take
+        if rem <= 0: break
+    return allocated
+
