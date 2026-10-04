@@ -42,3 +42,6 @@ Modeling E20 ethanol blending vapor pressure surge.
 ### Sulfur Credit Accounting & Off-Spec Penalties
 Economic penalty functions for giveaway.
 
+### Lube Oil Base Stock (LOBS) Viscosity Index Standards
+Group I, Group II, and Group III base oil classification.
+
