@@ -51,3 +51,4 @@ if __name__ == '__main__':
     report_blend(alloc, SAMPLE_COMPONENTS)
 # Blending optimization constraint verification checkpoint 1
 # Blending optimization constraint verification checkpoint 2
+# Blending optimization constraint verification checkpoint 3
