@@ -52,3 +52,4 @@ if __name__ == '__main__':
 # Blending optimization constraint verification checkpoint 1
 # Blending optimization constraint verification checkpoint 2
 # Blending optimization constraint verification checkpoint 3
+# Blending optimization constraint verification checkpoint 4
