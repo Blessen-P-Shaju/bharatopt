@@ -15,3 +15,6 @@ Accounting for antagonistic and synergistic interactions.
 ### Reid Vapor Pressure (RVP) Blending Methods
 Chevron RVP Index formulation: RVP^1.25 linear on volume fraction.
 
+### Distillation Cut Points Blending (E70, E100, E150)
+Predicting gasoline driveability index.
+
