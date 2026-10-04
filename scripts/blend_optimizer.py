@@ -49,3 +49,4 @@ if __name__ == '__main__':
     vol = float(sys.argv[1]) if len(sys.argv) > 1 else 25000.0
     alloc = solve_blend(SAMPLE_COMPONENTS, vol)
     report_blend(alloc, SAMPLE_COMPONENTS)
+# Blending optimization constraint verification checkpoint 1
