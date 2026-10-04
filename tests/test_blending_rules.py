@@ -27,3 +27,9 @@ class TestBlendingRules(unittest.TestCase):
         blend_s = sum(v * s for v, s in zip(vols, sulfurs))
         self.assertLessEqual(blend_s, 10.0)
 
+    def test_gasoline_ron_constraint(self):
+        rons = [98.0, 85.0, 96.0]
+        vols = [0.4, 0.2, 0.4]
+        blend_ron = sum(v * r for v, r in zip(vols, rons))
+        self.assertGreaterEqual(blend_ron, 91.0)
+
