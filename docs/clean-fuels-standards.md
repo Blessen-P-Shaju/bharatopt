@@ -27,3 +27,6 @@ VLSFO 0.50% sulfur cap and stability blending.
 ### Cold Filter Plugging Point (CFPP) Blending in Diesel
 Winter grade diesel blending with kerosene.
 
+### Polyaromatic Hydrocarbons (PAH) in Diesel
+Statutory cap of 8.0 wt% PAH in BS-VI diesel.
+
