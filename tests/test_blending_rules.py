@@ -39,3 +39,9 @@ class TestBlendingRules(unittest.TestCase):
         ci = 454.74 - 1641.416 / api + 774.74 * math.log10(t50_f) / api
         self.assertTrue(ci > 40.0)
 
+    def test_gasoline_benzene_cap(self):
+        benzene_vols = [0.8, 1.2, 0.5]
+        vols = [0.5, 0.2, 0.3]
+        blend_benzene = sum(v * b for v, b in zip(vols, benzene_vols))
+        self.assertLessEqual(blend_benzene, 1.0)
+
