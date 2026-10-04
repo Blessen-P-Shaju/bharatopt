@@ -51,3 +51,6 @@ Methane number and Wobbe index limits.
 ### Green Hydrogen Fuel Cell Vehicle Purity Standards
 ISO 14687 Grade D fuel cell hydrogen purity.
 
+### Summary of Quality Blending Equations in BharatOPT
+Integration of linear and nonlinear blending models.
+
