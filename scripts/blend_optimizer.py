@@ -45,3 +45,7 @@ def report_blend(allocated, components):
     print(f'RON: {avg_ron:.2f} | RVP: {avg_rvp:.2f} kPa | Sulfur: {avg_s:.2f} ppm')
     print('----------------------------------------')
 
+if __name__ == '__main__':
+    vol = float(sys.argv[1]) if len(sys.argv) > 1 else 25000.0
+    alloc = solve_blend(SAMPLE_COMPONENTS, vol)
+    report_blend(alloc, SAMPLE_COMPONENTS)
