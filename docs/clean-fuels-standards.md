@@ -33,3 +33,6 @@ Statutory cap of 8.0 wt% PAH in BS-VI diesel.
 ### Flash Point Blending Index Formulation
 Using Maxwell-Bonnell flash point index 10^(-0.06 * FP).
 
+### Viscosity Blending Index (Refutas Method)
+VBN Viscosity Blending Number logarithmic formulation.
+
