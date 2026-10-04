@@ -39,3 +39,6 @@ VBN Viscosity Blending Number logarithmic formulation.
 ### Oxygenate Blending: Ethanol & MTBE Limits
 Modeling E20 ethanol blending vapor pressure surge.
 
+### Sulfur Credit Accounting & Off-Spec Penalties
+Economic penalty functions for giveaway.
+
