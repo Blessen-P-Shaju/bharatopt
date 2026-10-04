@@ -48,3 +48,6 @@ Group I, Group II, and Group III base oil classification.
 ### Compressed Natural Gas (CNG) and Bio-CNG Fuel Specs
 Methane number and Wobbe index limits.
 
+### Green Hydrogen Fuel Cell Vehicle Purity Standards
+ISO 14687 Grade D fuel cell hydrogen purity.
+
