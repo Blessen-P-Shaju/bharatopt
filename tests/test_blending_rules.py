@@ -13,3 +13,11 @@ class TestBlendingRules(unittest.TestCase):
         blend_rvp = blend_idx ** (1.0 / 1.25)
         self.assertTrue(50.0 < blend_rvp < 65.0)
 
+    def test_flash_point_blending_index(self):
+        fps = [40.0, 65.0]
+        vols = [0.4, 0.6]
+        indices = [10 ** (-0.06 * fp) for fp in fps]
+        blend_idx = sum(v * idx for v, idx in zip(vols, indices))
+        blend_fp = -math.log10(blend_idx) / 0.06
+        self.assertTrue(38.0 <= blend_fp <= 55.0)
+
