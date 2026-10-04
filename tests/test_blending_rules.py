@@ -21,3 +21,9 @@ class TestBlendingRules(unittest.TestCase):
         blend_fp = -math.log10(blend_idx) / 0.06
         self.assertTrue(38.0 <= blend_fp <= 55.0)
 
+    def test_diesel_sulfur_compliance(self):
+        sulfurs = [8.0, 9.5, 7.0]
+        vols = [0.5, 0.3, 0.2]
+        blend_s = sum(v * s for v, s in zip(vols, sulfurs))
+        self.assertLessEqual(blend_s, 10.0)
+
