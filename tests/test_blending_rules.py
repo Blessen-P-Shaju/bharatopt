@@ -51,3 +51,11 @@ class TestBlendingRules(unittest.TestCase):
         blend_density = sum(v * d for v, d in zip(vols, densities))
         self.assertEqual(blend_density, 760.0)
 
+    def test_refutas_viscosity_index(self):
+        v1, v2 = 2.5, 4.0
+        vbn1 = 14.534 * math.log(math.log(v1 + 0.8)) + 10.975
+        vbn2 = 14.534 * math.log(math.log(v2 + 0.8)) + 10.975
+        vbn_blend = 0.5 * vbn1 + 0.5 * vbn2
+        v_blend = math.exp(math.exp((vbn_blend - 10.975) / 14.534)) - 0.8
+        self.assertTrue(v1 <= v_blend <= v2)
+
