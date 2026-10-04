@@ -30,3 +30,6 @@ Winter grade diesel blending with kerosene.
 ### Polyaromatic Hydrocarbons (PAH) in Diesel
 Statutory cap of 8.0 wt% PAH in BS-VI diesel.
 
+### Flash Point Blending Index Formulation
+Using Maxwell-Bonnell flash point index 10^(-0.06 * FP).
+
