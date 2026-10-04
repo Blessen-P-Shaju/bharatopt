@@ -59,3 +59,5 @@ class TestBlendingRules(unittest.TestCase):
         v_blend = math.exp(math.exp((vbn_blend - 10.975) / 14.534)) - 0.8
         self.assertTrue(v1 <= v_blend <= v2)
 
+if __name__ == '__main__':
+    unittest.main()
