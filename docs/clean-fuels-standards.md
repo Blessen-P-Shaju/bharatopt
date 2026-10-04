@@ -36,3 +36,6 @@ Using Maxwell-Bonnell flash point index 10^(-0.06 * FP).
 ### Viscosity Blending Index (Refutas Method)
 VBN Viscosity Blending Number logarithmic formulation.
 
+### Oxygenate Blending: Ethanol & MTBE Limits
+Modeling E20 ethanol blending vapor pressure surge.
+
