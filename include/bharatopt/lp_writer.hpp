@@ -9,3 +9,10 @@ void write_lp_format(const LPModel& model, const std::string& path);
 std::string to_lp_string(const LPModel& model);
 
 } // namespace bharatopt
+
+struct LPWriterOptions {
+    bool write_bounds{true};
+    bool write_integers{true};
+    int float_precision{6};
+};
+void write_lp_formatted(const LPModel& model, const std::string& filepath, const LPWriterOptions& opt);
