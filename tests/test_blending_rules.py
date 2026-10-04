@@ -33,3 +33,9 @@ class TestBlendingRules(unittest.TestCase):
         blend_ron = sum(v * r for v, r in zip(vols, rons))
         self.assertGreaterEqual(blend_ron, 91.0)
 
+    def test_cetane_index_astm_d976(self):
+        api = 35.0
+        t50_f = 520.0
+        ci = 454.74 - 1641.416 / api + 774.74 * math.log10(t50_f) / api
+        self.assertTrue(ci > 40.0)
+
