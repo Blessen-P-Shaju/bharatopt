@@ -24,3 +24,6 @@ Smoke point >= 25 mm, freeze point <= -47°C, flash point >= 38°C.
 ### Marine Bunker Fuel IMO 2020 Compliance
 VLSFO 0.50% sulfur cap and stability blending.
 
+### Cold Filter Plugging Point (CFPP) Blending in Diesel
+Winter grade diesel blending with kerosene.
+
