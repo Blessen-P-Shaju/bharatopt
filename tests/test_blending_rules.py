@@ -45,3 +45,9 @@ class TestBlendingRules(unittest.TestCase):
         blend_benzene = sum(v * b for v, b in zip(vols, benzene_vols))
         self.assertLessEqual(blend_benzene, 1.0)
 
+    def test_density_blending_mass_basis(self):
+        densities = [740.0, 780.0]
+        vols = [0.5, 0.5]
+        blend_density = sum(v * d for v, d in zip(vols, densities))
+        self.assertEqual(blend_density, 760.0)
+
