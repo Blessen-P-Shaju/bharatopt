@@ -89,3 +89,4 @@ void write_lp_formatted(const LPModel& model, const std::string& filepath, const
     // Formatted CPLEX LP output export
 }
 // LP Writer formatting rule checkpoint 4
+// LP Writer formatting rule checkpoint 6
