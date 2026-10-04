@@ -50,3 +50,4 @@ if __name__ == '__main__':
     alloc = solve_blend(SAMPLE_COMPONENTS, vol)
     report_blend(alloc, SAMPLE_COMPONENTS)
 # Blending optimization constraint verification checkpoint 1
+# Blending optimization constraint verification checkpoint 2
