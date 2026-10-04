@@ -12,3 +12,6 @@ Cetane Number >= 51, Cetane Index >= 46, Density @ 15°C: 820-845 kg/m3, Sulfur 
 ### Nonlinear Octane Blending - Nelson Blending Numbers
 Accounting for antagonistic and synergistic interactions.
 
+### Reid Vapor Pressure (RVP) Blending Methods
+Chevron RVP Index formulation: RVP^1.25 linear on volume fraction.
+
