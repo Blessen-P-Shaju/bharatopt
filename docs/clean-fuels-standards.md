@@ -18,3 +18,6 @@ Chevron RVP Index formulation: RVP^1.25 linear on volume fraction.
 ### Distillation Cut Points Blending (E70, E100, E150)
 Predicting gasoline driveability index.
 
+### Aviation Turbine Fuel (ATF / Jet A-1) Specifications
+Smoke point >= 25 mm, freeze point <= -47°C, flash point >= 38°C.
+
