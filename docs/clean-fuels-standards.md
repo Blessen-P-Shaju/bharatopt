@@ -45,3 +45,6 @@ Economic penalty functions for giveaway.
 ### Lube Oil Base Stock (LOBS) Viscosity Index Standards
 Group I, Group II, and Group III base oil classification.
 
+### Compressed Natural Gas (CNG) and Bio-CNG Fuel Specs
+Methane number and Wobbe index limits.
+
