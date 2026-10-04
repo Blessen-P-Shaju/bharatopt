@@ -21,3 +21,6 @@ Predicting gasoline driveability index.
 ### Aviation Turbine Fuel (ATF / Jet A-1) Specifications
 Smoke point >= 25 mm, freeze point <= -47°C, flash point >= 38°C.
 
+### Marine Bunker Fuel IMO 2020 Compliance
+VLSFO 0.50% sulfur cap and stability blending.
+
