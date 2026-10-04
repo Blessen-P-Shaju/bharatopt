@@ -16,3 +16,4 @@ struct LPWriterOptions {
     int float_precision{6};
 };
 void write_lp_formatted(const LPModel& model, const std::string& filepath, const LPWriterOptions& opt);
+// LP Writer formatting rule checkpoint 3
