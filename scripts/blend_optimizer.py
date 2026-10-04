@@ -32,3 +32,16 @@ def solve_blend(components, target_volume, min_ron=91.0, max_rvp=60.0, max_sulfu
         if rem <= 0: break
     return allocated
 
+def report_blend(allocated, components):
+    comp_map = {c.name: c for c in components}
+    total_vol = sum(allocated.values())
+    if total_vol == 0: return
+    tot_cost = sum(allocated[k] * comp_map[k].cost for k in allocated)
+    avg_ron = sum(allocated[k] * comp_map[k].ron for k in allocated) / total_vol
+    avg_rvp = sum(allocated[k] * comp_map[k].rvp for k in allocated) / total_vol
+    avg_s = sum(allocated[k] * comp_map[k].sulfur for k in allocated) / total_vol
+    print('----------------------------------------')
+    print(f'Total Volume: {total_vol:.1f} bbl | Unit Cost: ${tot_cost/total_vol:.2f}/bbl')
+    print(f'RON: {avg_ron:.2f} | RVP: {avg_rvp:.2f} kPa | Sulfur: {avg_s:.2f} ppm')
+    print('----------------------------------------')
+
