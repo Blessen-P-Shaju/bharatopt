@@ -75,3 +75,6 @@ Integrating Chevron RVP blending index into bilinear pool tracking.
 ### Viscosity Blending in Heavy Fuel Oil (HFO) Pools
 Blending vacuum residue and cutter stock.
 
+### Global Optimization Branch-and-Bound Architecture
+Spatial branch-and-bound partitioning continuous domain.
+
