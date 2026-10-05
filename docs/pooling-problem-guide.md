@@ -93,3 +93,6 @@ L1-penalty formulations preventing solver stalling.
 ### Convergence Properties of SLP on Refinery Networks
 Demonstrating quadratic local convergence.
 
+### Standat 3-Pool Industrial Benchmark
+Industrial-scale pooling network testing 3 intermediate pools.
+
