@@ -63,3 +63,6 @@ Expressing pool exit flows as proportional fractions of inlet flows.
 ### Multi-Component Quality Tracking (Sulfur, Octane, Density)
 Simultaneous tracking of multiple non-linear attributes.
 
+### Crude Oil Blending at Atmospheric Distillation Inlets
+Optimizing crude tank transfers to CDU desalter.
+
