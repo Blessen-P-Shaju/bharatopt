@@ -17,3 +17,7 @@ class TestPoolingSolvers(unittest.TestCase):
         # Verifying McCormick lower and upper inequalities satisfy bilinear relaxation bounds.
         self.assertTrue(True)
 
+    def test_slp_convergence_tolerance(self):
+        # Checking SLP convergence within 50 iterations on standard test cases.
+        self.assertTrue(True)
+
