@@ -114,3 +114,6 @@ Modeling imperfect mixing in large tanks.
 ### Reactivity-Weighted Octane Blending in Reformate Pools
 Accounting for aromatic-olefin interactions.
 
+### Diesel Cetane Giveaway Minimization in DHDT Rundown Pools
+Optimizing blend cut points to hit 51.0 cetane.
+
