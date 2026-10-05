@@ -81,3 +81,6 @@ Spatial branch-and-bound partitioning continuous domain.
 ### Branching Variable Selection Rules
 Selecting variable with maximum McCormick violation.
 
+### Duality Gap Closure in Spatial Branch and Bound
+Convergence when NLP upper bound matches LP lower bound.
+
