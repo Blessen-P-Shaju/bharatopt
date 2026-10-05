@@ -120,3 +120,6 @@ Optimizing blend cut points to hit 51.0 cetane.
 ### Jet Fuel Smoke Point vs Aromatic Content Pooling
 Balancing hydrotreater severity against straight-run kerosene.
 
+### Lube Oil Extraction Solvent Ratio Pooling
+Solvent-to-oil extraction ratios in lube base oil units.
+
