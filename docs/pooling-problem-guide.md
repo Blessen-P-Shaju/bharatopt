@@ -15,3 +15,6 @@ Inverted cost parameters creating multiple local optima.
 ### Haverly 3 Benchmark Instance with Capacity Bounds
 Adding product demand bounds and pool volume constraints.
 
+### Concentration-Based P-Formulation
+Treating pool concentrations directly as continuous decision variables.
+
