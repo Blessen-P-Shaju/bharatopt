@@ -77,3 +77,5 @@ class TestPoolingSolvers(unittest.TestCase):
         # Verifying residual |w - x y| < 10^-6 upon declared convergence.
         self.assertTrue(True)
 
+if __name__ == '__main__':
+    unittest.main()
