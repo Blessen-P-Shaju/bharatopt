@@ -117,3 +117,6 @@ Accounting for aromatic-olefin interactions.
 ### Diesel Cetane Giveaway Minimization in DHDT Rundown Pools
 Optimizing blend cut points to hit 51.0 cetane.
 
+### Jet Fuel Smoke Point vs Aromatic Content Pooling
+Balancing hydrotreater severity against straight-run kerosene.
+
