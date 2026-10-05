@@ -21,3 +21,6 @@ Treating pool concentrations directly as continuous decision variables.
 ### Proportion-Based Q-Formulation (Ben-Tal et al.)
 Reformulating using split fractions.
 
+### Comparison: P-Formulation vs Q-Formulation Tightness
+Q-formulation yields tighter linear relaxations.
+
