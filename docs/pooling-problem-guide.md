@@ -18,3 +18,6 @@ Adding product demand bounds and pool volume constraints.
 ### Concentration-Based P-Formulation
 Treating pool concentrations directly as continuous decision variables.
 
+### Proportion-Based Q-Formulation (Ben-Tal et al.)
+Reformulating using split fractions.
+
