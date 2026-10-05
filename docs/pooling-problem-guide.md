@@ -3,3 +3,6 @@
 ## 1. Introduction
 The pooling problem is a classic non-convex Non-Linear Program (NLP) that arises in petroleum refining.
 
+### Bilinear Non-Convexities in Quality Blending
+Product of total flow and pool quality creates bilinear terms.
+
