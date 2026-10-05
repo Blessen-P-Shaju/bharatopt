@@ -24,3 +24,6 @@ Reformulating using split fractions.
 ### Comparison: P-Formulation vs Q-Formulation Tightness
 Q-formulation yields tighter linear relaxations.
 
+### Hybrid PQ-Formulation (Tavallali et al.)
+Combining both variable sets with redundant linking constraints.
+
