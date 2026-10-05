@@ -129,3 +129,6 @@ Blending vacuum residue to satisfy VG-30/VG-40 paving specs.
 ### Bilinear Pooling Solver Failure Modes and Recovery
 Detecting cycling between alternate local optima.
 
+### Integration with BharatOPT Flowsheet Compiler
+Automated detection of bilinear network structures in JSON.
+
