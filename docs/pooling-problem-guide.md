@@ -45,3 +45,6 @@ w <= xL*y + x*yU - xL*yU.
 ### Successive Linear Programming (SLP) Core Algorithm
 Iterative Taylor series first-order linearization.
 
+### SLP Trust-Region Management
+Dynamically adjusting step size bounds based on fidelity ratio.
+
