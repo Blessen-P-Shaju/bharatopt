@@ -135,3 +135,6 @@ Automated detection of bilinear network structures in JSON.
 ### Sensitivity Analysis on Bilinear Pool Bounds
 Shadow prices of quality specifications.
 
+### Future Roadmap: Outer Approximation and Polyhedral Cuts
+Incorporating tangent planes and edge-concave relaxations.
+
