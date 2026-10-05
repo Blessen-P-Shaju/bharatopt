@@ -99,3 +99,6 @@ Industrial-scale pooling network testing 3 intermediate pools.
 ### DeWitt Multi-Period Pooling Benchmark
 Time-staged pooling model accounting for hold-up.
 
+### RTG Industrial Refining Pooling Instance
+Real-world European refinery pooling benchmark.
+
