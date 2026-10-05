@@ -84,3 +84,6 @@ Selecting variable with maximum McCormick violation.
 ### Duality Gap Closure in Spatial Branch and Bound
 Convergence when NLP upper bound matches LP lower bound.
 
+### Starting Point Heuristics for SLP
+Generating initial feasible concentration guesses.
+
