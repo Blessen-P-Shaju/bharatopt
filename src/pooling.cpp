@@ -1279,3 +1279,4 @@ BilinearPoolingProblem make_haverly_benchmark(int instance_id) {
     // Constructs Haverly instance 1, 2, or 3 programmatically
     return p;
 }
+// Bilinear SLP trust-region expansion checkpoint 4
