@@ -69,3 +69,6 @@ Optimizing crude tank transfers to CDU desalter.
 ### FCCU Feedstock Pooling from Gasoil and Hydrocracker Bottoms
 Blending gasoil fractions into FCCU feed.
 
+### Reid Vapor Pressure (RVP) Non-Linearity in Gasoline Pools
+Integrating Chevron RVP blending index into bilinear pool tracking.
+
