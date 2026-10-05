@@ -66,3 +66,6 @@ Simultaneous tracking of multiple non-linear attributes.
 ### Crude Oil Blending at Atmospheric Distillation Inlets
 Optimizing crude tank transfers to CDU desalter.
 
+### FCCU Feedstock Pooling from Gasoil and Hydrocracker Bottoms
+Blending gasoil fractions into FCCU feed.
+
