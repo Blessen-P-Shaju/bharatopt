@@ -105,3 +105,6 @@ Real-world European refinery pooling benchmark.
 ### Comparison: SLP vs Interior Point on Bilinear Relaxations
 Evaluation of iteration speed and accuracy.
 
+### Handling Unmeasured Intermediate Qualities
+Soft constraint bounds for secondary properties.
+
