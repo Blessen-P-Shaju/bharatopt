@@ -27,3 +27,6 @@ Q-formulation yields tighter linear relaxations.
 ### Hybrid PQ-Formulation (Tavallali et al.)
 Combining both variable sets with redundant linking constraints.
 
+### McCormick Convex Envelope Relaxation
+Bounding bilinear term on rectangle using 4 linear inequalities.
+
