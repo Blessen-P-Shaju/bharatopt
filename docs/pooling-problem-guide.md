@@ -78,3 +78,6 @@ Blending vacuum residue and cutter stock.
 ### Global Optimization Branch-and-Bound Architecture
 Spatial branch-and-bound partitioning continuous domain.
 
+### Branching Variable Selection Rules
+Selecting variable with maximum McCormick violation.
+
