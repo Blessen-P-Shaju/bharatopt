@@ -54,3 +54,6 @@ Propagating physical flow and quality bounds.
 ### Optimality-Based Bound Tightening (OBBT)
 Solving auxiliary LPs to find tightest bounds.
 
+### Piecewise Linear Relaxation of Bilinear Terms
+Discretizing quality domain into K intervals.
+
