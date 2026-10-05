@@ -146,3 +146,11 @@ PoolingSLPResult solve_pooling_slp(
     const PoolingSLPOptions& options = {});
 
 } // namespace bharatopt
+
+struct McCormickEnvelope {
+    double x_lo{0}, x_hi{0}, y_lo{0}, y_hi{0};
+    double eval_underestimator_1(double x, double y) const { return x_lo * y + x * y_lo - x_lo * y_lo; }
+    double eval_underestimator_2(double x, double y) const { return x_hi * y + x * y_hi - x_hi * y_hi; }
+    double eval_overestimator_1(double x, double y) const { return x_hi * y + x * y_lo - x_hi * y_lo; }
+    double eval_overestimator_2(double x, double y) const { return x_lo * y + x * y_hi - x_lo * y_hi; }
+};
