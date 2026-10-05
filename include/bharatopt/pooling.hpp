@@ -155,3 +155,4 @@ struct McCormickEnvelope {
     double eval_overestimator_2(double x, double y) const { return x_lo * y + x * y_hi - x_lo * y_hi; }
 };
 BilinearPoolingProblem make_haverly_benchmark(int instance_id = 1);
+// Bilinear SLP trust-region expansion checkpoint 5
