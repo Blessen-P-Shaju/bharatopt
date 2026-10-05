@@ -96,3 +96,6 @@ Demonstrating quadratic local convergence.
 ### Standat 3-Pool Industrial Benchmark
 Industrial-scale pooling network testing 3 intermediate pools.
 
+### DeWitt Multi-Period Pooling Benchmark
+Time-staged pooling model accounting for hold-up.
+
