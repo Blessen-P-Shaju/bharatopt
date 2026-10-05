@@ -87,3 +87,6 @@ Convergence when NLP upper bound matches LP lower bound.
 ### Starting Point Heuristics for SLP
 Generating initial feasible concentration guesses.
 
+### Penalty Functions for Infeasible SLP Steps
+L1-penalty formulations preventing solver stalling.
+
