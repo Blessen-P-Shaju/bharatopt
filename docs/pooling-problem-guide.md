@@ -108,3 +108,6 @@ Evaluation of iteration speed and accuracy.
 ### Handling Unmeasured Intermediate Qualities
 Soft constraint bounds for secondary properties.
 
+### Tank Stratification & Incomplete Mixing Dynamics
+Modeling imperfect mixing in large tanks.
+
