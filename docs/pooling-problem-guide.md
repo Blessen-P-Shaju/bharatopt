@@ -111,3 +111,6 @@ Soft constraint bounds for secondary properties.
 ### Tank Stratification & Incomplete Mixing Dynamics
 Modeling imperfect mixing in large tanks.
 
+### Reactivity-Weighted Octane Blending in Reformate Pools
+Accounting for aromatic-olefin interactions.
+
