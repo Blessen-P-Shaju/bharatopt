@@ -138,3 +138,6 @@ Shadow prices of quality specifications.
 ### Future Roadmap: Outer Approximation and Polyhedral Cuts
 Incorporating tangent planes and edge-concave relaxations.
 
+### Summary & Recommended Solver Settings
+Default tolerances, trust-region radii, and iteration limits.
+
