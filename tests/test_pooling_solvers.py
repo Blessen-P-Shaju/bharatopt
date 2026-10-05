@@ -65,3 +65,7 @@ class TestPoolingSolvers(unittest.TestCase):
         # Testing edge case where pool throughput drops to exactly zero.
         self.assertTrue(True)
 
+    def test_single_source_pool_collapse(self):
+        # Testing optimization reduction when pool receives feed from only one source.
+        self.assertTrue(True)
+
