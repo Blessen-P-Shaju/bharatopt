@@ -36,3 +36,6 @@ w >= xL*y + x*yL - xL*yL convex envelope.
 ### McCormick Underestimator 2
 w >= xU*y + x*yU - xU*yU.
 
+### McCormick Overestimator 1
+w <= xU*y + x*yL - xU*yL concave envelope.
+
