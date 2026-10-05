@@ -57,3 +57,6 @@ Solving auxiliary LPs to find tightest bounds.
 ### Piecewise Linear Relaxation of Bilinear Terms
 Discretizing quality domain into K intervals.
 
+### Multiplying Factor Formulation
+Expressing pool exit flows as proportional fractions of inlet flows.
+
