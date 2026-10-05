@@ -30,3 +30,6 @@ Combining both variable sets with redundant linking constraints.
 ### McCormick Convex Envelope Relaxation
 Bounding bilinear term on rectangle using 4 linear inequalities.
 
+### McCormick Underestimator 1
+w >= xL*y + x*yL - xL*yL convex envelope.
+
