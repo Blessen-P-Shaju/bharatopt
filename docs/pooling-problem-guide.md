@@ -123,3 +123,6 @@ Balancing hydrotreater severity against straight-run kerosene.
 ### Lube Oil Extraction Solvent Ratio Pooling
 Solvent-to-oil extraction ratios in lube base oil units.
 
+### Bitumen Penetration Grade and Softening Point Pooling
+Blending vacuum residue to satisfy VG-30/VG-40 paving specs.
+
