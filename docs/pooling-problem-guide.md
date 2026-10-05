@@ -132,3 +132,6 @@ Detecting cycling between alternate local optima.
 ### Integration with BharatOPT Flowsheet Compiler
 Automated detection of bilinear network structures in JSON.
 
+### Sensitivity Analysis on Bilinear Pool Bounds
+Shadow prices of quality specifications.
+
