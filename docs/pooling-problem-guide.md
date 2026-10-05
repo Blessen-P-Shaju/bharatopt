@@ -48,3 +48,6 @@ Iterative Taylor series first-order linearization.
 ### SLP Trust-Region Management
 Dynamically adjusting step size bounds based on fidelity ratio.
 
+### Feasibility-Based Bound Tightening (FBBT)
+Propagating physical flow and quality bounds.
+
