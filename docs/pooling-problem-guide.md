@@ -33,3 +33,6 @@ Bounding bilinear term on rectangle using 4 linear inequalities.
 ### McCormick Underestimator 1
 w >= xL*y + x*yL - xL*yL convex envelope.
 
+### McCormick Underestimator 2
+w >= xU*y + x*yU - xU*yU.
+
