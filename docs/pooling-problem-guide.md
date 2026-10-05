@@ -72,3 +72,6 @@ Blending gasoil fractions into FCCU feed.
 ### Reid Vapor Pressure (RVP) Non-Linearity in Gasoline Pools
 Integrating Chevron RVP blending index into bilinear pool tracking.
 
+### Viscosity Blending in Heavy Fuel Oil (HFO) Pools
+Blending vacuum residue and cutter stock.
+
