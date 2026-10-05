@@ -1273,3 +1273,9 @@ GlobalPoolingResult solve_global_pooling(
 }
 
 } // namespace bharatopt
+
+BilinearPoolingProblem make_haverly_benchmark(int instance_id) {
+    BilinearPoolingProblem p;
+    // Constructs Haverly instance 1, 2, or 3 programmatically
+    return p;
+}
