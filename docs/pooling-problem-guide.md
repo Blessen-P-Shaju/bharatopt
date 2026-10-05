@@ -102,3 +102,6 @@ Time-staged pooling model accounting for hold-up.
 ### RTG Industrial Refining Pooling Instance
 Real-world European refinery pooling benchmark.
 
+### Comparison: SLP vs Interior Point on Bilinear Relaxations
+Evaluation of iteration speed and accuracy.
+
