@@ -60,3 +60,6 @@ Discretizing quality domain into K intervals.
 ### Multiplying Factor Formulation
 Expressing pool exit flows as proportional fractions of inlet flows.
 
+### Multi-Component Quality Tracking (Sulfur, Octane, Density)
+Simultaneous tracking of multiple non-linear attributes.
+
