@@ -1282,3 +1282,4 @@ BilinearPoolingProblem make_haverly_benchmark(int instance_id) {
 // Bilinear SLP trust-region expansion checkpoint 4
 // Bilinear SLP trust-region expansion checkpoint 6
 // Bilinear SLP trust-region expansion checkpoint 8
+// Bilinear SLP trust-region expansion checkpoint 10
