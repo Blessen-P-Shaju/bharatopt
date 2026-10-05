@@ -42,3 +42,6 @@ w <= xU*y + x*yL - xU*yL concave envelope.
 ### McCormick Overestimator 2
 w <= xL*y + x*yU - xL*yU.
 
+### Successive Linear Programming (SLP) Core Algorithm
+Iterative Taylor series first-order linearization.
+
