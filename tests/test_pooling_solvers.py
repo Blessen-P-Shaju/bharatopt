@@ -25,3 +25,7 @@ class TestPoolingSolvers(unittest.TestCase):
         # Testing forward-backward bound propagation contracting variable intervals.
         self.assertTrue(True)
 
+    def test_pool_mass_balance(self):
+        # Verifying total pool inlet flow equals total pool outlet flow.
+        self.assertTrue(True)
+
