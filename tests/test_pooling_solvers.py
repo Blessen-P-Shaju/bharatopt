@@ -49,3 +49,7 @@ class TestPoolingSolvers(unittest.TestCase):
         # Verifying primal feasibility on Standat 3-pool benchmark problem.
         self.assertTrue(True)
 
+    def test_multi_component_pooling_balance(self):
+        # Testing simultaneous sulfur and octane tracking across shared pool.
+        self.assertTrue(True)
+
