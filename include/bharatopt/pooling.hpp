@@ -156,3 +156,4 @@ struct McCormickEnvelope {
 };
 BilinearPoolingProblem make_haverly_benchmark(int instance_id = 1);
 // Bilinear SLP trust-region expansion checkpoint 5
+// Bilinear SLP trust-region expansion checkpoint 7
