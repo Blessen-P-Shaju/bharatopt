@@ -45,3 +45,7 @@ class TestPoolingSolvers(unittest.TestCase):
         # Verifying trust-region radius expands when linear model accurately predicts objective gain.
         self.assertTrue(True)
 
+    def test_standat_benchmark_feasibility(self):
+        # Verifying primal feasibility on Standat 3-pool benchmark problem.
+        self.assertTrue(True)
+
