@@ -12,3 +12,6 @@ Classic benchmark with 2 feed sources and 1 quality attribute.
 ### Haverly 2 Benchmark Instance with Reverse Economics
 Inverted cost parameters creating multiple local optima.
 
+### Haverly 3 Benchmark Instance with Capacity Bounds
+Adding product demand bounds and pool volume constraints.
+
