@@ -126,3 +126,6 @@ Solvent-to-oil extraction ratios in lube base oil units.
 ### Bitumen Penetration Grade and Softening Point Pooling
 Blending vacuum residue to satisfy VG-30/VG-40 paving specs.
 
+### Bilinear Pooling Solver Failure Modes and Recovery
+Detecting cycling between alternate local optima.
+
