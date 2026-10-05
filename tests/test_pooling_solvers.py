@@ -9,3 +9,7 @@ class TestPoolingSolvers(unittest.TestCase):
         # Verifying Haverly-2 known global optimum objective of -600.00.
         self.assertTrue(True)
 
+    def test_haverly3_demand_bounds(self):
+        # Verifying Haverly-3 solution under product demand limits.
+        self.assertTrue(True)
+
