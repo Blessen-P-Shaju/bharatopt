@@ -90,3 +90,6 @@ Generating initial feasible concentration guesses.
 ### Penalty Functions for Infeasible SLP Steps
 L1-penalty formulations preventing solver stalling.
 
+### Convergence Properties of SLP on Refinery Networks
+Demonstrating quadratic local convergence.
+
