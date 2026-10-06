@@ -78,3 +78,6 @@ Managing delayed coker green coke handling and calcining.
 ### Hydrogen Network Cross-Unit Balancing Over Time
 Buffer management of high-pressure hydrogen storage headers.
 
+### Steam Header Dynamics During Boiler Fuel Swaps
+Transient response of steam turbine generators.
+
