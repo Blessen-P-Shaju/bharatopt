@@ -49,3 +49,4 @@ if __name__ == '__main__':
 # Generator routine checkpoint 5: verified scheduling constraints
 # Generator routine checkpoint 6: verified scheduling constraints
 # Generator routine checkpoint 7: verified scheduling constraints
+# Generator routine checkpoint 8: verified scheduling constraints
