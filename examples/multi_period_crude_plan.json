@@ -21,5 +21,11 @@
     "crude_type": "Arab_Light",
     "discharge_volume_bbl": 850000.0,
     "cdu_target_kbpd": 290.0
+  },
+  "day_4_plan": {
+    "vessel": "Crude_Tanker_4",
+    "crude_type": "Brent",
+    "discharge_volume_bbl": 950000.0,
+    "cdu_target_kbpd": 290.0
   }
 }
