@@ -102,3 +102,6 @@ Decomposing monthly LP targets into daily MILP scheduling constraints.
 ### Rolling Horizon Execution Framework
 Solving 14-day schedule every 24 hours with SCADA feedback.
 
+### Disturbance Rejection & Real-Time Rescheduling
+Automated schedule repair when vessel arrivals are delayed.
+
