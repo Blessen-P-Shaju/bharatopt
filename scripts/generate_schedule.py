@@ -28,3 +28,14 @@ def generate_tank_inventory(tanks=6):
         }
     return inventory
 
+def export_schedule(filename='examples/multi_period_crude_plan.json', days=7):
+    plan = {
+        'horizon_days': days,
+        'arrivals': generate_crude_arrivals(days),
+        'tanks': generate_tank_inventory(),
+        'daily_cdu_feed_target_bbl': 300000.0
+    }
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(plan, f, indent=2)
+    print(f'Schedule scenario written to {filename}')
+
