@@ -12,3 +12,6 @@ Stock equation balancing inventory carry-over with receipts and withdrawals.
 ### Working Ullage and Minimum Heel Constraints
 Physical tank limits preventing pump cavitation and overflow.
 
+### Dedicated vs Flexible Service Tank Allocation
+Binary decision variables assigning crude or product grades to tanks.
+
