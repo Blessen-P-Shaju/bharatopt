@@ -117,3 +117,6 @@ Ensuring tank bund containment volume complies with safety codes.
 ### Vapor Recovery System (VRS) Logistics at Gantries
 Balancing gasoline loading rates with carbon bed adsorption.
 
+### Summary of Logistics Formulations in BharatOPT
+Mathematical formulation of the master scheduling MILP matrix.
+
