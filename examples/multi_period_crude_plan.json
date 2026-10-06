@@ -3,5 +3,11 @@
   "metadata": {
     "model": "BharatOPT Multi-Period Demo",
     "version": "2.0"
+  },
+  "day_1_plan": {
+    "vessel": "Crude_Tanker_1",
+    "crude_type": "Arab_Light",
+    "discharge_volume_bbl": 850000.0,
+    "cdu_target_kbpd": 290.0
   }
 }
