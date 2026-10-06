@@ -81,3 +81,6 @@ Buffer management of high-pressure hydrogen storage headers.
 ### Steam Header Dynamics During Boiler Fuel Swaps
 Transient response of steam turbine generators.
 
+### Cooling Water Loop Flow Redistribution
+Scheduling seasonal flow redistribution across battery limits.
+
