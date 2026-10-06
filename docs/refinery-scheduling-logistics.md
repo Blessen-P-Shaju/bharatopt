@@ -123,3 +123,6 @@ Mathematical formulation of the master scheduling MILP matrix.
 ### Future Roadmap: Real-Time SCADA/DCS Integration
 Direct integration with refinery distributed control systems.
 
+### Best Practices for Multi-Period Flowsheet Modeling
+Guidelines for setting realistic inter-period inventory bounds.
+
