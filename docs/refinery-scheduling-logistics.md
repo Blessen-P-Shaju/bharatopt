@@ -30,3 +30,6 @@ Tide-dependent departure draft limits for laden tankers.
 ### Single Point Mooring (SPM) Subsea Pipeline Hydraulics
 Pressure drops and flow rate limits for off-shore buoys.
 
+### Crude Distillation Unit (CDU) Campaign Scheduling
+Scheduling crude blend switches to minimize transition slops.
+
