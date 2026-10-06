@@ -9,3 +9,6 @@ Partitioning planning horizons into daily or shift time buckets.
 ### Tank Farm Dynamic Mass Balance Equations
 Stock equation balancing inventory carry-over with receipts and withdrawals.
 
+### Working Ullage and Minimum Heel Constraints
+Physical tank limits preventing pump cavitation and overflow.
+
