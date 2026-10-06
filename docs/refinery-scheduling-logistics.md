@@ -24,3 +24,6 @@ Jetty berth allocation for VLCC and Suezmax vessels.
 ### Demurrage Cost Function Formulation
 Piecewise linear penalty on vessel discharge delays exceeding laytime.
 
+### Tidal Window and Draft Constraints at Marine Terminals
+Tide-dependent departure draft limits for laden tankers.
+
