@@ -54,3 +54,6 @@ Minimizing road tanker turnaround times across gantries.
 ### Coastal Product Barge Evacuation Schedules
 Scheduling shallow-draft barges for coastal petroleum delivery.
 
+### Strategic Petroleum Reserve (SPR) Inventory Management
+Mandatory statutory inventory reserve maintenance.
+
