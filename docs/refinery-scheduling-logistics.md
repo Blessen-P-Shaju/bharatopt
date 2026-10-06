@@ -36,3 +36,6 @@ Scheduling crude blend switches to minimize transition slops.
 ### Transition Slop and Interface Contamination Modeling
 Quantifying contaminated intermediate volume during changeover.
 
+### Multi-Product Pipeline Batch Sequencing
+Pumping sequence: Gasoline -> ATF -> Diesel -> Kerosene.
+
