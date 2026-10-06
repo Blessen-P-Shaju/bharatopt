@@ -114,3 +114,6 @@ Setting safety stock levels against delivery variance.
 ### Environmental Spill Containment & Bund Wall Capacity
 Ensuring tank bund containment volume complies with safety codes.
 
+### Vapor Recovery System (VRS) Logistics at Gantries
+Balancing gasoline loading rates with carbon bed adsorption.
+
