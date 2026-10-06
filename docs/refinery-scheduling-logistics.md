@@ -6,3 +6,6 @@ Bridging strategic monthly linear programming plans with operational daily batch
 ### Multi-Period Discrete Time Representation
 Partitioning planning horizons into daily or shift time buckets.
 
+### Tank Farm Dynamic Mass Balance Equations
+Stock equation balancing inventory carry-over with receipts and withdrawals.
+
