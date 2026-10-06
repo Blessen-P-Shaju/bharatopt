@@ -102,3 +102,4 @@ struct VesselDemurrageSpec {
 // Refinery multi-period scheduling rule 9
 // Refinery multi-period scheduling rule 11
 // Refinery multi-period scheduling rule 13
+// Refinery multi-period scheduling rule 15
