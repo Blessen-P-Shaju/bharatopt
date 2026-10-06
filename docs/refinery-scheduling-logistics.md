@@ -96,3 +96,6 @@ Separating oil-water emulsions and recycling recovered hydrocarbons.
 ### Multi-Period Demurrage Soft Constraint Optimization
 Balancing tanker demurrage penalties against tank ullage.
 
+### Heuristic Decomposition: Plan-to-Schedule Translation
+Decomposing monthly LP targets into daily MILP scheduling constraints.
+
