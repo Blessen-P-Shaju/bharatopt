@@ -66,3 +66,6 @@ Planning API 653 tank internal inspections.
 ### LPG Pressurized Bullet & Mounded Storage Scheduling
 Managing high-pressure spherical and mounded bullets.
 
+### Bitumen Heated Tank Temperature Maintenance
+Thermal energy requirements for maintaining bitumen at 140-160°C.
+
