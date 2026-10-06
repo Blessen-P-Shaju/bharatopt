@@ -39,3 +39,6 @@ def export_schedule(filename='examples/multi_period_crude_plan.json', days=7):
         json.dump(plan, f, indent=2)
     print(f'Schedule scenario written to {filename}')
 
+if __name__ == '__main__':
+    days = int(sys.argv[1]) if len(sys.argv) > 1 else 7
+    export_schedule(days=days)
