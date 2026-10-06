@@ -90,3 +90,6 @@ Managing compressor availability to capture off-gas.
 ### Waste Heat Boiler Blowdown Scheduling
 Scheduling boiler blowdown to control total dissolved solids.
 
+### Slop Oil Treatment & Decanting Logistics
+Separating oil-water emulsions and recycling recovered hydrocarbons.
+
