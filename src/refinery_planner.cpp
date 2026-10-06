@@ -599,3 +599,4 @@ bharatopt::PoolingModel RefineryPlanner::build() const {
 // Refinery multi-period scheduling rule 4
 // Refinery multi-period scheduling rule 6
 // Refinery multi-period scheduling rule 8
+// Refinery multi-period scheduling rule 10
