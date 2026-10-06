@@ -87,3 +87,6 @@ Scheduling seasonal flow redistribution across battery limits.
 ### Flare Gas Recovery Compressor Scheduling
 Managing compressor availability to capture off-gas.
 
+### Waste Heat Boiler Blowdown Scheduling
+Scheduling boiler blowdown to control total dissolved solids.
+
