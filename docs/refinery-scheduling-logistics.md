@@ -18,3 +18,6 @@ Binary decision variables assigning crude or product grades to tanks.
 ### Tank Residence Time and Settling Requirements
 Enforcing dewatering settling time before crude tank transfer.
 
+### Crude Tanker Arrival Scheduling
+Jetty berth allocation for VLCC and Suezmax vessels.
+
