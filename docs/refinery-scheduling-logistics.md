@@ -84,3 +84,6 @@ Transient response of steam turbine generators.
 ### Cooling Water Loop Flow Redistribution
 Scheduling seasonal flow redistribution across battery limits.
 
+### Flare Gas Recovery Compressor Scheduling
+Managing compressor availability to capture off-gas.
+
