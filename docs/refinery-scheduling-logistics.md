@@ -93,3 +93,6 @@ Scheduling boiler blowdown to control total dissolved solids.
 ### Slop Oil Treatment & Decanting Logistics
 Separating oil-water emulsions and recycling recovered hydrocarbons.
 
+### Multi-Period Demurrage Soft Constraint Optimization
+Balancing tanker demurrage penalties against tank ullage.
+
