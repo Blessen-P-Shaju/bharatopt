@@ -72,3 +72,6 @@ Thermal energy requirements for maintaining bitumen at 140-160°C.
 ### Sulfur Pastillation & Solid Storage Logistics
 Scheduling molten sulfur pastillation for rail transport.
 
+### Petcoke Yard Conveyor & Silo Scheduling
+Managing delayed coker green coke handling and calcining.
+
