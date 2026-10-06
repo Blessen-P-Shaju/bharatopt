@@ -42,3 +42,6 @@ Pumping sequence: Gasoline -> ATF -> Diesel -> Kerosene.
 ### Pipeline Batch Hydraulic Pressure Gradient
 Fanning friction factor and pumping power optimization.
 
+### Transmix Generation at Pipeline Interface
+Heart-cut separation of contaminated interface slop.
+
