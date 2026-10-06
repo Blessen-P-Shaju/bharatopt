@@ -27,3 +27,6 @@ Piecewise linear penalty on vessel discharge delays exceeding laytime.
 ### Tidal Window and Draft Constraints at Marine Terminals
 Tide-dependent departure draft limits for laden tankers.
 
+### Single Point Mooring (SPM) Subsea Pipeline Hydraulics
+Pressure drops and flow rate limits for off-shore buoys.
+
