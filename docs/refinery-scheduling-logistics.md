@@ -120,3 +120,6 @@ Balancing gasoline loading rates with carbon bed adsorption.
 ### Summary of Logistics Formulations in BharatOPT
 Mathematical formulation of the master scheduling MILP matrix.
 
+### Future Roadmap: Real-Time SCADA/DCS Integration
+Direct integration with refinery distributed control systems.
+
