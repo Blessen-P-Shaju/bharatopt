@@ -33,3 +33,6 @@ Pressure drops and flow rate limits for off-shore buoys.
 ### Crude Distillation Unit (CDU) Campaign Scheduling
 Scheduling crude blend switches to minimize transition slops.
 
+### Transition Slop and Interface Contamination Modeling
+Quantifying contaminated intermediate volume during changeover.
+
