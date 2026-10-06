@@ -45,3 +45,6 @@ Fanning friction factor and pumping power optimization.
 ### Transmix Generation at Pipeline Interface
 Heart-cut separation of contaminated interface slop.
 
+### Rail Wagon Loading Gantry Optimization
+Scheduling rakes of BTPN tank wagons for bulk transport.
+
