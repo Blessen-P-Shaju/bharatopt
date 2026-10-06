@@ -88,3 +88,11 @@ private:
 };
 
 }  // namespace bharatopt::refinery
+
+struct VesselDemurrageSpec {
+    double allowed_laytime_hours{36.0};
+    double hourly_demurrage_rate{2500.0};
+    double calculate_penalty(double actual_hours) const {
+        return (actual_hours > allowed_laytime_hours) ? (actual_hours - allowed_laytime_hours) * hourly_demurrage_rate : 0.0;
+    }
+};
