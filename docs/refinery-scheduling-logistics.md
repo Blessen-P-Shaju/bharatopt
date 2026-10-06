@@ -108,3 +108,6 @@ Automated schedule repair when vessel arrivals are delayed.
 ### Sensitivity Analysis on Tank Storage Capacities
 Identifying bottleneck storage tanks with highest dual shadow values.
 
+### Safety Stock Buffer Sizing via Stochastic Programming
+Setting safety stock levels against delivery variance.
+
