@@ -96,3 +96,4 @@ struct VesselDemurrageSpec {
         return (actual_hours > allowed_laytime_hours) ? (actual_hours - allowed_laytime_hours) * hourly_demurrage_rate : 0.0;
     }
 };
+// Refinery multi-period scheduling rule 3
