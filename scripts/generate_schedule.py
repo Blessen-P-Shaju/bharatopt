@@ -17,3 +17,14 @@ def generate_crude_arrivals(days=7):
             })
     return arrivals
 
+def generate_tank_inventory(tanks=6):
+    inventory = {}
+    for i in range(1, tanks + 1):
+        inventory[f'TK-{100+i}'] = {
+            'capacity_bbl': 500000.0,
+            'initial_level_bbl': 250000.0,
+            'min_heel_bbl': 50000.0,
+            'max_ullage_bbl': 475000.0
+        }
+    return inventory
+
