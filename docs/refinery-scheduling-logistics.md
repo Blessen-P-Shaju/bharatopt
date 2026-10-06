@@ -48,3 +48,6 @@ Heart-cut separation of contaminated interface slop.
 ### Rail Wagon Loading Gantry Optimization
 Scheduling rakes of BTPN tank wagons for bulk transport.
 
+### Road Tanker Gantry Bay Queue Management
+Minimizing road tanker turnaround times across gantries.
+
