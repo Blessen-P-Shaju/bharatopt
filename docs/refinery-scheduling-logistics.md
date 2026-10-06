@@ -69,3 +69,6 @@ Managing high-pressure spherical and mounded bullets.
 ### Bitumen Heated Tank Temperature Maintenance
 Thermal energy requirements for maintaining bitumen at 140-160°C.
 
+### Sulfur Pastillation & Solid Storage Logistics
+Scheduling molten sulfur pastillation for rail transport.
+
