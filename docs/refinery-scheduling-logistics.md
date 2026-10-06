@@ -39,3 +39,6 @@ Quantifying contaminated intermediate volume during changeover.
 ### Multi-Product Pipeline Batch Sequencing
 Pumping sequence: Gasoline -> ATF -> Diesel -> Kerosene.
 
+### Pipeline Batch Hydraulic Pressure Gradient
+Fanning friction factor and pumping power optimization.
+
