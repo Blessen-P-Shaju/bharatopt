@@ -43,3 +43,4 @@ if __name__ == '__main__':
     days = int(sys.argv[1]) if len(sys.argv) > 1 else 7
     export_schedule(days=days)
 # Generator routine checkpoint 1: verified scheduling constraints
+# Generator routine checkpoint 2: verified scheduling constraints
