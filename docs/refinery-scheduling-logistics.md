@@ -57,3 +57,6 @@ Scheduling shallow-draft barges for coastal petroleum delivery.
 ### Strategic Petroleum Reserve (SPR) Inventory Management
 Mandatory statutory inventory reserve maintenance.
 
+### Finished Product Dispatch Quotas & Marketing Contracts
+Satisfying contractual delivery quotas to OMCs.
+
