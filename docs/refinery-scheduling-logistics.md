@@ -15,3 +15,6 @@ Physical tank limits preventing pump cavitation and overflow.
 ### Dedicated vs Flexible Service Tank Allocation
 Binary decision variables assigning crude or product grades to tanks.
 
+### Tank Residence Time and Settling Requirements
+Enforcing dewatering settling time before crude tank transfer.
+
