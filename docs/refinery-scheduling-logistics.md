@@ -21,3 +21,6 @@ Enforcing dewatering settling time before crude tank transfer.
 ### Crude Tanker Arrival Scheduling
 Jetty berth allocation for VLCC and Suezmax vessels.
 
+### Demurrage Cost Function Formulation
+Piecewise linear penalty on vessel discharge delays exceeding laytime.
+
