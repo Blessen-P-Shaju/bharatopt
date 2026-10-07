@@ -18,3 +18,6 @@ Economic valuation of ESCerts earned by beating PAT targets.
 ### Solomon Energy Intensity Index (EII) Methodology
 Standardized complexity-weighted benchmarking against peers.
 
+### Fired Heater & Furnace Thermal Efficiency
+Stack gas temperature, excess oxygen control, and air preheater recovery.
+
