@@ -93,3 +93,6 @@ Value chain emissions including shipping and downstream product combustion.
 ### IPCC Tier 3 Emission Factor Methodologies
 Fuel-specific carbon content and oxidation factors.
 
+### Continuous Emission Monitoring Systems (CEMS)
+Online flue gas analyzers measuring SO2, NOx, CO, and CO2.
+
