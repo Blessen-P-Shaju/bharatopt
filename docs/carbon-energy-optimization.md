@@ -27,3 +27,6 @@ Scheduling automated soot blowers to prevent convective tube fouling.
 ### Steam Header Balance & Turbine Letdown Optimization
 HP, MP, and LP steam header balances.
 
+### Backpressure vs Condensing Turbine Selection
+Optimizing electric power generation vs process steam demand.
+
