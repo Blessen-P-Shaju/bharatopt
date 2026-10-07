@@ -150,3 +150,6 @@ Multivariable predictive control keeping oxygen at minimum safe limit.
 ### Refinery Digital Twin for Real-Time Utility Optimization
 Rigorous thermodynamics tracking real-time steam and power balances.
 
+### Summary of Carbon Constraints in BharatOPT LP Matrix
+Incorporating statutory emission caps and carbon tax terms into LP.
+
