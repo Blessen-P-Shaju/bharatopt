@@ -126,3 +126,6 @@ Ranking energy conservation projects by $/t CO2 abated.
 ### Refinery Water Pinch & Zero Liquid Discharge (ZLD)
 Water re-use networks, reverse osmosis permeate recycling.
 
+### Cooling Tower Blowdown Re-use in Demineralization
+Reducing freshwater withdrawal from municipal sources.
+
