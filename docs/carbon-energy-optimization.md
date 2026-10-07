@@ -21,3 +21,6 @@ Standardized complexity-weighted benchmarking against peers.
 ### Fired Heater & Furnace Thermal Efficiency
 Stack gas temperature, excess oxygen control, and air preheater recovery.
 
+### Soot Blowing Optimization in Convection Sections
+Scheduling automated soot blowers to prevent convective tube fouling.
+
