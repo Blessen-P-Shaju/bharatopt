@@ -81,3 +81,6 @@ Replacing multi-stage steam ejectors with hybrid liquid-ring systems.
 ### FCCU Power Recovery Train (PRT)
 Flue gas expansion turbines generating mechanical power from regenerator gas.
 
+### Carbon Accounting Framework: Scope 1 Emissions
+Direct emissions from fuel combustion, coke burn-off, and SMR reforming.
+
