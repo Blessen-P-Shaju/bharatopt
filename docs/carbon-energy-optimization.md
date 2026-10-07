@@ -132,3 +132,6 @@ Reducing freshwater withdrawal from municipal sources.
 ### Sludge Dewatering & Bio-Remediation Economics
 Thermal desorption and bio-slurry treatment of tank bottoms.
 
+### Energy KPI Dashboard & ISO 50001 Energy Management
+Enforcing daily unit specific energy consumption tracking.
+
