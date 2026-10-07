@@ -99,3 +99,6 @@ Online flue gas analyzers measuring SO2, NOx, CO, and CO2.
 ### Carbon Capture, Utilization & Storage (CCUS) Readiness
 Amine-based post-combustion CO2 capture from stacks.
 
+### CO2 Utilization in Enhanced Oil Recovery (EOR)
+Pipelines delivering captured CO2 to mature oilfields.
+
