@@ -75,3 +75,4 @@ struct RefineryEmissionFactors {
     double grid_electricity_kg_co2_per_kwh{0.82};
     double catalyst_coke_kg_co2_per_ton{3100.0};
 };
+// Refinery stream property conservation rule 3
