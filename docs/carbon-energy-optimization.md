@@ -30,3 +30,6 @@ HP, MP, and LP steam header balances.
 ### Backpressure vs Condensing Turbine Selection
 Optimizing electric power generation vs process steam demand.
 
+### Steam Trap Auditing & Loss Elimination
+Quantifying steam trap failure rates and acoustic monitoring.
+
