@@ -141,3 +141,6 @@ Well-to-wheel carbon intensity analysis comparing fuels.
 ### Green Hydrogen Valley Policy & H2 Blending in City Gas
 Supplying surplus high-purity hydrogen to municipal gas grids.
 
+### Methane Fugitive Leak Detection & Repair (LDAR)
+Optical gas imaging cameras detecting fugitive leaks.
+
