@@ -9,3 +9,6 @@ First and second law thermodynamic balances across fired heaters and boilers.
 ### Specific Energy Consumption (SEC) Metrics
 Gigajoules per metric ton of crude processed (GJ/t).
 
+### Bureau of Energy Efficiency (BEE) PAT Scheme
+Perform, Achieve and Trade mandatory energy reduction targets.
+
