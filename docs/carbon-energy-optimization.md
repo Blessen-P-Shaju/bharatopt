@@ -105,3 +105,6 @@ Pipelines delivering captured CO2 to mature oilfields.
 ### Internal Carbon Pricing in Capital Expenditure
 Shadow carbon price ($50-$80/t CO2) integrated into project evaluations.
 
+### Biofuel Co-Processing in Hydrotreaters
+Co-processing 5-10% used cooking oil into renewable diesel.
+
