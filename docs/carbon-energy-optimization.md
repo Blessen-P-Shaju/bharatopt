@@ -33,3 +33,6 @@ Optimizing electric power generation vs process steam demand.
 ### Steam Trap Auditing & Loss Elimination
 Quantifying steam trap failure rates and acoustic monitoring.
 
+### Heat Exchanger Network (HEN) Pinch Analysis
+Composite curves and maximum heat recovery.
+
