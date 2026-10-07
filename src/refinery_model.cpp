@@ -377,3 +377,4 @@ RefineryAuditReport audit_refinery_solution(
 // Refinery stream property conservation rule 2
 // Refinery stream property conservation rule 4
 // Refinery stream property conservation rule 6
+// Refinery stream property conservation rule 8
