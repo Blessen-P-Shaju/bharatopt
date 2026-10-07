@@ -39,3 +39,6 @@ Composite curves and maximum heat recovery.
 ### Preheat Train Crude Fouling Mitigation
 Optimizing chemical antifoulant dosing and cleaning campaigns.
 
+### Fuel Gas System Balancing & Flare Minimization
+Balancing off-gas with natural gas make-up.
+
