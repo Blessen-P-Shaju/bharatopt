@@ -24,3 +24,6 @@ Stack gas temperature, excess oxygen control, and air preheater recovery.
 ### Soot Blowing Optimization in Convection Sections
 Scheduling automated soot blowers to prevent convective tube fouling.
 
+### Steam Header Balance & Turbine Letdown Optimization
+HP, MP, and LP steam header balances.
+
