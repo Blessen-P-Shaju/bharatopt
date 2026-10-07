@@ -42,3 +42,6 @@ Optimizing chemical antifoulant dosing and cleaning campaigns.
 ### Fuel Gas System Balancing & Flare Minimization
 Balancing off-gas with natural gas make-up.
 
+### Flare Gas Recovery System (FGRS) Compressor Operations
+Liquid ring compressors recovering flare gas into fuel gas header.
+
