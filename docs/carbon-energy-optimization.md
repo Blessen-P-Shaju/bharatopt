@@ -87,3 +87,6 @@ Direct emissions from fuel combustion, coke burn-off, and SMR reforming.
 ### Carbon Accounting Framework: Scope 2 Emissions
 Indirect emissions from imported electricity and commercial steam.
 
+### Carbon Accounting Framework: Scope 3 Emissions
+Value chain emissions including shipping and downstream product combustion.
+
