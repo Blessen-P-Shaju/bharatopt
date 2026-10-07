@@ -111,3 +111,6 @@ Co-processing 5-10% used cooking oil into renewable diesel.
 ### Compressed Biogas (CBG) Integration
 Injecting CBG from agricultural waste into refinery fuel gas networks.
 
+### Solar Photovoltaic Microgrid in Refinery Buffer Zones
+Deploying ground-mounted solar PV in greenbelts.
+
