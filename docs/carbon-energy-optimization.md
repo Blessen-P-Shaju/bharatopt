@@ -84,3 +84,6 @@ Flue gas expansion turbines generating mechanical power from regenerator gas.
 ### Carbon Accounting Framework: Scope 1 Emissions
 Direct emissions from fuel combustion, coke burn-off, and SMR reforming.
 
+### Carbon Accounting Framework: Scope 2 Emissions
+Indirect emissions from imported electricity and commercial steam.
+
