@@ -144,3 +144,6 @@ Supplying surplus high-purity hydrogen to municipal gas grids.
 ### Methane Fugitive Leak Detection & Repair (LDAR)
 Optical gas imaging cameras detecting fugitive leaks.
 
+### Advanced Process Control (APC) for Energy Minimization
+Multivariable predictive control keeping oxygen at minimum safe limit.
+
