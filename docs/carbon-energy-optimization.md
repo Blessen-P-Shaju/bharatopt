@@ -147,3 +147,6 @@ Optical gas imaging cameras detecting fugitive leaks.
 ### Advanced Process Control (APC) for Energy Minimization
 Multivariable predictive control keeping oxygen at minimum safe limit.
 
+### Refinery Digital Twin for Real-Time Utility Optimization
+Rigorous thermodynamics tracking real-time steam and power balances.
+
