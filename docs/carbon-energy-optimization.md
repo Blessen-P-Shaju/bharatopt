@@ -135,3 +135,6 @@ Thermal desorption and bio-slurry treatment of tank bottoms.
 ### Energy KPI Dashboard & ISO 50001 Energy Management
 Enforcing daily unit specific energy consumption tracking.
 
+### Life Cycle Assessment (LCA) of Clean BS-VI Fuels
+Well-to-wheel carbon intensity analysis comparing fuels.
+
