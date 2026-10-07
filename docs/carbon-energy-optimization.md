@@ -57,3 +57,6 @@ Multi-bed PSA units recovering 99.9% pure hydrogen.
 ### Membrane Separation for Hydrogen Recovery
 Polymeric hollow-fiber membranes for bulk hydrogen separation.
 
+### Electrolytic Green Hydrogen Integration
+Modeling solar-powered PEM electrolyzers for refinery decarbonization.
+
