@@ -376,3 +376,4 @@ RefineryAuditReport audit_refinery_solution(
 } // namespace bharatopt
 // Refinery stream property conservation rule 2
 // Refinery stream property conservation rule 4
+// Refinery stream property conservation rule 6
