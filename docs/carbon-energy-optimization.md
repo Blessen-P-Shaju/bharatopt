@@ -54,3 +54,6 @@ Hydrogen source-sink composite curves identifying minimum fresh generation.
 ### Pressure Swing Adsorption (PSA) Hydrogen Recovery
 Multi-bed PSA units recovering 99.9% pure hydrogen.
 
+### Membrane Separation for Hydrogen Recovery
+Polymeric hollow-fiber membranes for bulk hydrogen separation.
+
