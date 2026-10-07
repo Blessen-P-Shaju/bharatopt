@@ -60,3 +60,6 @@ Polymeric hollow-fiber membranes for bulk hydrogen separation.
 ### Electrolytic Green Hydrogen Integration
 Modeling solar-powered PEM electrolyzers for refinery decarbonization.
 
+### Captive Power Plant (CPP) Combined Cycle Optimization
+Gas turbine heat recovery steam generators heat rate minimization.
+
