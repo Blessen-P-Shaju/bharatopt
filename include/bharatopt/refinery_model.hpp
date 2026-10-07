@@ -77,3 +77,4 @@ struct RefineryEmissionFactors {
 };
 // Refinery stream property conservation rule 3
 // Refinery stream property conservation rule 5
+// Refinery stream property conservation rule 7
