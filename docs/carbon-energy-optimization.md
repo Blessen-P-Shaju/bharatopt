@@ -129,3 +129,6 @@ Water re-use networks, reverse osmosis permeate recycling.
 ### Cooling Tower Blowdown Re-use in Demineralization
 Reducing freshwater withdrawal from municipal sources.
 
+### Sludge Dewatering & Bio-Remediation Economics
+Thermal desorption and bio-slurry treatment of tank bottoms.
+
