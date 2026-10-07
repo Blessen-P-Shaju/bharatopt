@@ -138,3 +138,6 @@ Enforcing daily unit specific energy consumption tracking.
 ### Life Cycle Assessment (LCA) of Clean BS-VI Fuels
 Well-to-wheel carbon intensity analysis comparing fuels.
 
+### Green Hydrogen Valley Policy & H2 Blending in City Gas
+Supplying surplus high-purity hydrogen to municipal gas grids.
+
