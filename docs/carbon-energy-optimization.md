@@ -69,3 +69,6 @@ Energy savings from pump and fan speed modulation.
 ### Cooling Water Tower Pumping Optimization
 Cell staging and wet-bulb temperature tracking.
 
+### Desalter Heat Optimization
+Pre-heating crude desalter feed to 125-135°C to maximize separation.
+
