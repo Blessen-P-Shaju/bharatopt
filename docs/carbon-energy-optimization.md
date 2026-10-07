@@ -48,3 +48,6 @@ Liquid ring compressors recovering flare gas into fuel gas header.
 ### LPG Recovery from Off-Gas Streams
 Cryogenic and absorption recovery of propane and butane fractions.
 
+### Hydrogen Network Pinch Analysis
+Hydrogen source-sink composite curves identifying minimum fresh generation.
+
