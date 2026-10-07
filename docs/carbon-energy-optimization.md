@@ -36,3 +36,6 @@ Quantifying steam trap failure rates and acoustic monitoring.
 ### Heat Exchanger Network (HEN) Pinch Analysis
 Composite curves and maximum heat recovery.
 
+### Preheat Train Crude Fouling Mitigation
+Optimizing chemical antifoulant dosing and cleaning campaigns.
+
