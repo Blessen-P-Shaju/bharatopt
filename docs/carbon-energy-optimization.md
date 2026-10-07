@@ -114,3 +114,6 @@ Injecting CBG from agricultural waste into refinery fuel gas networks.
 ### Solar Photovoltaic Microgrid in Refinery Buffer Zones
 Deploying ground-mounted solar PV in greenbelts.
 
+### Waste Heat to Power Organic Rankine Cycle (ORC)
+Generating electricity from low-grade waste heat.
+
