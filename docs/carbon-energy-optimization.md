@@ -63,3 +63,6 @@ Modeling solar-powered PEM electrolyzers for refinery decarbonization.
 ### Captive Power Plant (CPP) Combined Cycle Optimization
 Gas turbine heat recovery steam generators heat rate minimization.
 
+### Electric Motor Variable Frequency Drives (VFDs)
+Energy savings from pump and fan speed modulation.
+
