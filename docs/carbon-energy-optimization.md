@@ -75,3 +75,6 @@ Pre-heating crude desalter feed to 125-135°C to maximize separation.
 ### Atmospheric Column Pumparound Heat Recovery
 Maximizing heat rejection to cold crude rather than air coolers.
 
+### Vacuum System Motive Steam Reduction
+Replacing multi-stage steam ejectors with hybrid liquid-ring systems.
+
