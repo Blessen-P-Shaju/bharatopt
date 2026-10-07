@@ -69,3 +69,9 @@ RefineryAuditReport audit_refinery_solution(
     double tolerance = 1e-5);
 
 } // namespace bharatopt
+
+struct RefineryEmissionFactors {
+    double fuel_gas_kg_co2_per_mmbtu{53.0};
+    double grid_electricity_kg_co2_per_kwh{0.82};
+    double catalyst_coke_kg_co2_per_ton{3100.0};
+};
