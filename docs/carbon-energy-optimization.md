@@ -102,3 +102,6 @@ Amine-based post-combustion CO2 capture from stacks.
 ### CO2 Utilization in Enhanced Oil Recovery (EOR)
 Pipelines delivering captured CO2 to mature oilfields.
 
+### Internal Carbon Pricing in Capital Expenditure
+Shadow carbon price ($50-$80/t CO2) integrated into project evaluations.
+
