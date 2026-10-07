@@ -15,3 +15,6 @@ Perform, Achieve and Trade mandatory energy reduction targets.
 ### Energy Saving Certificates (ESCerts) Trading
 Economic valuation of ESCerts earned by beating PAT targets.
 
+### Solomon Energy Intensity Index (EII) Methodology
+Standardized complexity-weighted benchmarking against peers.
+
