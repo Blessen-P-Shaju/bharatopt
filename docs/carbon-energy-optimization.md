@@ -6,3 +6,6 @@ Energy consumption constitutes up to 60-70% of refinery operating expenditure (O
 ### Refinery Energy Balance Fundamentals
 First and second law thermodynamic balances across fired heaters and boilers.
 
+### Specific Energy Consumption (SEC) Metrics
+Gigajoules per metric ton of crude processed (GJ/t).
+
