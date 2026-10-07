@@ -117,3 +117,6 @@ Deploying ground-mounted solar PV in greenbelts.
 ### Waste Heat to Power Organic Rankine Cycle (ORC)
 Generating electricity from low-grade waste heat.
 
+### Thermal Insulation Auditing & Heat Loss Prevention
+Infrared thermography surveys to replace damaged insulation.
+
