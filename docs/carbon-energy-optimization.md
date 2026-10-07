@@ -78,3 +78,6 @@ Maximizing heat rejection to cold crude rather than air coolers.
 ### Vacuum System Motive Steam Reduction
 Replacing multi-stage steam ejectors with hybrid liquid-ring systems.
 
+### FCCU Power Recovery Train (PRT)
+Flue gas expansion turbines generating mechanical power from regenerator gas.
+
