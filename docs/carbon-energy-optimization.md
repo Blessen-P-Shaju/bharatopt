@@ -51,3 +51,6 @@ Cryogenic and absorption recovery of propane and butane fractions.
 ### Hydrogen Network Pinch Analysis
 Hydrogen source-sink composite curves identifying minimum fresh generation.
 
+### Pressure Swing Adsorption (PSA) Hydrogen Recovery
+Multi-bed PSA units recovering 99.9% pure hydrogen.
+
