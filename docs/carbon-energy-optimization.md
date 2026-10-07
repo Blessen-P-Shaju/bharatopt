@@ -90,3 +90,6 @@ Indirect emissions from imported electricity and commercial steam.
 ### Carbon Accounting Framework: Scope 3 Emissions
 Value chain emissions including shipping and downstream product combustion.
 
+### IPCC Tier 3 Emission Factor Methodologies
+Fuel-specific carbon content and oxidation factors.
+
