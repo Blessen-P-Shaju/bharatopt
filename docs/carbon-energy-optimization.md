@@ -72,3 +72,6 @@ Cell staging and wet-bulb temperature tracking.
 ### Desalter Heat Optimization
 Pre-heating crude desalter feed to 125-135°C to maximize separation.
 
+### Atmospheric Column Pumparound Heat Recovery
+Maximizing heat rejection to cold crude rather than air coolers.
+
