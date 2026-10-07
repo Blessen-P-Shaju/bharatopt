@@ -123,3 +123,6 @@ Infrared thermography surveys to replace damaged insulation.
 ### Decarbonization Abatement Cost Curves
 Ranking energy conservation projects by $/t CO2 abated.
 
+### Refinery Water Pinch & Zero Liquid Discharge (ZLD)
+Water re-use networks, reverse osmosis permeate recycling.
+
