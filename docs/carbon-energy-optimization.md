@@ -96,3 +96,6 @@ Fuel-specific carbon content and oxidation factors.
 ### Continuous Emission Monitoring Systems (CEMS)
 Online flue gas analyzers measuring SO2, NOx, CO, and CO2.
 
+### Carbon Capture, Utilization & Storage (CCUS) Readiness
+Amine-based post-combustion CO2 capture from stacks.
+
