@@ -170,3 +170,12 @@ async function uploadFlowsheet(){
   <p style="color:var(--muted);font-size:0.9rem">Select volume fractions for atmospheric distillation feed.</p>
   <form method="dialog"><button class="btn-primary">Apply Blend</button></form>
 </dialog>
+<script>
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+    var m = document.getElementById('modal-blend');
+    if (m) { m.showModal ? m.showModal() : alert('Blend configuration modal'); }
+  }
+});
+</script>
