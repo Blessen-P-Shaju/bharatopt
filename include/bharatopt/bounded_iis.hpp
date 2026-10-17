@@ -64,3 +64,10 @@ BoundedIISResult computeBoundedIIS(
     const BoundedIISOptions& options = {});
 
 } // namespace bharatopt
+
+struct DeletionFilterDiagnostics {
+    int candidate_constraints_tested{0};
+    int constraints_eliminated{0};
+    int essential_iis_constraints{0};
+    double elapsed_filter_time_sec{0.0};
+};
