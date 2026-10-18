@@ -11,3 +11,6 @@ Accepts standard MPS or JSON flowsheet payloads and executes high-speed optimiza
 ### Request Schema: OptimizeRequest
 Defines solver choice (simplex, interior_point, qp), time limit, tolerances, and input model.
 
+### Response Schema: OptimizeResponse
+Returns certified objective value, execution status (optimal, infeasible, unbounded), solve duration, and primal variable vectors.
+
