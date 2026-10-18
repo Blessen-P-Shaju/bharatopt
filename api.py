@@ -124,3 +124,7 @@ class OptimizeRequestModel(BaseModel):
     time_limit_sec: Optional[float] = Field(default=300.0, ge=1.0, le=3600.0)
     feasibility_tolerance: Optional[float] = Field(default=1e-7, ge=1e-12, le=1e-3)
 
+class BlendEvaluateRequest(BaseModel):
+    components: Dict[str, float] = Field(..., description='Component volumes in barrels')
+    target_fuel: str = Field(default='gasoline', description='gasoline | diesel | jet_a1')
+
