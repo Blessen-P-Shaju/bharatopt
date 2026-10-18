@@ -41,3 +41,6 @@ Kubernetes liveness and readiness probe endpoints returning engine status and GP
 ### Authentication & API Key Header Specification
 Bearer token and `X-API-Key` authentication headers for enterprise multi-tenancy.
 
+### Rate Limiting & Concurrency Policies
+Token bucket rate-limiting (100 req/min) and concurrent solve job queue limits.
+
