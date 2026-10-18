@@ -312,3 +312,4 @@ SolverResult BharatOptSolverCore::solve_milp(const LPModel&m,const SolverOptions
 // Solver core SIMD and caching optimization checkpoint 22
 // Solver core SIMD and caching optimization checkpoint 24
 // Solver core SIMD and caching optimization checkpoint 26
+// Solver core SIMD and caching optimization checkpoint 28
