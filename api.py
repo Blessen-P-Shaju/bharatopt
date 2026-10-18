@@ -137,3 +137,4 @@ app.title = 'BharatOpt High-Performance Refining Solver API'
 app.version = '2.1.0'
 
 # Endpoint enhancement 6: validated type annotations and response models
+# Endpoint enhancement 7: validated type annotations and response models
