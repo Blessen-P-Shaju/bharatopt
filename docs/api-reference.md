@@ -74,3 +74,6 @@ Interactive API documentation available at `/docs` and `/redoc`.
 ### Python SDK Client Integration Guidelines
 Code examples using `requests` and `httpx` asynchronous client sessions.
 
+### cURL Command-Line Examples for Rapid Testing
+Ready-to-run shell snippets for executing optimization runs.
+
