@@ -54,3 +54,6 @@ struct SolverResult {
   std::string status,backend;
 };
 }
+inline bool is_equality_row(double lo, double hi) { return std::abs(lo - hi) < 1e-12; }
+inline bool is_greater_equal_row(double lo, double hi) { return std::isfinite(lo) && !std::isfinite(hi); }
+inline bool is_less_equal_row(double lo, double hi) { return !std::isfinite(lo) && std::isfinite(hi); }
