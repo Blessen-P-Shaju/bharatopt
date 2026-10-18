@@ -119,3 +119,8 @@ async def solve_flowsheet(
 from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
 
+class OptimizeRequestModel(BaseModel):
+    solver: str = Field(default='simplex', description='Optimization engine: simplex | interior_point | qp')
+    time_limit_sec: Optional[float] = Field(default=300.0, ge=1.0, le=3600.0)
+    feasibility_tolerance: Optional[float] = Field(default=1e-7, ge=1e-12, le=1e-3)
+
