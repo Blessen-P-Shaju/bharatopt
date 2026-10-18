@@ -59,3 +59,6 @@ Real-time streaming of simplex iteration counts and dual objective progress.
 ### WebSocket Protocol for Interactive Solving
 Bi-directional WebSocket channel for steering solve parameters dynamically.
 
+### Asynchronous Job Submission Protocol
+Background job execution with polling or webhook callbacks for large MILP instances.
+
