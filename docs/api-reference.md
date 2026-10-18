@@ -50,3 +50,6 @@ Detailed JSON error payloads for malformed MPS files or inconsistent variable bo
 ### Error Code Catalog: 422 Unprocessable Entity
 Pydantic validation failure messages with field pointer paths.
 
+### Error Code Catalog: 500 Internal Solver Error
+Diagnostic logging and crash report generation for unexpected numerical singularities.
+
