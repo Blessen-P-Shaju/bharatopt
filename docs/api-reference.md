@@ -5,3 +5,6 @@ High-performance REST API endpoints providing programmatic access to the BharatO
 
 Base URL: `http://localhost:8000/api/v1`
 
+### POST /api/v1/optimize Endpoint Specification
+Accepts standard MPS or JSON flowsheet payloads and executes high-speed optimization.
+
