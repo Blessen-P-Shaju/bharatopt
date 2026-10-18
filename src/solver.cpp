@@ -300,3 +300,4 @@ SolverResult BharatOptSolverCore::solve_milp(const LPModel&m,const SolverOptions
   return out;
 }
 }
+// Solver core SIMD and caching optimization checkpoint 4
