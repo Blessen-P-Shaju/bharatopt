@@ -17,3 +17,6 @@ Returns certified objective value, execution status (optimal, infeasible, unboun
 ### GET /api/v1/crude-assays Endpoint Specification
 Queries crude oil assay catalog with filters by API gravity, sulfur content, and origin.
 
+### GET /api/v1/crude-assays/{crude_id} Endpoint
+Retrieves complete True Boiling Point (TBP) distillation cuts and physical properties for specified crude.
+
