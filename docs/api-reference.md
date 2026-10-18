@@ -44,3 +44,6 @@ Bearer token and `X-API-Key` authentication headers for enterprise multi-tenancy
 ### Rate Limiting & Concurrency Policies
 Token bucket rate-limiting (100 req/min) and concurrent solve job queue limits.
 
+### Error Code Catalog: 400 Bad Request
+Detailed JSON error payloads for malformed MPS files or inconsistent variable bounds.
+
