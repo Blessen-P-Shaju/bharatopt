@@ -71,3 +71,6 @@ HTTP content-encoding headers for high-bandwidth sparse solution matrices.
 ### OpenAPI Swagger UI & ReDoc Integration
 Interactive API documentation available at `/docs` and `/redoc`.
 
+### Python SDK Client Integration Guidelines
+Code examples using `requests` and `httpx` asynchronous client sessions.
+
