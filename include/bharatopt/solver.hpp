@@ -19,3 +19,4 @@ struct SolverPerformanceProfile {
     double postsolve_time_ms{0.0};
     double total_wall_clock_ms{0.0};
 };
+// Solver core SIMD and caching optimization checkpoint 3
