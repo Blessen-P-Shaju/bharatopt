@@ -29,3 +29,6 @@ Solves least-cost linear program for automotive gasoline or diesel blending give
 ### GET /api/v1/refinery-units Endpoint
 Lists all available processing units (CDU, VDU, FCCU, HCU, CCR) with nominal capacities and yields.
 
+### POST /api/v1/refinery-flowsheet/simulate Endpoint
+Executes full flowsheet mass balance simulation across connected refinery units.
+
