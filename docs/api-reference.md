@@ -68,3 +68,6 @@ Configuring allowed origins, headers, and credentials for web console integratio
 ### Gzip and Brotli Compression Negotiation
 HTTP content-encoding headers for high-bandwidth sparse solution matrices.
 
+### OpenAPI Swagger UI & ReDoc Integration
+Interactive API documentation available at `/docs` and `/redoc`.
+
