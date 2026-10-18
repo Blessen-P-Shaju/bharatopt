@@ -14,3 +14,6 @@ Defines solver choice (simplex, interior_point, qp), time limit, tolerances, and
 ### Response Schema: OptimizeResponse
 Returns certified objective value, execution status (optimal, infeasible, unbounded), solve duration, and primal variable vectors.
 
+### GET /api/v1/crude-assays Endpoint Specification
+Queries crude oil assay catalog with filters by API gravity, sulfur content, and origin.
+
