@@ -47,3 +47,6 @@ Token bucket rate-limiting (100 req/min) and concurrent solve job queue limits.
 ### Error Code Catalog: 400 Bad Request
 Detailed JSON error payloads for malformed MPS files or inconsistent variable bounds.
 
+### Error Code Catalog: 422 Unprocessable Entity
+Pydantic validation failure messages with field pointer paths.
+
