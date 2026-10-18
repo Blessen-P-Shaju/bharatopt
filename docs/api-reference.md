@@ -65,3 +65,6 @@ Background job execution with polling or webhook callbacks for large MILP instan
 ### CORS & Cross-Origin Resource Sharing Rules
 Configuring allowed origins, headers, and credentials for web console integration.
 
+### Gzip and Brotli Compression Negotiation
+HTTP content-encoding headers for high-bandwidth sparse solution matrices.
+
