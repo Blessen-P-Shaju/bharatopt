@@ -132,3 +132,7 @@ class AssayQueryRequest(BaseModel):
     min_api: Optional[float] = Field(default=None, ge=10.0, le=60.0)
     max_sulfur: Optional[float] = Field(default=None, ge=0.0, le=10.0)
 
+# Metadata update
+app.title = 'BharatOpt High-Performance Refining Solver API'
+app.version = '2.1.0'
+
