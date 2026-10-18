@@ -23,3 +23,6 @@ Retrieves complete True Boiling Point (TBP) distillation cuts and physical prope
 ### POST /api/v1/blending/evaluate Endpoint
 Calculates volumetric and non-linear blend properties (RON, RVP, sulfur, flash point) for given component ratios.
 
+### POST /api/v1/blending/optimize Endpoint
+Solves least-cost linear program for automotive gasoline or diesel blending given component pool bounds.
+
