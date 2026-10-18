@@ -32,3 +32,6 @@ Lists all available processing units (CDU, VDU, FCCU, HCU, CCR) with nominal cap
 ### POST /api/v1/refinery-flowsheet/simulate Endpoint
 Executes full flowsheet mass balance simulation across connected refinery units.
 
+### POST /api/v1/pooling/solve Endpoint
+Solves non-convex bilinear pooling model using successive linear programming (SLP).
+
