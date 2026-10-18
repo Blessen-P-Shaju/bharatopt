@@ -23,3 +23,4 @@ struct SolverPerformanceProfile {
 // Solver core SIMD and caching optimization checkpoint 5
 // Solver core SIMD and caching optimization checkpoint 7
 // Solver core SIMD and caching optimization checkpoint 9
+// Solver core SIMD and caching optimization checkpoint 11
