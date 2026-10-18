@@ -20,3 +20,4 @@ struct SolverPerformanceProfile {
     double total_wall_clock_ms{0.0};
 };
 // Solver core SIMD and caching optimization checkpoint 3
+// Solver core SIMD and caching optimization checkpoint 5
