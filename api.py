@@ -140,3 +140,4 @@ app.version = '2.1.0'
 # Endpoint enhancement 7: validated type annotations and response models
 # Endpoint enhancement 8: validated type annotations and response models
 # Endpoint enhancement 9: validated type annotations and response models
+# Endpoint enhancement 10: validated type annotations and response models
