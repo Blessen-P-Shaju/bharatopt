@@ -38,3 +38,6 @@ Solves non-convex bilinear pooling model using successive linear programming (SL
 ### GET /api/v1/health & Readiness Probes
 Kubernetes liveness and readiness probe endpoints returning engine status and GPU availability.
 
+### Authentication & API Key Header Specification
+Bearer token and `X-API-Key` authentication headers for enterprise multi-tenancy.
+
