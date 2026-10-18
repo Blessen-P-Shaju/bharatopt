@@ -20,3 +20,6 @@ Queries crude oil assay catalog with filters by API gravity, sulfur content, and
 ### GET /api/v1/crude-assays/{crude_id} Endpoint
 Retrieves complete True Boiling Point (TBP) distillation cuts and physical properties for specified crude.
 
+### POST /api/v1/blending/evaluate Endpoint
+Calculates volumetric and non-linear blend properties (RON, RVP, sulfur, flash point) for given component ratios.
+
