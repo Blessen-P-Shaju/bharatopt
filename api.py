@@ -114,3 +114,8 @@ async def solve_flowsheet(
         ]
         return run_solver(args)
 
+
+# Enhanced Pydantic Schemas for BharatOPT API v1
+from pydantic import BaseModel, Field
+from typing import Optional, List, Dict, Any
+
