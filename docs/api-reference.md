@@ -35,3 +35,6 @@ Executes full flowsheet mass balance simulation across connected refinery units.
 ### POST /api/v1/pooling/solve Endpoint
 Solves non-convex bilinear pooling model using successive linear programming (SLP).
 
+### GET /api/v1/health & Readiness Probes
+Kubernetes liveness and readiness probe endpoints returning engine status and GPU availability.
+
