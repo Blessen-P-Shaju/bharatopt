@@ -11,3 +11,11 @@ public:
 };
 }
 
+
+struct SolverPerformanceProfile {
+    double presolve_time_ms{0.0};
+    double factorization_time_ms{0.0};
+    double pivot_execution_time_ms{0.0};
+    double postsolve_time_ms{0.0};
+    double total_wall_clock_ms{0.0};
+};
