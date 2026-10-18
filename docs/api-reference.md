@@ -56,3 +56,6 @@ Diagnostic logging and crash report generation for unexpected numerical singular
 ### Streaming Solution Logs via Server-Sent Events (SSE)
 Real-time streaming of simplex iteration counts and dual objective progress.
 
+### WebSocket Protocol for Interactive Solving
+Bi-directional WebSocket channel for steering solve parameters dynamically.
+
