@@ -77,3 +77,6 @@ Code examples using `requests` and `httpx` asynchronous client sessions.
 ### cURL Command-Line Examples for Rapid Testing
 Ready-to-run shell snippets for executing optimization runs.
 
+### Summary of API Performance Benchmarks
+Sub-millisecond API request routing overhead on FastAPI ASGI server.
+
