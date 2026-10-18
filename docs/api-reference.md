@@ -62,3 +62,6 @@ Bi-directional WebSocket channel for steering solve parameters dynamically.
 ### Asynchronous Job Submission Protocol
 Background job execution with polling or webhook callbacks for large MILP instances.
 
+### CORS & Cross-Origin Resource Sharing Rules
+Configuring allowed origins, headers, and credentials for web console integration.
+
