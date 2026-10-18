@@ -53,3 +53,6 @@ Pydantic validation failure messages with field pointer paths.
 ### Error Code Catalog: 500 Internal Solver Error
 Diagnostic logging and crash report generation for unexpected numerical singularities.
 
+### Streaming Solution Logs via Server-Sent Events (SSE)
+Real-time streaming of simplex iteration counts and dual objective progress.
+
