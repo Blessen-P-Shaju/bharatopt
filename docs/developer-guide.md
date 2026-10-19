@@ -21,3 +21,6 @@ Compiling with `-fsanitize=address,undefined` for zero memory leaks and undefine
 ### CUDA GPU Backend Compilation Flags
 NVCC compilation with compute capability architecture `sm_70`, `sm_80`, and `sm_90`.
 
+### Memory Management Guidelines: Zero Heap Allocations in Inner Loops
+Pre-allocating scratch workspace buffers to eliminate `malloc`/`free` during simplex pivots.
+
