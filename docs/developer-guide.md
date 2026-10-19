@@ -42,3 +42,6 @@ Automated performance regression testing against Netlib benchmark suite on every
 ### Documentation Generation via Doxygen & Markdown
 Generating API reference documentation using Doxygen and GitHub Pages.
 
+### Profiling CPU Hotspots with Linux perf and VTune
+Identifying cache bottlenecks and instruction stalls during sparse matrix-vector multiplication.
+
