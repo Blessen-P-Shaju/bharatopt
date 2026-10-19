@@ -54,3 +54,6 @@ Defensive recovery strategies when matrix condition numbers exceed $10^{12}$.
 ### Security Practices for Open-Source Contributions
 Code scanning with CodeQL and dependabot for supply-chain vulnerability mitigation.
 
+### Release Engineering & Semantic Versioning
+Automated semantic tagging, changelog generation, and multi-platform wheel publishing.
+
