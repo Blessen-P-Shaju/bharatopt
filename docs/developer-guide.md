@@ -51,3 +51,6 @@ Inspecting compiler assembly output for effective AVX-512 FMA utilization.
 ### Handling Numerical Singularities & Ill-Conditioned Bases
 Defensive recovery strategies when matrix condition numbers exceed $10^{12}$.
 
+### Security Practices for Open-Source Contributions
+Code scanning with CodeQL and dependabot for supply-chain vulnerability mitigation.
+
