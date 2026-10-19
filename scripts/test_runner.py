@@ -134,3 +134,6 @@ def test_extended_crude_assays():
 def test_extended_blending_rules():
     run_python_test_module('tests.test_blending_rules')
 
+def test_extended_pooling_solvers():
+    run_python_test_module('tests.test_pooling_solvers')
+
