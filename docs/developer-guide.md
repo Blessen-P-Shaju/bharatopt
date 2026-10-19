@@ -3,3 +3,6 @@
 ## 1. Development Environment Setup
 BharatOPT requires a modern C++20 compiler (Clang 15+, GCC 12+, MSVC 2022), CMake 3.22+, and Python 3.10+.
 
+### C++20 Language Standards & Modern Dialect Rules
+Enforcing strict adherence to C++20 standard: concepts, ranges, constexpr algorithms, and std::span.
+
