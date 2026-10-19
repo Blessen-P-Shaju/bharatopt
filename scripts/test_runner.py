@@ -137,3 +137,9 @@ def test_extended_blending_rules():
 def test_extended_pooling_solvers():
     run_python_test_module('tests.test_pooling_solvers')
 
+# Hook into verification suite
+def run_all_extended_tests():
+    test_extended_crude_assays()
+    test_extended_blending_rules()
+    test_extended_pooling_solvers()
+
