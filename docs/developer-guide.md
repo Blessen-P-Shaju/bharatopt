@@ -69,3 +69,6 @@ Overview of `LinearProgram`, `SimplexSolver`, `InteriorPointSolver`, and `Refine
 ### Extending BharatOPT: Adding Custom Unit Operations
 Step-by-step guide to subclassing refinery processing units and registering yield transfer curves.
 
+### Extending BharatOPT: Implementing Custom Pivot Rules
+Implementing the `IPricingStrategy` interface for experimental simplex pricing heuristics.
+
