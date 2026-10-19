@@ -176,3 +176,8 @@ python scripts/assay_manager.py list
 python scripts/blend_optimizer.py 50000
 ```
 
+### Quickstart: Scenario Schedule Generator
+```bash
+python scripts/generate_schedule.py 14
+```
+
