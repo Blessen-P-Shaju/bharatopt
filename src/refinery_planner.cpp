@@ -1,4 +1,4 @@
-// src/refinery_planner.cpp
+// src/refinery_planner.cpp - refinery flowsheet to pooling problem translator
 //
 // Implements everything declared in refinery_planner.hpp. The validate()
 // path is fully self-contained and needs nothing from your solver — it is

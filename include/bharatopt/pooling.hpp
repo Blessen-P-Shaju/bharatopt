@@ -154,7 +154,7 @@ struct McCormickEnvelope {
     double eval_overestimator_1(double x, double y) const { return x_hi * y + x * y_lo - x_hi * y_lo; }
     double eval_overestimator_2(double x, double y) const { return x_lo * y + x * y_hi - x_lo * y_hi; }
 };
-BilinearPoolingProblem make_haverly_benchmark(int instance_id = 1);
+PoolingModel make_haverly_benchmark(int instance_id = 1);
 
 } // namespace bharatopt
 

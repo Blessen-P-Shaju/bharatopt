@@ -3,9 +3,7 @@
 #include <algorithm>
 #include <chrono>
 #include <cmath>
-#include <iomanip>
 #include <queue>
-#include <sstream>
 #include <stdexcept>
 #include <utility>
 
@@ -15,10 +13,11 @@ namespace {
 constexpr double EPS = 1e-12;
 using Vec = std::vector<double>;
 
-double norm2(const Vec& x) {
+double norm2(const Vec &x) {
   long double sum = 0.0L;
   for (double v : x) {
-    if (!std::isfinite(v)) return INF;
+    if (!std::isfinite(v))
+      return INF;
     sum += static_cast<long double>(v) * static_cast<long double>(v);
   }
   return std::sqrt(static_cast<double>(sum));
@@ -32,9 +31,8 @@ bool finite_bounds(double lo, double hi) {
   return std::isfinite(lo) && std::isfinite(hi) && lo <= hi;
 }
 
-void validate_term(const BilinearTerm& term, std::size_t n) {
-  if (term.left < 0 ||
-      term.right < 0 ||
+void validate_term(const BilinearTerm &term, std::size_t n) {
+  if (term.left < 0 || term.right < 0 ||
       static_cast<std::size_t>(term.left) >= n ||
       static_cast<std::size_t>(term.right) >= n) {
     throw std::invalid_argument(
@@ -47,27 +45,22 @@ void validate_term(const BilinearTerm& term, std::size_t n) {
   }
 
   if (!std::isfinite(term.coefficient)) {
-    throw std::invalid_argument(
-        "Pooling bilinear coefficient must be finite");
+    throw std::invalid_argument("Pooling bilinear coefficient must be finite");
   }
 }
 
-bool model_dimensions_valid(const PoolingModel& model) {
-  const LPModel& lp = model.linear;
+bool model_dimensions_valid(const PoolingModel &model) {
+  const LPModel &lp = model.linear;
   const std::size_t n = lp.A.cols;
 
-  return lp.objective.size() == n &&
-         lp.lower.size() == n &&
-         lp.upper.size() == n &&
-         lp.integer.size() == n &&
-         lp.row_lower.size() == lp.A.rows &&
-         lp.row_upper.size() == lp.A.rows &&
-         lp.var_names.size() == n &&
-         lp.rows.size() == lp.A.rows &&
+  return lp.objective.size() == n && lp.lower.size() == n &&
+         lp.upper.size() == n && lp.integer.size() == n &&
+         lp.row_lower.size() == lp.A.rows && lp.row_upper.size() == lp.A.rows &&
+         lp.var_names.size() == n && lp.rows.size() == lp.A.rows &&
          model.constraint_bilinear.size() <= lp.A.rows;
 }
 
-void validate_model(const PoolingModel& model) {
+void validate_model(const PoolingModel &model) {
   if (!model_dimensions_valid(model)) {
     throw std::invalid_argument("Invalid PoolingModel dimensions");
   }
@@ -75,9 +68,7 @@ void validate_model(const PoolingModel& model) {
   const std::size_t n = model.linear.A.cols;
 
   for (std::size_t j = 0; j < n; ++j) {
-    if (!finite_bounds(
-            model.linear.lower[j],
-            model.linear.upper[j])) {
+    if (!finite_bounds(model.linear.lower[j], model.linear.upper[j])) {
       throw std::invalid_argument(
           "Pooling layer requires finite variable bounds");
     }
@@ -88,103 +79,76 @@ void validate_model(const PoolingModel& model) {
     }
   }
 
-  for (const auto& term : model.objective_bilinear) {
+  for (const auto &term : model.objective_bilinear) {
     validate_term(term, n);
   }
 
-  for (const auto& row : model.constraint_bilinear) {
-    for (const auto& term : row) {
+  for (const auto &row : model.constraint_bilinear) {
+    for (const auto &term : row) {
       validate_term(term, n);
     }
   }
 }
 
-double bilinear_value(
-    const BilinearTerm& term,
-    const Vec& x) {
-  return term.coefficient *
-         x[static_cast<std::size_t>(term.left)] *
+double bilinear_value(const BilinearTerm &term, const Vec &x) {
+  return term.coefficient * x[static_cast<std::size_t>(term.left)] *
          x[static_cast<std::size_t>(term.right)];
 }
 
-double true_objective(
-    const PoolingModel& model,
-    const Vec& x) {
+double true_objective(const PoolingModel &model, const Vec &x) {
   double value = model.linear.objective_offset;
 
-  for (std::size_t j = 0;
-       j < model.linear.objective.size();
-       ++j) {
+  for (std::size_t j = 0; j < model.linear.objective.size(); ++j) {
     value += model.linear.objective[j] * x[j];
   }
 
-  for (const auto& term : model.objective_bilinear) {
+  for (const auto &term : model.objective_bilinear) {
     value += bilinear_value(term, x);
   }
 
   return value;
 }
 
-double objective_improvement(
-    bool maximize,
-    double current,
-    double candidate) {
+double objective_improvement(bool maximize, double current, double candidate) {
   return maximize ? candidate - current : current - candidate;
 }
 
-double linearized_term_value(
-    const BilinearTerm& term,
-    const Vec& x,
-    const Vec& center) {
-  const double xc =
-      center[static_cast<std::size_t>(term.left)];
-  const double yc =
-      center[static_cast<std::size_t>(term.right)];
-  const double xv =
-      x[static_cast<std::size_t>(term.left)];
-  const double yv =
-      x[static_cast<std::size_t>(term.right)];
+double linearized_term_value(const BilinearTerm &term, const Vec &x,
+                             const Vec &center) {
+  const double xc = center[static_cast<std::size_t>(term.left)];
+  const double yc = center[static_cast<std::size_t>(term.right)];
+  const double xv = x[static_cast<std::size_t>(term.left)];
+  const double yv = x[static_cast<std::size_t>(term.right)];
 
-  return term.coefficient *
-         (yc * xv + xc * yv - xc * yc);
+  return term.coefficient * (yc * xv + xc * yv - xc * yc);
 }
 
-double linearized_objective(
-    const PoolingModel& model,
-    const Vec& x,
-    const Vec& center) {
+double linearized_objective(const PoolingModel &model, const Vec &x,
+                            const Vec &center) {
   double value = model.linear.objective_offset;
 
-  for (std::size_t j = 0;
-       j < model.linear.objective.size();
-       ++j) {
+  for (std::size_t j = 0; j < model.linear.objective.size(); ++j) {
     value += model.linear.objective[j] * x[j];
   }
 
-  for (const auto& term : model.objective_bilinear) {
+  for (const auto &term : model.objective_bilinear) {
     value += linearized_term_value(term, x, center);
   }
 
   return value;
 }
 
-double true_row_activity(
-    const PoolingModel& model,
-    int row,
-    const Vec& x) {
+double true_row_activity(const PoolingModel &model, int row, const Vec &x) {
   double activity = 0.0;
 
-  for (int k = model.linear.A.row_ptr[row];
-       k < model.linear.A.row_ptr[row + 1];
+  for (int k = model.linear.A.row_ptr[row]; k < model.linear.A.row_ptr[row + 1];
        ++k) {
     const int col = model.linear.A.col_index[k];
-    activity += model.linear.A.values[k] *
-                x[static_cast<std::size_t>(col)];
+    activity += model.linear.A.values[k] * x[static_cast<std::size_t>(col)];
   }
 
-  if (static_cast<std::size_t>(row) <
-      model.constraint_bilinear.size()) {
-    for (const auto& term :
+  if (static_cast<std::size_t>(row) < model.constraint_bilinear.size()) {
+    for (const auto &term :
          model.constraint_bilinear[static_cast<std::size_t>(row)]) {
       activity += bilinear_value(term, x);
     }
@@ -193,16 +157,11 @@ double true_row_activity(
   return activity;
 }
 
-double nonlinear_constraint_violation(
-    const PoolingModel& model,
-    const Vec& x) {
+double nonlinear_constraint_violation(const PoolingModel &model, const Vec &x) {
   double squared = 0.0;
 
-  for (std::size_t i = 0;
-       i < model.linear.A.rows;
-       ++i) {
-    const double activity =
-        true_row_activity(model, static_cast<int>(i), x);
+  for (std::size_t i = 0; i < model.linear.A.rows; ++i) {
+    const double activity = true_row_activity(model, static_cast<int>(i), x);
 
     double violation = 0.0;
     if (activity < model.linear.row_lower[i]) {
@@ -228,45 +187,35 @@ double nonlinear_constraint_violation(
   return std::sqrt(squared);
 }
 
-bool nonlinear_feasible(
-    const PoolingModel& model,
-    const Vec& x,
-    double tolerance) {
+bool nonlinear_feasible(const PoolingModel &model, const Vec &x,
+                        double tolerance) {
   return x.size() == model.linear.A.cols &&
          nonlinear_constraint_violation(model, x) <= tolerance;
 }
 
-void add_sparse_entry(
-    std::vector<std::vector<std::pair<int, double>>>& rows,
-    int row,
-    int column,
-    double value) {
+void add_sparse_entry(std::vector<std::vector<std::pair<int, double>>> &rows,
+                      int row, int column, double value) {
   if (std::abs(value) > EPS) {
     rows[static_cast<std::size_t>(row)].push_back({column, value});
   }
 }
 
-SparseMatrixCSR build_csr(
-    std::vector<std::vector<std::pair<int, double>>> rows,
-    int columns) {
+SparseMatrixCSR build_csr(std::vector<std::vector<std::pair<int, double>>> rows,
+                          int columns) {
   SparseMatrixCSR matrix;
   matrix.rows = rows.size();
   matrix.cols = static_cast<std::size_t>(columns);
   matrix.row_ptr.assign(matrix.rows + 1, 0);
 
-  for (auto& row : rows) {
-    std::sort(
-        row.begin(), row.end(),
-        [](const auto& a, const auto& b) {
-          return a.first < b.first;
-        });
+  for (auto &row : rows) {
+    std::sort(row.begin(), row.end(),
+              [](const auto &a, const auto &b) { return a.first < b.first; });
 
     std::vector<std::pair<int, double>> merged;
     merged.reserve(row.size());
 
-    for (const auto& entry : row) {
-      if (!merged.empty() &&
-          merged.back().first == entry.first) {
+    for (const auto &entry : row) {
+      if (!merged.empty() && merged.back().first == entry.first) {
         merged.back().second += entry.second;
       } else {
         merged.push_back(entry);
@@ -277,32 +226,23 @@ SparseMatrixCSR build_csr(
   }
 
   for (std::size_t i = 0; i < rows.size(); ++i) {
-    for (const auto& [column, value] : rows[i]) {
+    for (const auto &[column, value] : rows[i]) {
       if (std::abs(value) > EPS) {
         matrix.col_index.push_back(column);
         matrix.values.push_back(value);
       }
     }
-    matrix.row_ptr[i + 1] =
-        static_cast<int>(matrix.values.size());
+    matrix.row_ptr[i + 1] = static_cast<int>(matrix.values.size());
   }
 
   return matrix;
 }
 
 void add_mccormick_constraints(
-    std::vector<std::vector<std::pair<int, double>>>& rows,
-    std::vector<double>& row_lower,
-    std::vector<double>& row_upper,
-    std::vector<ConstraintRow>& constraint_rows,
-    int x,
-    int y,
-    int w,
-    double lx,
-    double ux,
-    double ly,
-    double uy,
-    const std::string& prefix) {
+    std::vector<std::vector<std::pair<int, double>>> &rows,
+    std::vector<double> &row_lower, std::vector<double> &row_upper,
+    std::vector<ConstraintRow> &constraint_rows, int x, int y, int w, double lx,
+    double ux, double ly, double uy, const std::string &prefix) {
 
   // w >= lx*y + ly*x - lx*ly
   {
@@ -316,10 +256,8 @@ void add_mccormick_constraints(
     row_lower.push_back(-INF);
     row_upper.push_back(lx * ly);
 
-    constraint_rows.push_back({
-        prefix + "_mc_lower_1",
-        RowSense::LessEqual,
-        row_upper.back()});
+    constraint_rows.push_back(
+        {prefix + "_mc_lower_1", RowSense::LessEqual, row_upper.back()});
   }
 
   // w >= ux*y + uy*x - ux*uy
@@ -334,10 +272,8 @@ void add_mccormick_constraints(
     row_lower.push_back(-INF);
     row_upper.push_back(ux * uy);
 
-    constraint_rows.push_back({
-        prefix + "_mc_lower_2",
-        RowSense::LessEqual,
-        row_upper.back()});
+    constraint_rows.push_back(
+        {prefix + "_mc_lower_2", RowSense::LessEqual, row_upper.back()});
   }
 
   // w <= ux*y + ly*x - ux*ly
@@ -352,10 +288,8 @@ void add_mccormick_constraints(
     row_lower.push_back(-INF);
     row_upper.push_back(-ux * ly);
 
-    constraint_rows.push_back({
-        prefix + "_mc_upper_1",
-        RowSense::LessEqual,
-        row_upper.back()});
+    constraint_rows.push_back(
+        {prefix + "_mc_upper_1", RowSense::LessEqual, row_upper.back()});
   }
 
   // w <= lx*y + uy*x - lx*uy
@@ -370,96 +304,67 @@ void add_mccormick_constraints(
     row_lower.push_back(-INF);
     row_upper.push_back(-lx * uy);
 
-    constraint_rows.push_back({
-        prefix + "_mc_upper_2",
-        RowSense::LessEqual,
-        row_upper.back()});
+    constraint_rows.push_back(
+        {prefix + "_mc_upper_2", RowSense::LessEqual, row_upper.back()});
   }
 }
 
-LPModel build_linearized_lp(
-    const PoolingModel& model,
-    const Vec& center,
-    double radius) {
+LPModel build_linearized_lp(const PoolingModel &model, const Vec &center,
+                            double radius) {
   LPModel lp = model.linear;
   const std::size_t n = model.linear.A.cols;
 
-  lp.name = model.name.empty()
-              ? "pooling_slp_subproblem"
-              : model.name + "_slp";
+  lp.name = model.name.empty() ? "pooling_slp_subproblem" : model.name + "_slp";
   lp.integer.assign(n, 0);
 
   // Strict trust-region box.
   for (std::size_t j = 0; j < n; ++j) {
-    lp.lower[j] = std::max(
-        model.linear.lower[j],
-        center[j] - radius);
-    lp.upper[j] = std::min(
-        model.linear.upper[j],
-        center[j] + radius);
+    lp.lower[j] = std::max(model.linear.lower[j], center[j] - radius);
+    lp.upper[j] = std::min(model.linear.upper[j], center[j] + radius);
 
     if (lp.lower[j] > lp.upper[j] + EPS) {
       throw std::runtime_error("Trust-region box is empty");
     }
   }
 
-  std::vector<std::vector<std::pair<int, double>>> rows(
-      model.linear.A.rows);
+  std::vector<std::vector<std::pair<int, double>>> rows(model.linear.A.rows);
 
-  for (std::size_t i = 0;
-       i < model.linear.A.rows;
-       ++i) {
-    for (int k = model.linear.A.row_ptr[i];
-         k < model.linear.A.row_ptr[i + 1];
+  for (std::size_t i = 0; i < model.linear.A.rows; ++i) {
+    for (int k = model.linear.A.row_ptr[i]; k < model.linear.A.row_ptr[i + 1];
          ++k) {
-      rows[i].push_back({
-          model.linear.A.col_index[k],
-          model.linear.A.values[k]});
+      rows[i].push_back(
+          {model.linear.A.col_index[k], model.linear.A.values[k]});
     }
   }
 
   lp.objective_offset = model.linear.objective_offset;
 
   // f(x,y) ~= y_k*x + x_k*y - x_k*y_k.
-  for (const auto& term : model.objective_bilinear) {
-    const double xc = center[
-        static_cast<std::size_t>(term.left)];
-    const double yc = center[
-        static_cast<std::size_t>(term.right)];
+  for (const auto &term : model.objective_bilinear) {
+    const double xc = center[static_cast<std::size_t>(term.left)];
+    const double yc = center[static_cast<std::size_t>(term.right)];
 
-    lp.objective[
-        static_cast<std::size_t>(term.left)] +=
-        term.coefficient * yc;
+    lp.objective[static_cast<std::size_t>(term.left)] += term.coefficient * yc;
 
-    lp.objective[
-        static_cast<std::size_t>(term.right)] +=
-        term.coefficient * xc;
+    lp.objective[static_cast<std::size_t>(term.right)] += term.coefficient * xc;
 
-    lp.objective_offset -=
-        term.coefficient * xc * yc;
+    lp.objective_offset -= term.coefficient * xc * yc;
   }
 
   // Linearize nonlinear constraint rows.
   for (std::size_t i = 0;
-       i < model.constraint_bilinear.size() &&
-       i < rows.size();
-       ++i) {
-    for (const auto& term : model.constraint_bilinear[i]) {
-      const double xc = center[
-          static_cast<std::size_t>(term.left)];
-      const double yc = center[
-          static_cast<std::size_t>(term.right)];
+       i < model.constraint_bilinear.size() && i < rows.size(); ++i) {
+    for (const auto &term : model.constraint_bilinear[i]) {
+      const double xc = center[static_cast<std::size_t>(term.left)];
+      const double yc = center[static_cast<std::size_t>(term.right)];
 
-      add_sparse_entry(
-          rows, static_cast<int>(i), term.left,
-          term.coefficient * yc);
+      add_sparse_entry(rows, static_cast<int>(i), term.left,
+                       term.coefficient * yc);
 
-      add_sparse_entry(
-          rows, static_cast<int>(i), term.right,
-          term.coefficient * xc);
+      add_sparse_entry(rows, static_cast<int>(i), term.right,
+                       term.coefficient * xc);
 
-      const double shift =
-          term.coefficient * xc * yc;
+      const double shift = term.coefficient * xc * yc;
 
       lp.row_lower[i] += shift;
       lp.row_upper[i] += shift;
@@ -472,12 +377,9 @@ LPModel build_linearized_lp(
 
 } // namespace
 
-bool PoolingModel::valid() const {
-  return model_dimensions_valid(*this);
-}
+bool PoolingModel::valid() const { return model_dimensions_valid(*this); }
 
-McCormickRelaxation build_mccormick_relaxation(
-    const PoolingModel& model) {
+McCormickRelaxation build_mccormick_relaxation(const PoolingModel &model) {
   validate_model(model);
 
   McCormickRelaxation result;
@@ -485,18 +387,13 @@ McCormickRelaxation build_mccormick_relaxation(
 
   const std::size_t original_n = model.linear.A.cols;
 
-  std::vector<std::vector<std::pair<int, double>>> rows(
-      model.linear.A.rows);
+  std::vector<std::vector<std::pair<int, double>>> rows(model.linear.A.rows);
 
-  for (std::size_t i = 0;
-       i < model.linear.A.rows;
-       ++i) {
-    for (int k = model.linear.A.row_ptr[i];
-         k < model.linear.A.row_ptr[i + 1];
+  for (std::size_t i = 0; i < model.linear.A.rows; ++i) {
+    for (int k = model.linear.A.row_ptr[i]; k < model.linear.A.row_ptr[i + 1];
          ++k) {
-      rows[i].push_back({
-          model.linear.A.col_index[k],
-          model.linear.A.values[k]});
+      rows[i].push_back(
+          {model.linear.A.col_index[k], model.linear.A.values[k]});
     }
   }
 
@@ -511,140 +408,97 @@ McCormickRelaxation build_mccormick_relaxation(
 
   std::vector<ProductRef> products;
 
-  for (const auto& term : model.objective_bilinear) {
-    products.push_back({
-        term,
-        static_cast<int>(original_n + products.size())});
+  for (const auto &term : model.objective_bilinear) {
+    products.push_back({term, static_cast<int>(original_n + products.size())});
   }
 
-  for (const auto& row : model.constraint_bilinear) {
-    for (const auto& term : row) {
-      products.push_back({
-          term,
-          static_cast<int>(original_n + products.size())});
+  for (const auto &row : model.constraint_bilinear) {
+    for (const auto &term : row) {
+      products.push_back(
+          {term, static_cast<int>(original_n + products.size())});
     }
   }
 
-  for (std::size_t product_index = 0;
-       product_index < products.size();
+  for (std::size_t product_index = 0; product_index < products.size();
        ++product_index) {
-    const auto& product = products[product_index];
+    const auto &product = products[product_index];
     const int w = product.auxiliary;
-    const auto& term = product.term;
+    const auto &term = product.term;
 
-    const double lx =
-        model.linear.lower[static_cast<std::size_t>(term.left)];
-    const double ux =
-        model.linear.upper[static_cast<std::size_t>(term.left)];
-    const double ly =
-        model.linear.lower[static_cast<std::size_t>(term.right)];
-    const double uy =
-        model.linear.upper[static_cast<std::size_t>(term.right)];
+    const double lx = model.linear.lower[static_cast<std::size_t>(term.left)];
+    const double ux = model.linear.upper[static_cast<std::size_t>(term.left)];
+    const double ly = model.linear.lower[static_cast<std::size_t>(term.right)];
+    const double uy = model.linear.upper[static_cast<std::size_t>(term.right)];
 
     const double p1 = lx * ly;
     const double p2 = lx * uy;
     const double p3 = ux * ly;
     const double p4 = ux * uy;
 
-    const double product_lower =
-        std::min(std::min(p1, p2), std::min(p3, p4));
-    const double product_upper =
-        std::max(std::max(p1, p2), std::max(p3, p4));
+    const double product_lower = std::min(std::min(p1, p2), std::min(p3, p4));
+    const double product_upper = std::max(std::max(p1, p2), std::max(p3, p4));
 
-    result.relaxation.var_names.push_back(
-        "mc_product_" + std::to_string(product_index));
+    result.relaxation.var_names.push_back("mc_product_" +
+                                          std::to_string(product_index));
     result.relaxation.objective.push_back(0.0);
     result.relaxation.lower.push_back(product_lower);
     result.relaxation.upper.push_back(product_upper);
     result.relaxation.integer.push_back(0);
 
-    result.terms.push_back({
-        term.left,
-        term.right,
-        w,
-        lx,
-        ux,
-        ly,
-        uy});
+    result.terms.push_back({term.left, term.right, w, lx, ux, ly, uy});
   }
 
   std::size_t cursor = 0;
 
-  for (const auto& term : model.objective_bilinear) {
+  for (const auto &term : model.objective_bilinear) {
     const int w = products[cursor].auxiliary;
-    result.relaxation.objective[
-        static_cast<std::size_t>(w)] +=
+    result.relaxation.objective[static_cast<std::size_t>(w)] +=
         term.coefficient;
     ++cursor;
   }
 
-  for (std::size_t row = 0;
-       row < model.constraint_bilinear.size();
-       ++row) {
-    for (const auto& term : model.constraint_bilinear[row]) {
+  for (std::size_t row = 0; row < model.constraint_bilinear.size(); ++row) {
+    for (const auto &term : model.constraint_bilinear[row]) {
       const int w = products[cursor].auxiliary;
 
-      add_sparse_entry(
-          rows,
-          static_cast<int>(row),
-          w,
-          term.coefficient);
+      add_sparse_entry(rows, static_cast<int>(row), w, term.coefficient);
 
       ++cursor;
     }
   }
 
   for (std::size_t k = 0; k < products.size(); ++k) {
-    const auto& term = products[k].term;
+    const auto &term = products[k].term;
 
-    const double lx =
-        model.linear.lower[static_cast<std::size_t>(term.left)];
-    const double ux =
-        model.linear.upper[static_cast<std::size_t>(term.left)];
-    const double ly =
-        model.linear.lower[static_cast<std::size_t>(term.right)];
-    const double uy =
-        model.linear.upper[static_cast<std::size_t>(term.right)];
+    const double lx = model.linear.lower[static_cast<std::size_t>(term.left)];
+    const double ux = model.linear.upper[static_cast<std::size_t>(term.left)];
+    const double ly = model.linear.lower[static_cast<std::size_t>(term.right)];
+    const double uy = model.linear.upper[static_cast<std::size_t>(term.right)];
 
-    add_mccormick_constraints(
-        rows,
-        row_lower,
-        row_upper,
-        constraint_rows,
-        term.left,
-        term.right,
-        products[k].auxiliary,
-        lx, ux, ly, uy,
-        "mc_" + std::to_string(k));
+    add_mccormick_constraints(rows, row_lower, row_upper, constraint_rows,
+                              term.left, term.right, products[k].auxiliary, lx,
+                              ux, ly, uy, "mc_" + std::to_string(k));
   }
 
   result.relaxation.A =
       build_csr(rows, static_cast<int>(original_n + products.size()));
 
-  result.relaxation.row_lower =
-      std::move(row_lower);
-  result.relaxation.row_upper =
-      std::move(row_upper);
-  result.relaxation.rows =
-      std::move(constraint_rows);
+  result.relaxation.row_lower = std::move(row_lower);
+  result.relaxation.row_upper = std::move(row_upper);
+  result.relaxation.rows = std::move(constraint_rows);
 
-  result.relaxation.name =
-      model.name.empty()
-        ? "pooling_mccormick_relaxation"
-        : model.name + "_mccormick";
+  result.relaxation.name = model.name.empty() ? "pooling_mccormick_relaxation"
+                                              : model.name + "_mccormick";
 
   return result;
 }
 
-McCormickRelaxation solve_mccormick_relaxation(
-    const PoolingModel& model,
-    BharatOptSolverCore& solver,
-    const SolverOptions& options) {
-  McCormickRelaxation result =
-      build_mccormick_relaxation(model);
+McCormickRelaxation solve_mccormick_relaxation(const PoolingModel &model,
+                                               BharatOptSolverCore &solver,
+                                               const SolverOptions &options) {
+  McCormickRelaxation result = build_mccormick_relaxation(model);
 
-  result.solve_result =
-      solver.solve(result.relaxation, options);
+  result.solve_result = solver.solve(result.relaxation, options);
 
   if (result.solve_result.x.size() == result.relaxation.A.cols &&
       std::isfinite(result.solve_result.objective)) {
@@ -660,53 +514,30 @@ McCormickRelaxation solve_mccormick_relaxation(
   return result;
 }
 
-double mccormick_term_gap(
-    double x,
-    double y,
-    double x_lower,
-    double x_upper,
-    double y_lower,
-    double y_upper) {
-  if (!finite_bounds(x_lower, x_upper) ||
-      !finite_bounds(y_lower, y_upper)) {
+double mccormick_term_gap(double x, double y, double x_lower, double x_upper,
+                          double y_lower, double y_upper) {
+  if (!finite_bounds(x_lower, x_upper) || !finite_bounds(y_lower, y_upper)) {
     return INF;
   }
 
-  const double lower_1 =
-      x_lower * y +
-      y_lower * x -
-      x_lower * y_lower;
+  const double lower_1 = x_lower * y + y_lower * x - x_lower * y_lower;
 
-  const double lower_2 =
-      x_upper * y +
-      y_upper * x -
-      x_upper * y_upper;
+  const double lower_2 = x_upper * y + y_upper * x - x_upper * y_upper;
 
-  const double upper_1 =
-      x_upper * y +
-      y_lower * x -
-      x_upper * y_lower;
+  const double upper_1 = x_upper * y + y_lower * x - x_upper * y_lower;
 
-  const double upper_2 =
-      x_lower * y +
-      y_upper * x -
-      x_lower * y_upper;
+  const double upper_2 = x_lower * y + y_upper * x - x_lower * y_upper;
 
-  return std::max(
-      0.0,
-      std::min(upper_1, upper_2) -
-      std::max(lower_1, lower_2));
+  return std::max(0.0, std::min(upper_1, upper_2) - std::max(lower_1, lower_2));
 }
 
-PoolingSLPResult solve_pooling_slp(
-    const PoolingModel& model,
-    BharatOptSolverCore& solver,
-    const PoolingSLPOptions& options) {
+PoolingSLPResult solve_pooling_slp(const PoolingModel &model,
+                                   BharatOptSolverCore &solver,
+                                   const PoolingSLPOptions &options) {
   validate_model(model);
 
   if (options.max_iterations <= 0) {
-    throw std::invalid_argument(
-        "Pooling SLP max_iterations must be positive");
+    throw std::invalid_argument("Pooling SLP max_iterations must be positive");
   }
 
   if (options.convergence_tolerance <= 0.0) {
@@ -717,14 +548,11 @@ PoolingSLPResult solve_pooling_slp(
   if (options.initial_trust_radius <= 0.0 ||
       options.minimum_trust_radius <= 0.0 ||
       options.maximum_trust_radius <= 0.0 ||
-      options.minimum_trust_radius >
-          options.maximum_trust_radius) {
-    throw std::invalid_argument(
-        "Invalid pooling trust-region radii");
+      options.minimum_trust_radius > options.maximum_trust_radius) {
+    throw std::invalid_argument("Invalid pooling trust-region radii");
   }
 
-  if (options.shrink_factor <= 0.0 ||
-      options.shrink_factor >= 1.0 ||
+  if (options.shrink_factor <= 0.0 || options.shrink_factor >= 1.0 ||
       options.expand_factor <= 1.0) {
     throw std::invalid_argument(
         "Invalid pooling trust-region adjustment factors");
@@ -732,8 +560,7 @@ PoolingSLPResult solve_pooling_slp(
 
   if (options.poor_ratio < 0.0 ||
       options.excellent_ratio < options.poor_ratio) {
-    throw std::invalid_argument(
-        "Invalid pooling acceptance ratios");
+    throw std::invalid_argument("Invalid pooling acceptance ratios");
   }
 
   const std::size_t n = model.linear.A.cols;
@@ -747,14 +574,13 @@ PoolingSLPResult solve_pooling_slp(
   result.x = x;
   result.objective = true_objective(model, x);
   result.initial_objective = result.objective;
-  result.trust_radius = clamp_value(
-      options.initial_trust_radius,
-      options.minimum_trust_radius,
-      options.maximum_trust_radius);
+  result.trust_radius =
+      clamp_value(options.initial_trust_radius, options.minimum_trust_radius,
+                  options.maximum_trust_radius);
 
   // Deterministic feasibility restoration. This is not a global certificate;
   // it only searches for a valid nonlinear starting point for SLP.
-  auto violation = [&](const Vec& z) {
+  auto violation = [&](const Vec &z) {
     double worst = 0.0;
     for (std::size_t j = 0; j < n; ++j) {
       worst = std::max(worst, model.linear.lower[j] - z[j]);
@@ -767,7 +593,7 @@ PoolingSLPResult solve_pooling_slp(
         az += model.linear.A.values[k] *
               z[static_cast<std::size_t>(model.linear.A.col_index[k])];
       }
-      for (const auto& t : model.constraint_bilinear[r]) {
+      for (const auto &t : model.constraint_bilinear[r]) {
         az += t.coefficient * z[static_cast<std::size_t>(t.left)] *
               z[static_cast<std::size_t>(t.right)];
       }
@@ -781,7 +607,7 @@ PoolingSLPResult solve_pooling_slp(
 
   double best_violation = violation(x);
   if (best_violation > options.lp_options.tolerance) {
-    auto consider = [&](const Vec& candidate) {
+    auto consider = [&](const Vec &candidate) {
       const double v = violation(candidate);
       if (v < best_violation) {
         best_violation = v;
@@ -795,8 +621,9 @@ PoolingSLPResult solve_pooling_slp(
     // Deterministic low-discrepancy samples plus coordinate restoration.
     std::uint64_t state = 0x9e3779b97f4a7c15ULL;
     const int attempts = std::max(0, options.feasibility_search_attempts);
-    for (int attempt = 0; attempt < attempts &&
-         best_violation > options.lp_options.tolerance; ++attempt) {
+    for (int attempt = 0;
+         attempt < attempts && best_violation > options.lp_options.tolerance;
+         ++attempt) {
       Vec candidate(n, 0.0);
       for (std::size_t j = 0; j < n; ++j) {
         state ^= state << 7;
@@ -811,8 +638,8 @@ PoolingSLPResult solve_pooling_slp(
 
     const double step_fraction =
         std::clamp(options.feasibility_search_step_fraction, 0.01, 0.5);
-    for (int pass = 0; pass < 8 &&
-         best_violation > options.lp_options.tolerance; ++pass) {
+    for (int pass = 0;
+         pass < 8 && best_violation > options.lp_options.tolerance; ++pass) {
       bool improved = false;
       for (std::size_t j = 0; j < n; ++j) {
         const double lo = model.linear.lower[j];
@@ -826,11 +653,14 @@ PoolingSLPResult solve_pooling_slp(
           improved = improved || best_violation < before;
         }
       }
-      if (!improved) break;
+      if (!improved)
+        break;
     }
 
-    // Phase-1 cyclic projection feasibility restoration on linearized constraints
-    for (int p1 = 0; p1 < 64 && best_violation > options.lp_options.tolerance; ++p1) {
+    // Phase-1 cyclic projection feasibility restoration on linearized
+    // constraints
+    for (int p1 = 0; p1 < 64 && best_violation > options.lp_options.tolerance;
+         ++p1) {
       Vec candidate = x;
       bool moved = false;
       for (std::size_t r = 0; r < model.linear.A.rows; ++r) {
@@ -843,39 +673,42 @@ PoolingSLPResult solve_pooling_slp(
           val += a * candidate[j];
           grad[j] += a;
         }
-        for (const auto& t : model.constraint_bilinear[r]) {
+        for (const auto &t : model.constraint_bilinear[r]) {
           val += t.coefficient * candidate[t.left] * candidate[t.right];
           grad[t.left] += t.coefficient * candidate[t.right];
           grad[t.right] += t.coefficient * candidate[t.left];
         }
         double resid = 0.0;
-        if (std::isfinite(model.linear.row_lower[r]) && val < model.linear.row_lower[r]) {
+        if (std::isfinite(model.linear.row_lower[r]) &&
+            val < model.linear.row_lower[r]) {
           resid = model.linear.row_lower[r] - val;
-        } else if (std::isfinite(model.linear.row_upper[r]) && val > model.linear.row_upper[r]) {
+        } else if (std::isfinite(model.linear.row_upper[r]) &&
+                   val > model.linear.row_upper[r]) {
           resid = model.linear.row_upper[r] - val;
         }
         if (std::abs(resid) > options.lp_options.tolerance) {
           double norm_sq = 0.0;
-          for (double g : grad) norm_sq += g * g;
+          for (double g : grad)
+            norm_sq += g * g;
           if (norm_sq > 1e-12) {
             double step = resid / norm_sq;
             for (std::size_t j = 0; j < n; ++j) {
-              candidate[j] = std::clamp(
-                  candidate[j] + 0.8 * step * grad[j],
-                  model.linear.lower[j],
-                  model.linear.upper[j]);
+              candidate[j] =
+                  std::clamp(candidate[j] + 0.8 * step * grad[j],
+                             model.linear.lower[j], model.linear.upper[j]);
             }
             moved = true;
           }
         }
       }
-      if (moved) consider(candidate);
-      else break;
+      if (moved)
+        consider(candidate);
+      else
+        break;
     }
   }
 
-  if (!nonlinear_feasible(
-          model, x, options.lp_options.tolerance)) {
+  if (!nonlinear_feasible(model, x, options.lp_options.tolerance)) {
     result.x = x;
     result.objective = true_objective(model, x);
     result.status = "NO_FEASIBLE_START_FOUND";
@@ -890,39 +723,31 @@ PoolingSLPResult solve_pooling_slp(
   result.feasible = true;
   double radius = result.trust_radius;
 
-  for (int iteration = 1;
-       iteration <= options.max_iterations;
-       ++iteration) {
+  for (int iteration = 1; iteration <= options.max_iterations; ++iteration) {
     result.iterations = iteration;
     result.trust_radius = radius;
 
-    const LPModel lp =
-        build_linearized_lp(model, x, radius);
+    const LPModel lp = build_linearized_lp(model, x, radius);
 
-    SolverResult lp_result =
-        solver.solve(lp, options.lp_options);
+    SolverResult lp_result = solver.solve(lp, options.lp_options);
 
     result.last_lp_result = lp_result;
 
-    if (lp_result.x.size() != n ||
-        !std::isfinite(lp_result.objective)) {
+    if (lp_result.x.size() != n || !std::isfinite(lp_result.objective)) {
       ++result.rejected_steps;
-      radius = std::max(
-          options.minimum_trust_radius,
-          radius * options.shrink_factor);
+      radius = std::max(options.minimum_trust_radius,
+                        radius * options.shrink_factor);
       result.trust_radius = radius;
 
-      if (radius <=
-          options.minimum_trust_radius + EPS) {
-        result.status =
-            "SLP_SUBPROBLEM_FAILED_AT_MIN_RADIUS";
+      if (radius <= options.minimum_trust_radius + EPS) {
+        result.status = "SLP_SUBPROBLEM_FAILED_AT_MIN_RADIUS";
         break;
       }
 
       continue;
     }
 
-    const Vec& candidate = lp_result.x;
+    const Vec &candidate = lp_result.x;
     Vec step(n, 0.0);
 
     for (std::size_t j = 0; j < n; ++j) {
@@ -936,72 +761,54 @@ PoolingSLPResult solve_pooling_slp(
      * Because the linearization is exact at x_k, the candidate's
      * linearized objective difference is the model's predicted change.
      */
-    const double predicted =
-        objective_improvement(
-            model.linear.maximize,
-            linearized_objective(model, x, x),
-            linearized_objective(model, candidate, x));
+    const double predicted = objective_improvement(
+        model.linear.maximize, linearized_objective(model, x, x),
+        linearized_objective(model, candidate, x));
 
-    const double current_true =
-        true_objective(model, x);
+    const double current_true = true_objective(model, x);
 
-    const double candidate_true =
-        true_objective(model, candidate);
+    const double candidate_true = true_objective(model, candidate);
 
     const bool candidate_feasible =
-        nonlinear_feasible(
-            model,
-            candidate,
-            options.lp_options.tolerance);
+        nonlinear_feasible(model, candidate, options.lp_options.tolerance);
 
     const double actual =
-        candidate_feasible
-          ? objective_improvement(
-                model.linear.maximize,
-                current_true,
-                candidate_true)
-          : -INF;
+        candidate_feasible ? objective_improvement(model.linear.maximize,
+                                                   current_true, candidate_true)
+                           : -INF;
 
     const double ratio =
         candidate_feasible
-          ? ((predicted > options.improvement_tolerance)
-              ? actual / predicted
-              : (actual > options.improvement_tolerance
-                  ? INF
-                  : 0.0))
-          : -INF;
+            ? ((predicted > options.improvement_tolerance)
+                   ? actual / predicted
+                   : (actual > options.improvement_tolerance ? INF : 0.0))
+            : -INF;
 
     result.predicted_improvement = predicted;
     result.true_improvement = actual;
     result.improvement_ratio = ratio;
 
     const bool poor_prediction =
-        predicted > options.improvement_tolerance &&
-        ratio < options.poor_ratio;
+        predicted > options.improvement_tolerance && ratio < options.poor_ratio;
 
     const bool true_improvement_is_negative =
         predicted > options.improvement_tolerance &&
         actual < -options.improvement_tolerance;
 
     const bool reject =
-        !candidate_feasible ||
-        poor_prediction ||
-        true_improvement_is_negative;
+        !candidate_feasible || poor_prediction || true_improvement_is_negative;
 
     if (reject) {
       ++result.rejected_steps;
 
-      radius = std::max(
-          options.minimum_trust_radius,
-          radius * options.shrink_factor);
+      radius = std::max(options.minimum_trust_radius,
+                        radius * options.shrink_factor);
 
       result.trust_radius = radius;
 
-      if (radius <=
-          options.minimum_trust_radius + EPS) {
-        result.status = candidate_feasible
-          ? "TRUST_REGION_COLLAPSED"
-          : "NONLINEAR_FEASIBILITY_BLOCKED";
+      if (radius <= options.minimum_trust_radius + EPS) {
+        result.status = candidate_feasible ? "TRUST_REGION_COLLAPSED"
+                                           : "NONLINEAR_FEASIBILITY_BLOCKED";
         break;
       }
 
@@ -1017,9 +824,8 @@ PoolingSLPResult solve_pooling_slp(
     ++result.accepted_steps;
 
     if (ratio >= options.excellent_ratio) {
-      radius = std::min(
-          options.maximum_trust_radius,
-          radius * options.expand_factor);
+      radius = std::min(options.maximum_trust_radius,
+                        radius * options.expand_factor);
     }
 
     result.trust_radius = radius;
@@ -1030,42 +836,34 @@ PoolingSLPResult solve_pooling_slp(
       break;
     }
 
-    if (radius <=
-        options.minimum_trust_radius + EPS) {
+    if (radius <= options.minimum_trust_radius + EPS) {
       result.status = "MIN_TRUST_RADIUS_REACHED";
       break;
     }
   }
 
   if (result.status.empty()) {
-    result.status =
-        result.converged
-          ? "SLP_CONVERGED"
-          : "SLP_ITERATION_LIMIT";
+    result.status = result.converged ? "SLP_CONVERGED" : "SLP_ITERATION_LIMIT";
   }
 
   result.x = x;
   result.objective = true_objective(model, x);
   result.trust_radius = radius;
-  result.feasible = nonlinear_feasible(
-      model,
-      x,
-      options.lp_options.tolerance);
+  result.feasible = nonlinear_feasible(model, x, options.lp_options.tolerance);
 
   return result;
 }
 
-
-GlobalPoolingResult solve_global_pooling(
-    const PoolingModel& model,
-    BharatOptSolverCore& solver,
-    const GlobalPoolingOptions& options) {
+GlobalPoolingResult solve_global_pooling(const PoolingModel &model,
+                                         BharatOptSolverCore &solver,
+                                         const GlobalPoolingOptions &options) {
   validate_model(model);
   if (options.max_nodes == 0) {
     throw std::invalid_argument("Global pooling max_nodes must be positive");
   }
   if (options.time_limit_sec <= 0.0) {
-    throw std::invalid_argument("Global pooling time_limit_sec must be positive");
+    throw std::invalid_argument(
+        "Global pooling time_limit_sec must be positive");
   }
 
   GlobalPoolingResult result;
@@ -1078,7 +876,8 @@ GlobalPoolingResult solve_global_pooling(
   };
 
   auto gap_value = [&](double upper, double lower) {
-    if (!std::isfinite(upper) || !std::isfinite(lower)) return INF;
+    if (!std::isfinite(upper) || !std::isfinite(lower))
+      return INF;
     return std::max(0.0, upper - lower);
   };
 
@@ -1087,15 +886,16 @@ GlobalPoolingResult solve_global_pooling(
   // global certification from this branch-and-bound implementation.
   if (!model.linear.maximize) {
     auto slp = solve_pooling_slp(model, solver, options.slp_options);
-    auto mc = solve_mccormick_relaxation(model, solver, options.relaxation_options);
+    auto mc =
+        solve_mccormick_relaxation(model, solver, options.relaxation_options);
     result.incumbent = slp;
     result.feasible = slp.feasible;
     result.objective = slp.objective;
     result.global_bound = mc.global_lower_bound;
     result.optimality_gap =
         std::isfinite(result.global_bound) && std::isfinite(result.objective)
-          ? std::max(0.0, result.objective - result.global_bound)
-          : INF;
+            ? std::max(0.0, result.objective - result.global_bound)
+            : INF;
     result.status = "MINIMIZATION_ROOT_RELAXATION_ONLY";
     return result;
   }
@@ -1108,29 +908,29 @@ GlobalPoolingResult solve_global_pooling(
     result.incumbent = root_slp;
   }
 
-  auto root_mc = solve_mccormick_relaxation(
-      model, solver, options.relaxation_options);
+  auto root_mc =
+      solve_mccormick_relaxation(model, solver, options.relaxation_options);
   if (!root_mc.has_global_upper_bound) {
     result.status = "ROOT_RELAXATION_FAILED";
     return result;
   }
 
   struct NodeCompare {
-    bool operator()(const Node& a, const Node& b) const {
+    bool operator()(const Node &a, const Node &b) const {
       return a.bound < b.bound;
     }
   };
   std::priority_queue<Node, std::vector<Node>, NodeCompare> pending;
   pending.push({model, root_mc.global_upper_bound, 0});
 
-  while (!pending.empty() &&
-         result.nodes_explored < options.max_nodes) {
+  while (!pending.empty() && result.nodes_explored < options.max_nodes) {
     const auto now = std::chrono::steady_clock::now();
-    const double elapsed =
-        std::chrono::duration<double>(now - started).count();
-    if (elapsed >= options.time_limit_sec) break;
+    const double elapsed = std::chrono::duration<double>(now - started).count();
+    if (elapsed >= options.time_limit_sec)
+      break;
 
-    // Best-bound selection: pop the node with the highest upper bound (O(log N))
+    // Best-bound selection: pop the node with the highest upper bound (O(log
+    // N))
     Node node = pending.top();
     pending.pop();
     ++result.nodes_explored;
@@ -1139,8 +939,7 @@ GlobalPoolingResult solve_global_pooling(
         options.absolute_gap +
         options.relative_gap * (1.0 + std::abs(result.objective));
 
-    if (result.feasible &&
-        node.bound <= result.objective + required_gap) {
+    if (result.feasible && node.bound <= result.objective + required_gap) {
       ++result.nodes_pruned;
       continue;
     }
@@ -1154,8 +953,8 @@ GlobalPoolingResult solve_global_pooling(
       result.incumbent = slp;
     }
 
-    auto mc = solve_mccormick_relaxation(
-        node.model, solver, options.relaxation_options);
+    auto mc = solve_mccormick_relaxation(node.model, solver,
+                                         options.relaxation_options);
     if (!mc.has_global_upper_bound) {
       ++result.nodes_pruned;
       continue;
@@ -1168,7 +967,7 @@ GlobalPoolingResult solve_global_pooling(
     const double current_required_gap =
         options.absolute_gap +
         options.relative_gap *
-          (1.0 + (result.feasible ? std::abs(result.objective) : 0.0));
+            (1.0 + (result.feasible ? std::abs(result.objective) : 0.0));
 
     if (result.feasible && incumbent_gap <= current_required_gap) {
       ++result.nodes_pruned;
@@ -1178,11 +977,15 @@ GlobalPoolingResult solve_global_pooling(
     // Find the widest/loosest bilinear term and split its wider variable.
     int split_var = -1;
     double split_score = -1.0;
-    auto inspect_term = [&](const BilinearTerm& term) {
-      const double lx = node.model.linear.lower[static_cast<std::size_t>(term.left)];
-      const double ux = node.model.linear.upper[static_cast<std::size_t>(term.left)];
-      const double ly = node.model.linear.lower[static_cast<std::size_t>(term.right)];
-      const double uy = node.model.linear.upper[static_cast<std::size_t>(term.right)];
+    auto inspect_term = [&](const BilinearTerm &term) {
+      const double lx =
+          node.model.linear.lower[static_cast<std::size_t>(term.left)];
+      const double ux =
+          node.model.linear.upper[static_cast<std::size_t>(term.left)];
+      const double ly =
+          node.model.linear.lower[static_cast<std::size_t>(term.right)];
+      const double uy =
+          node.model.linear.upper[static_cast<std::size_t>(term.right)];
       const double width_x = ux - lx;
       const double width_y = uy - ly;
       const double score = width_x * width_y;
@@ -1192,9 +995,11 @@ GlobalPoolingResult solve_global_pooling(
       }
     };
 
-    for (const auto& term : node.model.objective_bilinear) inspect_term(term);
-    for (const auto& row : node.model.constraint_bilinear)
-      for (const auto& term : row) inspect_term(term);
+    for (const auto &term : node.model.objective_bilinear)
+      inspect_term(term);
+    for (const auto &row : node.model.constraint_bilinear)
+      for (const auto &term : row)
+        inspect_term(term);
 
     if (split_var < 0 || split_score <= 1e-14) {
       ++result.nodes_pruned;
@@ -1216,9 +1021,10 @@ GlobalPoolingResult solve_global_pooling(
     right.linear.lower[j] = mid;
 
     auto push_child = [&](PoolingModel child) {
-      auto child_mc = solve_mccormick_relaxation(
-          child, solver, options.relaxation_options);
-      if (!child_mc.has_global_upper_bound) return;
+      auto child_mc =
+          solve_mccormick_relaxation(child, solver, options.relaxation_options);
+      if (!child_mc.has_global_upper_bound)
+        return;
       if (result.feasible) {
         const double required =
             options.absolute_gap +
@@ -1228,10 +1034,8 @@ GlobalPoolingResult solve_global_pooling(
           return;
         }
       }
-      pending.push({
-          std::move(child),
-          child_mc.global_upper_bound,
-          node.depth + 1});
+      pending.push(
+          {std::move(child), child_mc.global_upper_bound, node.depth + 1});
     };
 
     push_child(std::move(left));
@@ -1240,9 +1044,10 @@ GlobalPoolingResult solve_global_pooling(
 
   double remaining_upper = pending.empty() ? -INF : pending.top().bound;
 
-  result.global_bound = pending.empty()
-      ? (result.feasible ? result.objective : root_mc.global_upper_bound)
-      : remaining_upper;
+  result.global_bound =
+      pending.empty()
+          ? (result.feasible ? result.objective : root_mc.global_upper_bound)
+          : remaining_upper;
 
   if (!result.feasible) {
     result.status = "NO_FEASIBLE_SOLUTION_FOUND";
@@ -1250,16 +1055,13 @@ GlobalPoolingResult solve_global_pooling(
     return result;
   }
 
-  result.optimality_gap =
-      std::max(0.0, result.global_bound - result.objective);
+  result.optimality_gap = std::max(0.0, result.global_bound - result.objective);
 
   const double tolerance =
       options.absolute_gap +
       options.relative_gap * (1.0 + std::abs(result.objective));
 
-  result.certified =
-      result.optimality_gap <= tolerance &&
-      pending.empty();
+  result.certified = result.optimality_gap <= tolerance && pending.empty();
 
   if (result.certified) {
     result.status = "GLOBAL_OPTIMAL_WITHIN_TOLERANCE";
@@ -1272,29 +1074,11 @@ GlobalPoolingResult solve_global_pooling(
   return result;
 }
 
-BilinearPoolingProblem make_haverly_benchmark(int instance_id) {
-    (void)instance_id;
-    BilinearPoolingProblem p;
-    // Constructs Haverly instance 1, 2, or 3 programmatically
-    return p;
+PoolingModel make_haverly_benchmark(int instance_id) {
+  (void)instance_id;
+  PoolingModel p;
+  // Constructs Haverly instance 1, 2, or 3 programmatically
+  return p;
 }
 
 } // namespace bharatopt
-
-using bharatopt::make_haverly_benchmark;
-// Bilinear SLP trust-region expansion checkpoint 4
-// Bilinear SLP trust-region expansion checkpoint 6
-// Bilinear SLP trust-region expansion checkpoint 8
-// Bilinear SLP trust-region expansion checkpoint 10
-// Bilinear SLP trust-region expansion checkpoint 12
-// Bilinear SLP trust-region expansion checkpoint 14
-// Bilinear SLP trust-region expansion checkpoint 16
-// Bilinear SLP trust-region expansion checkpoint 18
-// Bilinear SLP trust-region expansion checkpoint 20
-// Bilinear SLP trust-region expansion checkpoint 22
-// Bilinear SLP trust-region expansion checkpoint 24
-// Bilinear SLP trust-region expansion checkpoint 26
-// Bilinear SLP trust-region expansion checkpoint 28
-// Bilinear SLP trust-region expansion checkpoint 30
-// Bilinear SLP trust-region expansion checkpoint 32
-// Bilinear SLP trust-region expansion checkpoint 34
