@@ -45,3 +45,6 @@ Generating API reference documentation using Doxygen and GitHub Pages.
 ### Profiling CPU Hotspots with Linux perf and VTune
 Identifying cache bottlenecks and instruction stalls during sparse matrix-vector multiplication.
 
+### Debugging SIMD Vectorization with Compiler Assembly Explorer
+Inspecting compiler assembly output for effective AVX-512 FMA utilization.
+
