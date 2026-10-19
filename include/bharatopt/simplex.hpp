@@ -47,8 +47,6 @@ private:
 
 SolverResult solve_simplex(const LPModel& model, const SolverOptions& options);
 
-} // namespace bharatopt
-
 struct SimplexIterationStats {
     int iteration_count{0};
     int phase1_iterations{0};
@@ -67,3 +65,10 @@ int select_entering_steepest_edge(const std::vector<double>& reduced_costs, cons
 
 // Extension: support for Forrest-Tomlin basis factorization updates
 double estimate_basis_condition_number(const std::vector<double>& diag_u);
+
+} // namespace bharatopt
+
+using bharatopt::SimplexIterationStats;
+using bharatopt::select_entering_bland;
+using bharatopt::select_entering_steepest_edge;
+using bharatopt::estimate_basis_condition_number;

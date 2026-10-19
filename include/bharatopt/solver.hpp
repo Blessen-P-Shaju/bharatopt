@@ -9,8 +9,6 @@ public:
   SolverResult solve_qp(const QPModel& model, const SolverOptions& options = {});
   SolverResult solve(const LPModel& model, const SolverOptions& options = {});
 };
-}
-
 
 struct SolverPerformanceProfile {
     double presolve_time_ms{0.0};
@@ -19,6 +17,10 @@ struct SolverPerformanceProfile {
     double postsolve_time_ms{0.0};
     double total_wall_clock_ms{0.0};
 };
+
+} // namespace bharatopt
+
+using bharatopt::SolverPerformanceProfile;
 // Solver core SIMD and caching optimization checkpoint 3
 // Solver core SIMD and caching optimization checkpoint 5
 // Solver core SIMD and caching optimization checkpoint 7

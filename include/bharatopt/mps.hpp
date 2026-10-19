@@ -6,7 +6,7 @@ LPModel parse_mps(const std::string& path);
 void write_mps(const LPModel& model, const std::string& path);
 LPModel make_refinery_demo();
 LPModel make_milp_demo();
-}
+
 struct MPSReadOptions {
     bool allow_free_variables{true};
     bool strict_fixed_format{false};
@@ -19,6 +19,12 @@ struct MPSStats {
     double density_pct{0.0};
 };
 MPSStats inspect_mps_stream(const std::string& path);
+
+} // namespace bharatopt
+
+using bharatopt::MPSReadOptions;
+using bharatopt::MPSStats;
+using bharatopt::inspect_mps_stream;
 // MPS robust token parsing parser checkpoint 5
 // MPS robust token parsing parser checkpoint 7
 // MPS robust token parsing parser checkpoint 9

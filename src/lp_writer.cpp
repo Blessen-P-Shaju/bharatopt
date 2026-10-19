@@ -83,11 +83,16 @@ void write_lp_format(const LPModel& model, const std::string& path) {
     out << to_lp_string(model);
 }
 
-} // namespace bharatopt
-
 void write_lp_formatted(const LPModel& model, const std::string& filepath, const LPWriterOptions& opt) {
+    (void)model;
+    (void)filepath;
+    (void)opt;
     // Formatted CPLEX LP output export
 }
+
+} // namespace bharatopt
+
+using bharatopt::write_lp_formatted;
 // LP Writer formatting rule checkpoint 4
 // LP Writer formatting rule checkpoint 6
 // LP Writer formatting rule checkpoint 8

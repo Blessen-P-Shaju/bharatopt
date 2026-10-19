@@ -1272,13 +1272,16 @@ GlobalPoolingResult solve_global_pooling(
   return result;
 }
 
-} // namespace bharatopt
-
 BilinearPoolingProblem make_haverly_benchmark(int instance_id) {
+    (void)instance_id;
     BilinearPoolingProblem p;
     // Constructs Haverly instance 1, 2, or 3 programmatically
     return p;
 }
+
+} // namespace bharatopt
+
+using bharatopt::make_haverly_benchmark;
 // Bilinear SLP trust-region expansion checkpoint 4
 // Bilinear SLP trust-region expansion checkpoint 6
 // Bilinear SLP trust-region expansion checkpoint 8

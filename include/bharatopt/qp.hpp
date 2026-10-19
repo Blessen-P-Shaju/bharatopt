@@ -2,7 +2,7 @@
 #include "bharatopt/model.hpp"
 namespace bharatopt {
 QPModel make_qp_demo();
-}
+
 struct QPDiagnostics {
     int iterations{0};
     double objective_value{0.0};
@@ -11,6 +11,11 @@ struct QPDiagnostics {
     bool is_strictly_convex{true};
 };
 bool verify_hessian_psd(const SparseMatrixCSR& Q, double tol = 1e-9);
+
+} // namespace bharatopt
+
+using bharatopt::QPDiagnostics;
+using bharatopt::verify_hessian_psd;
 // QP gradient descent projection refinement checkpoint 43
 // QP gradient descent projection refinement checkpoint 45
 // QP gradient descent projection refinement checkpoint 47

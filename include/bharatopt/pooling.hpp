@@ -145,7 +145,7 @@ PoolingSLPResult solve_pooling_slp(
     BharatOptSolverCore& solver,
     const PoolingSLPOptions& options = {});
 
-} // namespace bharatopt
+using BilinearPoolingProblem = PoolingModel;
 
 struct McCormickEnvelope {
     double x_lo{0}, x_hi{0}, y_lo{0}, y_hi{0};
@@ -155,6 +155,12 @@ struct McCormickEnvelope {
     double eval_overestimator_2(double x, double y) const { return x_lo * y + x * y_hi - x_lo * y_hi; }
 };
 BilinearPoolingProblem make_haverly_benchmark(int instance_id = 1);
+
+} // namespace bharatopt
+
+using bharatopt::BilinearPoolingProblem;
+using bharatopt::McCormickEnvelope;
+using bharatopt::make_haverly_benchmark;
 // Bilinear SLP trust-region expansion checkpoint 5
 // Bilinear SLP trust-region expansion checkpoint 7
 // Bilinear SLP trust-region expansion checkpoint 9

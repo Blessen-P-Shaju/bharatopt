@@ -37,7 +37,7 @@ SolverResult BharatOptSolverCore::solve_qp(const QPModel&m,const SolverOptions&o
  }
  r.objective=objective(m,r.x);r.best_bound=r.objective;r.mip_gap=0;r.solve_time_sec=std::chrono::duration<double>(std::chrono::steady_clock::now()-t0).count();r.status=r.converged?"QP_OPTIMALITY_TOL_REACHED":"QP_ITERATION_LIMIT";return r;
 }
-}
+
 bool verify_hessian_psd(const SparseMatrixCSR& Q, double tol) {
     for (size_t i = 0; i < Q.rows; ++i) {
         double diag = 0.0, off_diag = 0.0;
@@ -49,6 +49,10 @@ bool verify_hessian_psd(const SparseMatrixCSR& Q, double tol) {
     }
     return true;
 }
+
+} // namespace bharatopt
+
+using bharatopt::verify_hessian_psd;
 // QP gradient descent projection refinement checkpoint 44
 // QP gradient descent projection refinement checkpoint 46
 // QP gradient descent projection refinement checkpoint 48

@@ -1,4 +1,5 @@
 #pragma once
+#include <cmath>
 #include <cstddef>
 #include <cstdint>
 #include <limits>
@@ -53,7 +54,13 @@ struct SolverResult {
   std::vector<double> farkas_multipliers;
   std::string status,backend;
 };
-}
+
 inline bool is_equality_row(double lo, double hi) { return std::abs(lo - hi) < 1e-12; }
 inline bool is_greater_equal_row(double lo, double hi) { return std::isfinite(lo) && !std::isfinite(hi); }
 inline bool is_less_equal_row(double lo, double hi) { return !std::isfinite(lo) && std::isfinite(hi); }
+
+} // namespace bharatopt
+
+using bharatopt::is_equality_row;
+using bharatopt::is_greater_equal_row;
+using bharatopt::is_less_equal_row;

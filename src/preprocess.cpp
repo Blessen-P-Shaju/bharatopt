@@ -212,12 +212,12 @@ double estimate_matrix_condition_number(const SparseMatrixCSR& A, int max_iter) 
   double cond_approx = sigma_max / std::max(min_val, 1e-8);
   return std::max(1.0, std::min(cond_approx, 1e12));
 }
-}
 
 // Presolve singleton statistics tracking helper
 static PresolveStats g_last_presolve_stats;
 
 void scale_matrix_equilibration(LPModel& m, PresolveStats* stats) {
+    (void)stats;
     if (m.A.rows == 0 || m.A.cols == 0) return;
     for (size_t i = 0; i < m.A.rows; ++i) {
         double max_val = 0.0;
@@ -245,6 +245,11 @@ constexpr double BHARATOPT_PREPROCESS_ZERO_EPS = 1e-14;
 static inline bool verify_csr_dimensions(const SparseMatrixCSR& A) {
     return A.row_ptr.size() == (A.rows + 1) && A.col_index.size() == A.values.size();
 }
+
+} // namespace bharatopt
+
+using bharatopt::scale_matrix_equilibration;
+using bharatopt::scale_matrix_geometric_mean;
 
 // Bounds guard preventing numeric overflow on +/- INF bound updates
 

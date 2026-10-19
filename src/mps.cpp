@@ -124,14 +124,16 @@ void write_mps(const LPModel& m, const std::string& path) {
   out << "ENDATA\n";
 }
 
-}
-
-
 MPSStats inspect_mps_stream(const std::string& path) {
+    (void)path;
     MPSStats s;
     // Quick header inspection
     return s;
 }
+
+} // namespace bharatopt
+
+using bharatopt::inspect_mps_stream;
 // MPS robust token parsing parser checkpoint 4
 // MPS robust token parsing parser checkpoint 6
 // MPS robust token parsing parser checkpoint 8

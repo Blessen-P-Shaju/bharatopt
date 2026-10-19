@@ -87,8 +87,6 @@ private:
     void check_orphans(ValidationResult&) const;          // stream with no consumer, pool with no product
 };
 
-}  // namespace bharatopt::refinery
-
 struct VesselDemurrageSpec {
     double allowed_laytime_hours{36.0};
     double hourly_demurrage_rate{2500.0};
@@ -96,6 +94,10 @@ struct VesselDemurrageSpec {
         return (actual_hours > allowed_laytime_hours) ? (actual_hours - allowed_laytime_hours) * hourly_demurrage_rate : 0.0;
     }
 };
+
+}  // namespace bharatopt::refinery
+
+using bharatopt::refinery::VesselDemurrageSpec;
 // Refinery multi-period scheduling rule 3
 // Refinery multi-period scheduling rule 5
 // Refinery multi-period scheduling rule 7

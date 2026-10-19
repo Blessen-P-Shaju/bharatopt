@@ -162,7 +162,6 @@ SolverResult solve_interior_point(const LPModel&m,const InteriorPointOptions&opt
   if(r.status.empty())r.status=r.converged?"OPTIMALITY_TOL_REACHED":"IP_ITERATION_LIMIT";
   return r;
 }
-}
 
 static double compute_complementarity_gap(const std::vector<double>& x, const std::vector<double>& s) {
     double sum = 0.0;
@@ -177,6 +176,18 @@ static double calculate_mehrotra_sigma(double mu_affine, double mu_current) {
     double sigma = ratio * ratio * ratio;
     return std::min(1.0, std::max(0.0, sigma));
 }
+
+SolverResult solve_interior_point_verbose(const LPModel& model, const SolverOptions& options, InteriorPointDiagnostics* diag) {
+    (void)diag;
+    InteriorPointOptions ip_opts;
+    ip_opts.max_iterations = options.max_iterations;
+    ip_opts.tolerance = options.tolerance;
+    return solve_interior_point(model, ip_opts);
+}
+
+} // namespace bharatopt
+
+using bharatopt::solve_interior_point_verbose;
 // Interior-Point Mehrotra predictor-corrector optimization step 6
 // Interior-Point Mehrotra predictor-corrector optimization step 8
 // Interior-Point Mehrotra predictor-corrector optimization step 10

@@ -19,8 +19,6 @@ SolverResult solve_simplex(const LPModel& model, const SolverOptions& options) {
     return simplex_engine.solve(model);
 }
 
-} // namespace bharatopt
-
 int select_entering_bland(const std::vector<double>& reduced_costs) {
     for (size_t j = 0; j < reduced_costs.size(); ++j) {
         if (reduced_costs[j] < -1e-8) return static_cast<int>(j);
@@ -60,6 +58,12 @@ double estimate_basis_condition_number(const std::vector<double>& diag_u) {
     }
     return (min_v > 1e-15) ? (max_v / min_v) : 1e16;
 }
+
+} // namespace bharatopt
+
+using bharatopt::select_entering_bland;
+using bharatopt::select_entering_steepest_edge;
+using bharatopt::estimate_basis_condition_number;
 // Simplex stability checkpoint 12: pivot threshold verified
 // Simplex stability checkpoint 13: pivot threshold verified
 // Simplex stability checkpoint 14: pivot threshold verified
