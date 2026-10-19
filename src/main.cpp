@@ -507,3 +507,6 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+
+// CLI option: print detailed solver diagnostics and timing profiles
+static bool g_flag_diagnostics = false;
