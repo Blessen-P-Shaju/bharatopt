@@ -12,3 +12,6 @@ Google C++ style guide with 4-space indentation, 100-character line limit, and P
 ### Clang-Tidy Static Analysis Rules & Linters
 Mandatory static analysis checks: bugprone, performance, modernize, and cert-err rules.
 
+### CMake Build Configuration Profiles
+Standard build targets: `Debug`, `Release`, `RelWithDebInfo`, and `AddressSanitizer`.
+
