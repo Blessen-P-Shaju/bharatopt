@@ -9,3 +9,6 @@ Enforcing strict adherence to C++20 standard: concepts, ranges, constexpr algori
 ### Clang-Format and Code Styling Conventions
 Google C++ style guide with 4-space indentation, 100-character line limit, and PascalCase types.
 
+### Clang-Tidy Static Analysis Rules & Linters
+Mandatory static analysis checks: bugprone, performance, modernize, and cert-err rules.
+
