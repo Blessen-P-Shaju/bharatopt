@@ -36,3 +36,6 @@ Writing deterministic unit tests with bounded execution timeouts.
 ### Continuous Integration GitHub Actions Pipelines
 Matrix testing across Ubuntu Linux, Windows MSVC, and macOS Apple Silicon.
 
+### Benchmarking Methodology for Pull Requests
+Automated performance regression testing against Netlib benchmark suite on every PR.
+
