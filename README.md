@@ -166,3 +166,8 @@ MIT
 - [Developer Guide & Architecture](docs/developer-guide.md): Onboarding, coding standards, CI/CD, and compilation guidelines.
 - [REST API Reference](docs/api-reference.md): Complete OpenAPI 3.1 specification for web and microservice integration.
 
+### Quickstart: Crude Assay Management
+```bash
+python scripts/assay_manager.py list
+```
+
