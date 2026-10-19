@@ -27,3 +27,6 @@ Pre-allocating scratch workspace buffers to eliminate `malloc`/`free` during sim
 ### Floating-Point Reproducibility & IEEE 754 Compliance
 Compiler flags `-fno-fast-math` ensuring strictly reproducible floating-point arithmetic.
 
+### Git Workflow & Conventional Commit Standards
+Feature branching (`feat/`, `fix/`, `docs/`) and conventional commit messages.
+
