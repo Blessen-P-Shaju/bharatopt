@@ -18,3 +18,6 @@ Standard build targets: `Debug`, `Release`, `RelWithDebInfo`, and `AddressSaniti
 ### AddressSanitizer (ASan) & UndefinedBehaviorSanitizer (UBSan)
 Compiling with `-fsanitize=address,undefined` for zero memory leaks and undefined behavior.
 
+### CUDA GPU Backend Compilation Flags
+NVCC compilation with compute capability architecture `sm_70`, `sm_80`, and `sm_90`.
+
