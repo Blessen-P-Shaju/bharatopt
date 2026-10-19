@@ -27,3 +27,5 @@ Ruiz scaling is intentionally not active yet because production-quality scaling 
 6. Periodically run FP64 validation and iterative refinement
 
 - Module Reference 1: Comprehensive technical documentation available under `docs/` directory.
+
+- Module Reference 2: Comprehensive technical documentation available under `docs/` directory.
