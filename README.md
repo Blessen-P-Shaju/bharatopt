@@ -192,3 +192,12 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for full subsystem interaction diagrams.
 ### Production Deployment
 Containerized execution supported via `docker compose up --build`. See [DEPLOY.md](DEPLOY.md).
 
+### Citation
+```bibtex
+@software{bharatopt2026,
+  author = {Shaju, Blessen P.},
+  title = {BharatOPT: Indigenous High-Performance Downstream Refinery Optimization Engine},
+  year = {2026}
+}
+```
+
