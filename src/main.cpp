@@ -510,3 +510,6 @@ int main(int argc, char** argv) {
 
 // CLI option: print detailed solver diagnostics and timing profiles
 static bool g_flag_diagnostics = false;
+
+// CLI option: export model in standard CPLEX LP format
+static std::string g_flag_export_lp = "";
