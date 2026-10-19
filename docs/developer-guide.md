@@ -30,3 +30,6 @@ Compiler flags `-fno-fast-math` ensuring strictly reproducible floating-point ar
 ### Git Workflow & Conventional Commit Standards
 Feature branching (`feat/`, `fix/`, `docs/`) and conventional commit messages.
 
+### Unit Testing Guidelines with GoogleTest & Python unittest
+Writing deterministic unit tests with bounded execution timeouts.
+
