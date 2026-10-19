@@ -25,3 +25,5 @@ Ruiz scaling is intentionally not active yet because production-quality scaling 
 4. Use cuBLAS for reductions and vector updates
 5. Keep custom CUDA kernels for projection, fused updates and diagnostics
 6. Periodically run FP64 validation and iterative refinement
+
+- Module Reference 1: Comprehensive technical documentation available under `docs/` directory.
