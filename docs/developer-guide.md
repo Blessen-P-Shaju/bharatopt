@@ -72,3 +72,6 @@ Step-by-step guide to subclassing refinery processing units and registering yiel
 ### Extending BharatOPT: Implementing Custom Pivot Rules
 Implementing the `IPricingStrategy` interface for experimental simplex pricing heuristics.
 
+### Community Governance & Code of Conduct
+Contributor Covenant Code of Conduct and community participation guidelines.
+
