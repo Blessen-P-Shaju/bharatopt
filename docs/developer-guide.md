@@ -66,3 +66,6 @@ Peer review criteria focusing on mathematical soundness, algorithmic complexity,
 ### Architecture Deep-Dive: Solver Class Hierarchy
 Overview of `LinearProgram`, `SimplexSolver`, `InteriorPointSolver`, and `RefineryModel`.
 
+### Extending BharatOPT: Adding Custom Unit Operations
+Step-by-step guide to subclassing refinery processing units and registering yield transfer curves.
+
