@@ -153,3 +153,16 @@ MIT
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](CMakeLists.txt)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](requirements.txt)
+
+## Comprehensive Documentation Index
+
+- [Solver Algorithms Reference Guide](docs/solver-algorithms.md): Linear programming, revised simplex, interior-point barrier, and infeasibility extraction.
+- [Crude Oil Assay Catalog](docs/crude-assay-catalog.md): Distillation cut curves and chemical properties for 15+ major global crude oils.
+- [Refinery Operations Handbook](docs/refinery-operations.md): Kinetic models and operational bounds for CDU, VDU, FCCU, HCU, and CCR units.
+- [Clean Fuels Standards & Blending](docs/clean-fuels-standards.md): Statutory BS-VI, Euro-VI, and ASTM D4814 specifications and nonlinear blending models.
+- [Bilinear Pooling Problem Guide](docs/pooling-problem-guide.md): Global non-convex optimization, Haverly benchmarks, and Successive Linear Programming.
+- [Refinery Scheduling & Logistics](docs/refinery-scheduling-logistics.md): Multi-period crude tanker scheduling, tank inventory, and pipeline batch sequencing.
+- [Decarbonization & Carbon Accounting](docs/carbon-energy-optimization.md): Steam balancing, hydrogen pinch analysis, and BEE PAT scheme compliance.
+- [Developer Guide & Architecture](docs/developer-guide.md): Onboarding, coding standards, CI/CD, and compilation guidelines.
+- [REST API Reference](docs/api-reference.md): Complete OpenAPI 3.1 specification for web and microservice integration.
+
