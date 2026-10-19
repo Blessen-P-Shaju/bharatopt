@@ -15,3 +15,6 @@ Mandatory static analysis checks: bugprone, performance, modernize, and cert-err
 ### CMake Build Configuration Profiles
 Standard build targets: `Debug`, `Release`, `RelWithDebInfo`, and `AddressSanitizer`.
 
+### AddressSanitizer (ASan) & UndefinedBehaviorSanitizer (UBSan)
+Compiling with `-fsanitize=address,undefined` for zero memory leaks and undefined behavior.
+
