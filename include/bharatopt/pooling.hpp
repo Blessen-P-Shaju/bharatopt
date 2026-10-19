@@ -97,8 +97,7 @@ struct McCormickRelaxation {
   SolverResult solve_result;
 };
 
-McCormickRelaxation build_mccormick_relaxation(
-    const PoolingModel& model);
+McCormickRelaxation build_mccormick_relaxation(const PoolingModel &model);
 
 struct GlobalPoolingOptions {
   PoolingSLPOptions slp_options{};
@@ -122,58 +121,43 @@ struct GlobalPoolingResult {
   PoolingSLPResult incumbent;
 };
 
-GlobalPoolingResult solve_global_pooling(
-    const PoolingModel& model,
-    BharatOptSolverCore& solver,
-    const GlobalPoolingOptions& options = {});
+GlobalPoolingResult
+solve_global_pooling(const PoolingModel &model, BharatOptSolverCore &solver,
+                     const GlobalPoolingOptions &options = {});
 
-McCormickRelaxation solve_mccormick_relaxation(
-    const PoolingModel& model,
-    BharatOptSolverCore& solver,
-    const SolverOptions& options = {});
+McCormickRelaxation
+solve_mccormick_relaxation(const PoolingModel &model,
+                           BharatOptSolverCore &solver,
+                           const SolverOptions &options = {});
 
-double mccormick_term_gap(
-    double x,
-    double y,
-    double x_lower,
-    double x_upper,
-    double y_lower,
-    double y_upper);
+double mccormick_term_gap(double x, double y, double x_lower, double x_upper,
+                          double y_lower, double y_upper);
 
-PoolingSLPResult solve_pooling_slp(
-    const PoolingModel& model,
-    BharatOptSolverCore& solver,
-    const PoolingSLPOptions& options = {});
+PoolingSLPResult solve_pooling_slp(const PoolingModel &model,
+                                   BharatOptSolverCore &solver,
+                                   const PoolingSLPOptions &options = {});
 
 using BilinearPoolingProblem = PoolingModel;
 
 struct McCormickEnvelope {
-    double x_lo{0}, x_hi{0}, y_lo{0}, y_hi{0};
-    double eval_underestimator_1(double x, double y) const { return x_lo * y + x * y_lo - x_lo * y_lo; }
-    double eval_underestimator_2(double x, double y) const { return x_hi * y + x * y_hi - x_hi * y_hi; }
-    double eval_overestimator_1(double x, double y) const { return x_hi * y + x * y_lo - x_hi * y_lo; }
-    double eval_overestimator_2(double x, double y) const { return x_lo * y + x * y_hi - x_lo * y_hi; }
+  double x_lo{0}, x_hi{0}, y_lo{0}, y_hi{0};
+  double eval_underestimator_1(double x, double y) const {
+    return x_lo * y + x * y_lo - x_lo * y_lo;
+  }
+  double eval_underestimator_2(double x, double y) const {
+    return x_hi * y + x * y_hi - x_hi * y_hi;
+  }
+  double eval_overestimator_1(double x, double y) const {
+    return x_hi * y + x * y_lo - x_hi * y_lo;
+  }
+  double eval_overestimator_2(double x, double y) const {
+    return x_lo * y + x * y_hi - x_lo * y_hi;
+  }
 };
 PoolingModel make_haverly_benchmark(int instance_id = 1);
 
 } // namespace bharatopt
 
 using bharatopt::BilinearPoolingProblem;
-using bharatopt::McCormickEnvelope;
 using bharatopt::make_haverly_benchmark;
-// Bilinear SLP trust-region expansion checkpoint 5
-// Bilinear SLP trust-region expansion checkpoint 7
-// Bilinear SLP trust-region expansion checkpoint 9
-// Bilinear SLP trust-region expansion checkpoint 11
-// Bilinear SLP trust-region expansion checkpoint 13
-// Bilinear SLP trust-region expansion checkpoint 15
-// Bilinear SLP trust-region expansion checkpoint 17
-// Bilinear SLP trust-region expansion checkpoint 19
-// Bilinear SLP trust-region expansion checkpoint 21
-// Bilinear SLP trust-region expansion checkpoint 23
-// Bilinear SLP trust-region expansion checkpoint 25
-// Bilinear SLP trust-region expansion checkpoint 27
-// Bilinear SLP trust-region expansion checkpoint 29
-// Bilinear SLP trust-region expansion checkpoint 31
-// Bilinear SLP trust-region expansion checkpoint 33
-// Bilinear SLP trust-region expansion checkpoint 35
+using bharatopt::McCormickEnvelope;
