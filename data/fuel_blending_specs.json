@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "standard_version": "BS-VI / Euro-VI",
+    "jurisdiction": "India / MoPNG",
+    "last_updated": "2026-09-26",
+    "description": "Standard specifications for clean automotive and aviation fuels"
+  },
+  "gasoline": {
+    "RON_min": 91.0,
+    "MON_min": 81.0,
+    "benzene_vol_pct_max": 1.0,
+    "aromatics_vol_pct_max": 35.0,
+    "olefins_vol_pct_max": 18.0,
+    "sulfur_ppm_max": 10.0,
+    "rvp_kpa_max_summer": 60.0,
+    "rvp_kpa_max_winter": 67.0,
+    "density_15c_min_kg_m3": 720.0,
+    "density_15c_max_kg_m3": 775.0,
+    "oxygen_content_wt_pct_max": 2.7,
+    "lead_content_g_l_max": 0.005
+  },
+  "diesel": {
+    "cetane_number_min": 51.0,
+    "cetane_index_min": 46.0,
+    "density_15c_min_kg_m3": 820.0,
+    "density_15c_max_kg_m3": 845.0,
+    "sulfur_ppm_max": 10.0,
+    "pah_wt_pct_max": 8.0,
+    "flash_point_c_min": 35.0,
+    "t95_c_max": 360.0,
+    "viscosity_40c_cst_min": 2.0,
+    "viscosity_40c_cst_max": 4.5,
+    "cfpp_c_max_winter": 6.0,
+    "cfpp_c_max_summer": 18.0
+  },
+  "jet_a1": {
+    "smoke_point_mm_min": 25.0,
+    "freeze_point_c_max": -47.0,
+    "flash_point_c_min": 38.0,
+    "density_15c_min_kg_m3": 775.0,
+    "density_15c_max_kg_m3": 840.0,
+    "viscosity_minus20c_cst_max": 8.0,
+    "sulfur_total_wt_pct_max": 0.3,
+    "acidity_total_mg_koh_g_max": 0.015,
+    "copper_strip_corrosion_max": "Class 1"
+  },
+  "marine_fuel_imo2020": {
+    "sulfur_wt_pct_max": 0.5,
+    "viscosity_50c_cst_max": 380.0,
+    "density_15c_max_kg_m3": 991.0,
+    "flash_point_c_min": 60.0,
+    "pour_point_c_max": 30.0
+  }
+}

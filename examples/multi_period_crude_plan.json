@@ -1,49 +1,49 @@
 {
-  "name": "MRPL_Quarterly_Crude_Procurement_Plan",
-  "periods": [
-    {"period_id": 1, "name": "Month_1_Winter", "duration_days": 30, "discount_factor": 1.00},
-    {"period_id": 2, "name": "Month_2_Spring", "duration_days": 30, "discount_factor": 0.99},
-    {"period_id": 3, "name": "Month_3_PreMonsoon", "duration_days": 30, "discount_factor": 0.98}
-  ],
-  "crude_cargoes": [
-    {
-      "cargo_id": "VLCC_Mangala_01",
-      "crude": "Mangala_Sweet",
-      "arrival_period": 1,
-      "volume_bbl": 1000000.0,
-      "fob_price": 76.50,
-      "freight_cost": 2.10,
-      "api": 29.2,
-      "sulfur_pct": 0.15
-    },
-    {
-      "cargo_id": "VLCC_Arab_Heavy_01",
-      "crude": "Arab_Heavy",
-      "arrival_period": 1,
-      "volume_bbl": 1500000.0,
-      "fob_price": 68.00,
-      "freight_cost": 2.80,
-      "api": 27.0,
-      "sulfur_pct": 2.80
-    },
-    {
-      "cargo_id": "Suezmax_Basrah_02",
-      "crude": "Basrah_Medium",
-      "arrival_period": 2,
-      "volume_bbl": 1000000.0,
-      "fob_price": 72.30,
-      "freight_cost": 2.50,
-      "api": 30.1,
-      "sulfur_pct": 2.10
-    }
-  ],
-  "tank_farm_limits": {
-    "crude_storage_max_bbl": 4500000.0,
-    "crude_storage_min_bbl": 800000.0,
-    "holding_cost_per_bbl_month": 0.45
+  "horizon_days": 7,
+  "metadata": {
+    "model": "BharatOPT Multi-Period Demo",
+    "version": "2.0"
   },
-  "refinery_throughput_limits": {
-    "cdu_monthly_min_bbl": 2400000.0,
-    "cdu_monthly_max_bbl": 4200000.0
+  "day_1_plan": {
+    "vessel": "Crude_Tanker_1",
+    "crude_type": "Arab_Light",
+    "discharge_volume_bbl": 850000.0,
+    "cdu_target_kbpd": 290.0
+  },
+  "day_2_plan": {
+    "vessel": "Crude_Tanker_2",
+    "crude_type": "Brent",
+    "discharge_volume_bbl": 950000.0,
+    "cdu_target_kbpd": 290.0
+  },
+  "day_3_plan": {
+    "vessel": "Crude_Tanker_3",
+    "crude_type": "Arab_Light",
+    "discharge_volume_bbl": 850000.0,
+    "cdu_target_kbpd": 290.0
+  },
+  "day_4_plan": {
+    "vessel": "Crude_Tanker_4",
+    "crude_type": "Brent",
+    "discharge_volume_bbl": 950000.0,
+    "cdu_target_kbpd": 290.0
+  },
+  "day_5_plan": {
+    "vessel": "Crude_Tanker_5",
+    "crude_type": "Arab_Light",
+    "discharge_volume_bbl": 850000.0,
+    "cdu_target_kbpd": 290.0
+  },
+  "day_6_plan": {
+    "vessel": "Crude_Tanker_6",
+    "crude_type": "Basrah_Medium",
+    "discharge_volume_bbl": 950000.0,
+    "cdu_target_kbpd": 290.0
+  },
+  "day_7_plan": {
+    "vessel": "Crude_Tanker_7",
+    "crude_type": "Basrah_Medium",
+    "discharge_volume_bbl": 850000.0,
+    "cdu_target_kbpd": 290.0
   }
 }

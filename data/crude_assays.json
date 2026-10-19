@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "database": "BharatOPT Crude Assay Catalog",
+    "crudes_count": 19,
+    "version": "1.0"
+  },
+  "arab_light": {
+    "name": "Arab Light",
+    "origin": "Saudi Arabia",
+    "api_gravity": 33.4,
+    "sulfur_wt_pct": 1.97,
+    "tan_mg_koh_g": 0.05,
+    "pour_point_c": -30.0,
+    "yield_cuts_pct": {
+      "lpg": 2.2,
+      "light_naphtha": 6.8,
+      "heavy_naphtha": 13.5,
+      "kerosene": 10.4,
+      "diesel": 20.8,
+      "vgo": 28.5,
+      "residue": 17.8
+    }
+  },
+  "arab_heavy": {
+    "name": "Arab Heavy",
+    "origin": "Saudi Arabia",
+    "api_gravity": 27.9,
+    "sulfur_wt_pct": 2.85,
+    "tan_mg_koh_g": 0.12,
+    "pour_point_c": -20.0,
+    "yield_cuts_pct": {
+      "lpg": 1.5,
+      "light_naphtha": 4.8,
+      "heavy_naphtha": 10.2,
+      "kerosene": 8.6,
+      "diesel": 18.4,
+      "vgo": 27.5,
+      "residue": 29.0
+    }
+  },
+  "brent_blend": {
+    "name": "Brent Blend",
+    "origin": "United Kingdom",
+    "api_gravity": 38.3,
+    "sulfur_wt_pct": 0.37,
+    "tan_mg_koh_g": 0.08,
+    "pour_point_c": -3.0,
+    "yield_cuts_pct": {
+      "lpg": 3.1,
+      "light_naphtha": 8.9,
+      "heavy_naphtha": 16.2,
+      "kerosene": 12.5,
+      "diesel": 23.4,
+      "vgo": 24.1,
+      "residue": 11.8
+    }
+  },
+  "forties": {
+    "name": "Forties",
+    "origin": "United Kingdom",
+    "api_gravity": 40.3,
+    "sulfur_wt_pct": 0.65,
+    "tan_mg_koh_g": 0.1,
+    "pour_point_c": -6.0,
+    "yield_cuts_pct": {
+      "lpg": 3.4,
+      "light_naphtha": 9.5,
+      "heavy_naphtha": 17.1,
+      "kerosene": 13.2,
+      "diesel": 22.8,
+      "vgo": 23.0,
+      "residue": 11.0
+    }
+  },
+  "maya": {
+    "name": "Maya",
+    "origin": "Mexico",
+    "api_gravity": 21.8,
+    "sulfur_wt_pct": 3.45,
+    "tan_mg_koh_g": 0.35,
+    "pour_point_c": -15.0,
+    "yield_cuts_pct": {
+      "lpg": 1.1,
+      "light_naphtha": 3.5,
+      "heavy_naphtha": 8.2,
+      "kerosene": 6.9,
+      "diesel": 15.6,
+      "vgo": 26.2,
+      "residue": 38.5
+    }
+  },
+  "wti_midland": {
+    "name": "WTI Midland",
+    "origin": "USA",
+    "api_gravity": 40.8,
+    "sulfur_wt_pct": 0.2,
+    "tan_mg_koh_g": 0.04,
+    "pour_point_c": -12.0,
+    "yield_cuts_pct": {
+      "lpg": 3.8,
+      "light_naphtha": 10.2,
+      "heavy_naphtha": 18.4,
+      "kerosene": 13.8,
+      "diesel": 24.5,
+      "vgo": 21.5,
+      "residue": 7.8
+    }
+  },
+  "mumbai_high": {
+    "name": "Mumbai High",
+    "origin": "India",
+    "api_gravity": 39.2,
+    "sulfur_wt_pct": 0.14,
+    "tan_mg_koh_g": 0.03,
+    "pour_point_c": 30.0,
+    "yield_cuts_pct": {
+      "lpg": 2.8,
+      "light_naphtha": 9.2,
+      "heavy_naphtha": 17.5,
+      "kerosene": 14.1,
+      "diesel": 25.2,
+      "vgo": 22.4,
+      "residue": 8.8
+    }
+  },
+  "mangala": {
+    "name": "Mangala",
+    "origin": "India (Rajasthan)",
+    "api_gravity": 28.5,
+    "sulfur_wt_pct": 0.18,
+    "tan_mg_koh_g": 0.05,
+    "pour_point_c": 42.0,
+    "yield_cuts_pct": {
+      "lpg": 0.8,
+      "light_naphtha": 2.9,
+      "heavy_naphtha": 7.8,
+      "kerosene": 8.5,
+      "diesel": 21.2,
+      "vgo": 34.6,
+      "residue": 24.2
+    }
+  },
+  "ravva": {
+    "name": "Ravva",
+    "origin": "India (KG Basin)",
+    "api_gravity": 36.5,
+    "sulfur_wt_pct": 0.08,
+    "tan_mg_koh_g": 0.02,
+    "pour_point_c": 12.0,
+    "yield_cuts_pct": {
+      "lpg": 2.5,
+      "light_naphtha": 8.4,
+      "heavy_naphtha": 15.9,
+      "kerosene": 13.5,
+      "diesel": 24.8,
+      "vgo": 24.2,
+      "residue": 10.7
+    }
+  },
+  "murban": {
+    "name": "Murban",
+    "origin": "UAE (Abu Dhabi)",
+    "api_gravity": 40.2,
+    "sulfur_wt_pct": 0.78,
+    "tan_mg_koh_g": 0.04,
+    "pour_point_c": -18.0,
+    "yield_cuts_pct": {
+      "lpg": 3.2,
+      "light_naphtha": 9.8,
+      "heavy_naphtha": 17.8,
+      "kerosene": 13.6,
+      "diesel": 24.1,
+      "vgo": 22.8,
+      "residue": 8.7
+    }
+  },
+  "dubai_fateh": {
+    "name": "Dubai Fateh",
+    "origin": "UAE",
+    "api_gravity": 31.0,
+    "sulfur_wt_pct": 2.05,
+    "tan_mg_koh_g": 0.08,
+    "pour_point_c": -15.0,
+    "yield_cuts_pct": {
+      "lpg": 1.8,
+      "light_naphtha": 5.9,
+      "heavy_naphtha": 12.1,
+      "kerosene": 9.8,
+      "diesel": 19.8,
+      "vgo": 28.4,
+      "residue": 22.2
+    }
+  },
+  "basrah_medium": {
+    "name": "Basrah Medium",
+    "origin": "Iraq",
+    "api_gravity": 28.5,
+    "sulfur_wt_pct": 2.9,
+    "tan_mg_koh_g": 0.15,
+    "pour_point_c": -18.0,
+    "yield_cuts_pct": {
+      "lpg": 1.6,
+      "light_naphtha": 5.1,
+      "heavy_naphtha": 10.8,
+      "kerosene": 9.1,
+      "diesel": 18.9,
+      "vgo": 27.8,
+      "residue": 26.7
+    }
+  },
+  "bonny_light": {
+    "name": "Bonny Light",
+    "origin": "Nigeria",
+    "api_gravity": 35.3,
+    "sulfur_wt_pct": 0.15,
+    "tan_mg_koh_g": 0.06,
+    "pour_point_c": -6.0,
+    "yield_cuts_pct": {
+      "lpg": 2.9,
+      "light_naphtha": 8.7,
+      "heavy_naphtha": 16.5,
+      "kerosene": 13.1,
+      "diesel": 24.0,
+      "vgo": 24.5,
+      "residue": 10.3
+    }
+  },
+  "urals": {
+    "name": "Urals",
+    "origin": "Russia",
+    "api_gravity": 31.3,
+    "sulfur_wt_pct": 1.48,
+    "tan_mg_koh_g": 0.18,
+    "pour_point_c": -12.0,
+    "yield_cuts_pct": {
+      "lpg": 1.9,
+      "light_naphtha": 6.2,
+      "heavy_naphtha": 12.8,
+      "kerosene": 10.1,
+      "diesel": 20.4,
+      "vgo": 27.6,
+      "residue": 21.0
+    }
+  },
+  "castilla": {
+    "name": "Castilla",
+    "origin": "Colombia",
+    "api_gravity": 18.8,
+    "sulfur_wt_pct": 1.95,
+    "tan_mg_koh_g": 0.42,
+    "pour_point_c": 6.0,
+    "yield_cuts_pct": {
+      "lpg": 0.6,
+      "light_naphtha": 2.2,
+      "heavy_naphtha": 6.1,
+      "kerosene": 5.4,
+      "diesel": 13.8,
+      "vgo": 28.1,
+      "residue": 43.8
+    }
+  },
+  "tapis": {
+    "name": "Tapis",
+    "origin": "Malaysia",
+    "api_gravity": 45.2,
+    "sulfur_wt_pct": 0.04,
+    "tan_mg_koh_g": 0.01,
+    "pour_point_c": 15.0,
+    "yield_cuts_pct": {
+      "lpg": 4.1,
+      "light_naphtha": 12.5,
+      "heavy_naphtha": 22.0,
+      "kerosene": 15.2,
+      "diesel": 26.4,
+      "vgo": 14.8,
+      "residue": 5.0
+    }
+  },
+  "minas": {
+    "name": "Minas",
+    "origin": "Indonesia",
+    "api_gravity": 35.0,
+    "sulfur_wt_pct": 0.09,
+    "tan_mg_koh_g": 0.03,
+    "pour_point_c": 36.0,
+    "yield_cuts_pct": {
+      "lpg": 1.2,
+      "light_naphtha": 4.5,
+      "heavy_naphtha": 11.2,
+      "kerosene": 10.5,
+      "diesel": 24.5,
+      "vgo": 32.1,
+      "residue": 16.0
+    }
+  },
+  "cinta": {
+    "name": "Cinta",
+    "origin": "Indonesia",
+    "api_gravity": 31.1,
+    "sulfur_wt_pct": 0.09,
+    "tan_mg_koh_g": 0.02,
+    "pour_point_c": 32.0,
+    "yield_cuts_pct": {
+      "lpg": 1.5,
+      "light_naphtha": 5.2,
+      "heavy_naphtha": 12.4,
+      "kerosene": 11.0,
+      "diesel": 23.8,
+      "vgo": 30.5,
+      "residue": 15.6
+    }
+  },
+  "qatar_marine": {
+    "name": "Qatar Marine",
+    "origin": "Qatar",
+    "api_gravity": 35.8,
+    "sulfur_wt_pct": 1.55,
+    "tan_mg_koh_g": 0.05,
+    "pour_point_c": -24.0,
+    "yield_cuts_pct": {
+      "lpg": 2.6,
+      "light_naphtha": 7.8,
+      "heavy_naphtha": 15.1,
+      "kerosene": 12.0,
+      "diesel": 22.5,
+      "vgo": 26.2,
+      "residue": 13.8
+    }
+  }
+}

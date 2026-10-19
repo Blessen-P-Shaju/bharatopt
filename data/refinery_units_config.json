@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "config_version": "1.0",
+    "description": "Refinery unit operating limits and yields"
+  },
+  "cdu": {
+    "name": "Atmospheric Distillation Unit",
+    "capacity_kbpd": 300.0,
+    "min_turndown_pct": 60.0,
+    "fuel_gas_duty_mmbtu_bbl": 0.12
+  },
+  "vdu": {
+    "name": "Vacuum Distillation Unit",
+    "capacity_kbpd": 140.0,
+    "min_turndown_pct": 55.0,
+    "steam_duty_kg_bbl": 8.5
+  },
+  "fccu": {
+    "name": "Fluid Catalytic Cracking Unit",
+    "capacity_kbpd": 80.0,
+    "catalyst_type": "USY Zeolite",
+    "lpg_yield_pct": 22.5,
+    "gasoline_yield_pct": 51.2,
+    "lco_yield_pct": 18.3,
+    "coke_yield_pct": 5.5
+  },
+  "hcu": {
+    "name": "Hydrocracker Unit",
+    "capacity_kbpd": 65.0,
+    "h2_consumption_nm3_m3": 210.0,
+    "kerosene_yield_pct": 28.0,
+    "diesel_yield_pct": 55.0
+  },
+  "ccr": {
+    "name": "Continuous Catalytic Reformer",
+    "capacity_kbpd": 45.0,
+    "ron_operating_range": [
+      95.0,
+      102.0
+    ],
+    "h2_byproduct_wt_pct": 3.8
+  },
+  "dcu": {
+    "name": "Delayed Coker Unit",
+    "capacity_kbpd": 50.0,
+    "coke_yield_wt_pct": 28.0,
+    "coker_gasoil_pct": 48.0
+  },
+  "isomerization": {
+    "name": "C5/C6 Isomerization Unit",
+    "capacity_kbpd": 20.0,
+    "isomerate_ron": 87.5
+  },
+  "alkylation": {
+    "name": "Sulfuric Acid Alkylation Unit",
+    "capacity_kbpd": 15.0,
+    "alkylate_ron": 96.0,
+    "acid_consumption_kg_bbl": 4.2
+  },
+  "dhdt": {
+    "name": "Diesel Hydrotreater Unit",
+    "capacity_kbpd": 90.0,
+    "sulfur_removal_efficiency_pct": 99.8,
+    "h2_consumption_nm3_m3": 75.0
+  },
+  "vgo_hdt": {
+    "name": "VGO Hydrotreater Unit",
+    "capacity_kbpd": 75.0,
+    "sulfur_removal_pct": 95.0
+  },
+  "sru": {
+    "name": "Sulfur Recovery Unit (Claus)",
+    "capacity_tpd": 450.0,
+    "recovery_efficiency_pct": 99.9
+  },
+  "hydrogen_smr": {
+    "name": "Steam Methane Reformer",
+    "capacity_knm3_h": 120.0,
+    "h2_purity_pct": 99.9
+  },
+  "etp": {
+    "name": "Effluent Treatment Plant",
+    "capacity_m3_h": 1200.0,
+    "treatment_type": "MBBR+RO+ZLD"
+  },
+  "cpp": {
+    "name": "Captive Power Plant (Cogeneration)",
+    "power_mw": 180.0,
+    "steam_generation_tph": 750.0
+  }
+}
