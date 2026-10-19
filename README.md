@@ -201,3 +201,4 @@ Containerized execution supported via `docker compose up --build`. See [DEPLOY.m
 }
 ```
 
+<!-- BharatOPT v2.1.0 Stable Release Verified -->
