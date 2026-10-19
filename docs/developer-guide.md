@@ -63,3 +63,6 @@ Standardized issue templates requesting minimal reproducible MPS test cases.
 ### Code Review Checklist for Maintainers
 Peer review criteria focusing on mathematical soundness, algorithmic complexity, and test coverage.
 
+### Architecture Deep-Dive: Solver Class Hierarchy
+Overview of `LinearProgram`, `SimplexSolver`, `InteriorPointSolver`, and `RefineryModel`.
+
