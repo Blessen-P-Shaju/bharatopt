@@ -48,3 +48,6 @@ Identifying cache bottlenecks and instruction stalls during sparse matrix-vector
 ### Debugging SIMD Vectorization with Compiler Assembly Explorer
 Inspecting compiler assembly output for effective AVX-512 FMA utilization.
 
+### Handling Numerical Singularities & Ill-Conditioned Bases
+Defensive recovery strategies when matrix condition numbers exceed $10^{12}$.
+
