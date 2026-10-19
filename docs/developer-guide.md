@@ -24,3 +24,6 @@ NVCC compilation with compute capability architecture `sm_70`, `sm_80`, and `sm_
 ### Memory Management Guidelines: Zero Heap Allocations in Inner Loops
 Pre-allocating scratch workspace buffers to eliminate `malloc`/`free` during simplex pivots.
 
+### Floating-Point Reproducibility & IEEE 754 Compliance
+Compiler flags `-fno-fast-math` ensuring strictly reproducible floating-point arithmetic.
+
