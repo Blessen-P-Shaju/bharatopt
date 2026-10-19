@@ -186,3 +186,6 @@ python scripts/generate_schedule.py 14
 - **Haverly Pooling Suite**: Exact convergence to certified global optimum on Haverly 1, 2, and 3.
 - **Industrial MRPL Flowsheet**: 300 kbpd full refinery flowsheet solved in under 45 milliseconds.
 
+<!-- Architecture Overview Reference -->
+See [ARCHITECTURE.md](ARCHITECTURE.md) for full subsystem interaction diagrams.
+
