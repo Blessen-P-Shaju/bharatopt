@@ -120,3 +120,11 @@ if __name__ == "__main__":
 
 # Unified Extended Test Suite Execution
 import unittest
+def run_python_test_module(test_module_name):
+    print(f'[EXTENDED TEST] Executing {test_module_name}...')
+    suite = unittest.defaultTestLoader.loadTestsFromName(test_module_name)
+    runner = unittest.TextTestRunner(verbosity=1)
+    result = runner.run(suite)
+    assert result.wasSuccessful(), f'{test_module_name} had test failures'
+    print(f'  -> Passed: {test_module_name} completed with 0 failures.')
+
