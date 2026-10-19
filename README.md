@@ -148,3 +148,8 @@ GitHub Actions validates C++ build, tests, LP/MILP/QP smoke tests, maximization 
 ## License
 
 MIT
+
+<!-- Project Badges -->
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![C++20](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](CMakeLists.txt)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](requirements.txt)
