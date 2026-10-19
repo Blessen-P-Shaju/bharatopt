@@ -60,3 +60,6 @@ Automated semantic tagging, changelog generation, and multi-platform wheel publi
 ### Issue Triage & Bug Reporting Templates
 Standardized issue templates requesting minimal reproducible MPS test cases.
 
+### Code Review Checklist for Maintainers
+Peer review criteria focusing on mathematical soundness, algorithmic complexity, and test coverage.
+
