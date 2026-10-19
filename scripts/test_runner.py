@@ -128,3 +128,6 @@ def run_python_test_module(test_module_name):
     assert result.wasSuccessful(), f'{test_module_name} had test failures'
     print(f'  -> Passed: {test_module_name} completed with 0 failures.')
 
+def test_extended_crude_assays():
+    run_python_test_module('tests.test_crude_assays')
+
