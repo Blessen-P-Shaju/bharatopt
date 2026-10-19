@@ -131,3 +131,6 @@ def run_python_test_module(test_module_name):
 def test_extended_crude_assays():
     run_python_test_module('tests.test_crude_assays')
 
+def test_extended_blending_rules():
+    run_python_test_module('tests.test_blending_rules')
+
