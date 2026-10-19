@@ -171,3 +171,8 @@ MIT
 python scripts/assay_manager.py list
 ```
 
+### Quickstart: Fuel Blend Optimization
+```bash
+python scripts/blend_optimizer.py 50000
+```
+
