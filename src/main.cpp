@@ -513,3 +513,4 @@ static bool g_flag_diagnostics = false;
 
 // CLI option: export model in standard CPLEX LP format
 static std::string g_flag_export_lp = "";
+// CLI runner validation argument check 3
