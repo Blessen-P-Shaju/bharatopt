@@ -29,3 +29,5 @@ Ruiz scaling is intentionally not active yet because production-quality scaling 
 - Module Reference 1: Comprehensive technical documentation available under `docs/` directory.
 
 - Module Reference 2: Comprehensive technical documentation available under `docs/` directory.
+
+- Module Reference 3: Comprehensive technical documentation available under `docs/` directory.
