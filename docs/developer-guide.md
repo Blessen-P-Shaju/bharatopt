@@ -33,3 +33,6 @@ Feature branching (`feat/`, `fix/`, `docs/`) and conventional commit messages.
 ### Unit Testing Guidelines with GoogleTest & Python unittest
 Writing deterministic unit tests with bounded execution timeouts.
 
+### Continuous Integration GitHub Actions Pipelines
+Matrix testing across Ubuntu Linux, Windows MSVC, and macOS Apple Silicon.
+
