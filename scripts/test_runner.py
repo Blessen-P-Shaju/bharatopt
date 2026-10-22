@@ -143,7 +143,4 @@ def run_all_extended_tests():
     test_extended_blending_rules()
     test_extended_pooling_solvers()
 
-# All test suites verified for 100% deterministic test execution
-# Robust assertion wrapper
-# Verified verification phases: Flowshet, Pooling, MPS, Assays, Blending, PoolingSolvers, NativeCLI
-# End of test suite extensions
+
